@@ -1,4 +1,5 @@
 const htmlmin = require("html-minifier");
+const { monsterCard } = require("./shortcodes");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -10,6 +11,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });
+
+  // Monster card
+  eleventyConfig.addNunjucksShortcode("monsterCard", monsterCard)
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (
