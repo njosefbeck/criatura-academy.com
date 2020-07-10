@@ -1,0 +1,66 @@
+/* purgecss start ignore */
+@tailwind base;
+/* purgecss end ignore */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mt-6;
+  @apply mb-2;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+p {
+  @apply mb-2;
+}
+
+a {
+  @apply font-bold;
+  @apply underline;
+  @apply text-blue-700;
+}
+
+td,
+th {
+  @apply border;
+  @apply p-2;
+  @apply text-center;
+}
+
+th {
+  @apply bg-purple-100;
+}
+
+td img {
+  @apply inline-block;
+}
+
+td figcaption {
+  @apply leading-tight;
+  @apply mt-2;
+}
+
+/* purgecss start ignore */
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+.bg-gradient {
+  background-color: #e6e6fa;
+  background-image: linear-gradient(315deg, #aee1f9, #e6e6fa)
+}

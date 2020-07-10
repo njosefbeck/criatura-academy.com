@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/index.css?v={% version %}' | url }}">
+  </head>
+  <body class="p-10">
+    <header class="mt-10 mb-8 text-center">
+      <h1 class="mb-0 text-3xl font-bold font-serif">
+        Criatura
+        <img src="/images/npcs/sprakki.gif" class="p-4 bg-purple-200 inline-block align-bottom rounded-full" alt="Sprakki" />
+        Academy
+      </h1>
+      <p class="mt-2">A Korean Ragnarok Online Zero fansite</p>
+      <div class="bg-gray-200 max-w-md mx-auto mt-8" style="height: 2px"></div>
+    </header>
+    <main class="mx-auto max-w-3xl mb-20">
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
