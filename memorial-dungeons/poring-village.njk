@@ -1,12 +1,14 @@
 ---
 layout: /layouts/base.njk
-title: Poring Village | Criatura Academy
+title: Poring Village
 description: All about the Memorial Dungeon Poring Village found in kRO Zero
+tags: memorialDungeon
 ---
 
 <article>
   <h1 class="text-2xl mb-2">Poring Village</h1>
   <p>This <b>memorial dungeon</b> is located one map west of Prontera.</p>
+
   <img class="mt-6 mb-2" src="/images/maps/poring-village-location.bmp" alt="Poring Village map location" />
 
   <h2>General Info</h2>
@@ -128,12 +130,12 @@ description: All about the Memorial Dungeon Poring Village found in kRO Zero
   <h3>Consumables</h3>
 
   <ul class="list-disc pl-8 mb-4">
-    <li>Red Potion</li>
-    <li>Blue Potion</li>
-    <li>Orange Potion</li>
-    <li>Yellow Potion</li>
-    <li>White Potion</li>
-    <li>Green Potion</li>
+    <li>{% item id="11570", name="[Not For Sale] Red Potion", imageFolder="consumables" %}</li>
+    <li>{% item id="11572", name="[Not For Sale] Blue Potion", imageFolder="consumables" %}</li>
+    <li>{% item id="11569", name="[Not For Sale] Orange Potion", imageFolder="consumables" %}</li>
+    <li>{% item id="11566", name="[Not For Sale] Yellow Potion", imageFolder="consumables" %}</li>
+    <li>{% item id="11565", name="[Not For Sale] White Potion", imageFolder="consumables" %}</li>
+    <li>{% item id="11571", name="[Not For Sale] Green Potion", imageFolder="consumables" %}</li>
   </ul>
 
   <h3>Lower headgear</h3>
@@ -174,6 +176,39 @@ description: All about the Memorial Dungeon Poring Village found in kRO Zero
   </div>
 
   <h3>Day of the week rewards</h3>
+
+  <p>Depending on the day of the week, you can get different Jello Fragments. These are used to craft Jello Stones, which in turn are used to craft higher-tier Memorial Dungeon equipment.</p>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      <strong class="align-middle">Monday:</strong>&nbsp;
+      {% item id="25465", name="Poring Jello Fragment", imageFolder="items" %}
+    </li>
+    <li>
+      <strong class="align-middle">Tuesday:</strong>&nbsp;
+      {% item id="25466", name="Poporing Jello Fragment", imageFolder="items" %}
+    </li>
+    <li>
+      <strong class="align-middle">Wednesday:</strong>&nbsp;
+      {% item id="25467", name="Drops Jello Fragment", imageFolder="items" %}
+    </li>
+    <li>
+      <strong class="align-middle">Thursday:</strong>&nbsp;
+      {% item id="25468", name="Deviling Jello Fragment", imageFolder="items" %}
+    </li>
+    <li>
+      <strong class="align-middle">Friday:</strong>&nbsp;
+      {% item id="25469", name="Angeling Jello Fragment", imageFolder="items" %}
+    </li>
+    <li>
+      <strong class="align-middle">Saturday:</strong>&nbsp;
+      {% item id="23649", name="Jello Fragment Box", imageFolder="items" %}
+    </li>
+    <li>
+      <strong class="align-middle">Sunday:</strong>&nbsp;
+      {% item id="23649", name="Jello Fragment Box", imageFolder="items" %}
+    </li>
+  </ul>
 
   <h2>Headgear Enchant</h2>
 
