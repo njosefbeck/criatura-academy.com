@@ -1,7 +1,7 @@
 // Monster card
 function monsterCard (monster) {
   return `
-  <div class="border-2 rounded-md p-2 text-sm mb-2 ${monster.widthClass}">
+  <div class="border-2 rounded-md p-2 text-sm mb-4 ${monster.widthClass}">
     <img src="/images/monsters/${monster.image}" class="float-right ml-2" alt="${monster.name}" />
     <span class="block leading-tight mb-2">
       <a href="https://divine-pride.net/database/monster/${monster.id}/" target="_blank" rel="noreferrer noopener">
@@ -24,19 +24,26 @@ function monsterCard (monster) {
 
 // Equipment card
 function equipCard (description, equip) {
+  const hasFoundInOrCraftedFrom = (equip.foundIn || equip.craftedFrom);
+  const displayStats = hasFoundInOrCraftedFrom && equip.weight && equip.def;
   return `
-  <div class="border-2 rounded-md text-sm mb-2 ca-w-49">
+  <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
     <div class="border-b rounded-t-md p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${equip.id}" target="_blank" rel="noopener noreferrer">
-        <img class="inline-block mr-2" src="/images/equip/subjugation/${equip.id}.png" alt="${equip.name}" />
+        <img class="inline-block mr-2" src="/images/equip/${equip.folder}/${equip.id}.png" alt="${equip.name}" />
         ${equip.name}</a>
       <span class="font-bold float-right">${equip.category}</span>
     </div>
-    <ul class="p-2">
-      ${equip.foundIn ? `<li><strong>Found In:</strong> ${equip.foundIn}</li>` : ``}
-      ${equip.craftedFrom ? `<li><strong>Crafted From:</strong> ${equip.craftedFrom}</li>` : ``}
-      <li><strong>Weight:</strong> ${equip.weight} &middot; <strong>DEF:</strong> ${equip.def}</li>
-    </ul>
+    ${displayStats ?
+      `
+      <ul class="p-2">
+        ${equip.foundIn ? `<li><strong>Found In:</strong> ${equip.foundIn}</li>` : ``}
+        ${equip.craftedFrom ? `<li><strong>Crafted From:</strong> ${equip.craftedFrom}</li>` : ``}
+        ${equip.weight && equip.def ? `<li><strong>Weight:</strong> ${equip.weight} &middot; <strong>DEF:</strong> ${equip.def}</li>` : ``}
+      </ul>
+      `
+      : ``
+    }
     ${description}
   </div>
   `
