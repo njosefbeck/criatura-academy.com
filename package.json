@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --formats=njk,gif,bmp & postcss css/index.css --o _tmp/index.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy --formats=njk,gif,bmp & ELEVENTY_PRODUCTION=true postcss css/index.css --o _site/css/index.css"
+    "start": "npx @11ty/eleventy --serve --formats=njk,gif,bmp,png & postcss css/index.css --o _tmp/index.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy --formats=njk,gif,bmp,png & ELEVENTY_PRODUCTION=true postcss css/index.css --o _site/css/index.css"
   },
   "keywords": [],
   "author": "",

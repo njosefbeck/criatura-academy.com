@@ -1,0 +1,99 @@
+---
+layout: /layouts/base.njk
+title: Memorial Dungeon Equipment | Criatura Academy
+description: All about the Memorial Dungeon equipment found in kRO Zero
+---
+
+<article>
+  <h1 class="text-2xl mb-4">Memorial Dungeon Equipment</h1>
+
+  <p>Memorial Dungeon equipment is broken up into four grades (Grade IV being the lowest, Grade I being the highest). The grades are as follows:
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>Subjugation Equipment (Grade IV)</li>
+    <li>Expedition Equipment (Grade III)</li>
+    <li>Dispatching Equipment (Grade II)</li>
+    <li>Conquering Equipment (Grade I)</li>
+  </ul>
+
+  <p>All Memorial Dungeon equipment can be worn by all classes, and each piece of equipment has one card slot.</p>
+
+  <p>Obtaining Memorial Dungeon equipment higher than Grade IV is done via crafting. To craft a higher grade you take the lower grade and combine with various materials to produce the higher grade piece. See <a href="/memorial-dungeons/equipment-crafting/">Memorial Dungeon equipment crafting</a> for more information. The rest of this article describes each piece of equipment.</p>
+
+  <h2>Subjugation (Grade IV) Equipment</h2>
+
+  <p>The lowest grade of Memorial Dungeon equipment. Your character must be at least <strong>base level 60</strong> to wear this grade of equipment.</p>
+
+  <div class="flex flex-wrap justify-between">
+
+    {% equipCard
+      id="20867",
+      name="Subjugation Sash [1]",
+      category="Garment",
+      foundIn="Orc's Memory (Normal Mode)",
+      weight="20",
+      def="12"
+    %}
+      <ul class="border-t p-2">
+        <li>+7% Neutral resistance</li>
+        <li>FLEE +10</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="15220",
+      name="Subjugation Armor [1]",
+      category="Armor",
+      foundIn="Orc's Memory (Normal Mode)",
+      weight="30",
+      def="46"
+    %}
+      <ul class="border-t p-2 divide-y">
+        <li class="pb-2">Max HP +300, MaxSP +20, MDEF +5, DEF +20</li>
+        <li class="py-2">
+          When wearing Subjugation Sash, Boots, & Ring:<br/>
+          ATK +15, MATK +15
+        </li>
+        <li class="pt-2">
+          If total Set is refined higher than +17:<br/>
+          Increased ASPD (-3% after attack delay),<br/>
+          -5% variable casting
+        </li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="22150",
+      name="Subjugation Boots [1]",
+      category="Shoes",
+      foundIn="Prontera Culvert (Normal Mode)",
+      weight="25",
+      def="12"
+    %}
+      <ul class="border-t p-2">
+        <li>+5% HP Recovery</li>
+        <li>+3% HP Recovery</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="28539",
+      name="Subjugation Ring [1]",
+      category="Accessory",
+      foundIn="Prontera Culvert (Normal Mode)",
+      weight="10",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>STR +2</li>
+        <li>INT +2</li>
+      </ul>
+    {% endequipCard %}
+
+  </div>
+
+  <h2>Expedition Equipment (Grade III)</h2>
+
+  <p>The third grade of Memorial Dungeon equipment. Your character must be at least <strong>base level 70</strong> to wear this grade of equipment.</p>
+  
+</article>
