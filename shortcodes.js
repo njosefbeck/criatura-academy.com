@@ -53,10 +53,9 @@ function equipCard (description, equip) {
 function item(item) {
   return `
   <img class="inline-block" src="/images/${item.imageFolder}/${item.id}.png" alt="${item.name}" />
-  <a class="align-middle" href="https://divine-pride.net/database/item/${item.id}/" target="_blank" rel="noopener noreferrer">
-    ${item.name}
-  </a>
-  `
+  ${item.onlyIcon ? `` : `
+    <a class="align-middle" href="https://divine-pride.net/database/item/${item.id}/" target="_blank" rel="noopener noreferrer">${item.name}</a>
+  `}`
 }
 
 module.exports = {
