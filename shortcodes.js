@@ -1,12 +1,11 @@
 // Monster card
 function monsterCard (monster) {
+  const monsterName = monster.id ? `<a href="https://divine-pride.net/database/monster/${monster.id}/" target="_blank" rel="noreferrer noopener">${monster.name}</a>` : `<u>${monster.name}</u>`;
   return `
   <div class="border-2 rounded-md p-2 text-sm mb-4 ${monster.widthClass}">
     <img src="/images/monsters/${monster.image}" class="float-right ml-2" alt="${monster.name}" />
     <span class="block leading-tight mb-2">
-      <a href="https://divine-pride.net/database/monster/${monster.id}/" target="_blank" rel="noreferrer noopener">
-        ${monster.name}
-      </a>
+      ${monsterName}
     </span>
     <ul>
       <li><strong>Level:</strong> ${monster.level}</li>
@@ -24,8 +23,8 @@ function monsterCard (monster) {
 
 // Equipment card
 function equipCard (description, equip) {
-  const hasFoundInOrCraftedFrom = (equip.foundIn || equip.craftedFrom);
-  const displayStats = hasFoundInOrCraftedFrom && equip.weight && equip.def;
+  const hasFoundInOrCraftedFrom = (equip.foundIn || equip.craftedFrom || equip.droppedBy);
+  const displayStats = hasFoundInOrCraftedFrom && equip.weight && (equip.def || equip.atk);
   return `
   <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
     <div class="border-b rounded-t-md p-2 bg-blue-100">
@@ -38,8 +37,15 @@ function equipCard (description, equip) {
       `
       <ul class="p-2">
         ${equip.foundIn ? `<li><strong>Found In:</strong> ${equip.foundIn}</li>` : ``}
+        ${equip.droppedBy ? `<li><strong>Dropped By:</strong> ${equip.droppedBy}</li>` : ``}
         ${equip.craftedFrom ? `<li><strong>Crafted From:</strong> ${equip.craftedFrom}</li>` : ``}
-        ${equip.weight && equip.def ? `<li><strong>Weight:</strong> ${equip.weight} &middot; <strong>DEF:</strong> ${equip.def}</li>` : ``}
+        ${equip.canWear ? `<li><strong>Can Wear:</strong> ${equip.canWear}</li>` : ``}
+        ${equip.requiredLevel ? `<li><strong>Required Level:</strong> ${equip.requiredLevel}</li>` : ``}
+        <li>
+          ${equip.weight ? `<strong>Weight:</strong> ${equip.weight}` : ``}
+          ${equip.def ? ` &middot; <strong>DEF:</strong> ${equip.def}` : ``}
+          ${equip.atk ? ` &middot; <strong>ATK:</strong> ${equip.atk}` : ``}
+        </li>
       </ul>
       `
       : ``

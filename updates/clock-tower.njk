@@ -1,0 +1,181 @@
+---
+layout: /layouts/base.njk
+title: Aldeberan Clock Tower
+description: All about the updates to Aldeberan Clock Tower in kRO Zero
+tags: update
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Aldeberan Clock Tower</h1>
+
+  <p>The biggest addition to the Clock Tower is the appearance of various boss monsters after a certain number of monsters are defeated. These boss monsters drop specific gear, which can have Fever Field options. Thus, we call these bosses "Fever Bosses". Besides these new bosses and equipment, Clock Tower also now has daily regional quests which give EXP and Keys needed to access various levels in the Clock Tower.</p>
+
+  <h2>Fever Boss Info</h2>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-boss-joker.gif",
+      name="Extra Joker (엑스트라 조커)", 
+      level="105",
+      hp="180660",
+      defMdef="129/152",
+      class="Boss",
+      family="Demi-Human",
+      property="Wind LV4",
+      size="Large",
+      expJexp="26700/27300"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-boss-bathory.gif",
+      name="Erzsebet (에르제베트)", 
+      level="101",
+      hp="157260",
+      defMdef="122/208",
+      class="Boss",
+      family="Demi-Human",
+      property="Shadow LV1",
+      size="Medium",
+      expJexp="19290/20460"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-boss-penomena.gif",
+      name="Jennifer (제니퍼)", 
+      level="100",
+      hp="137670",
+      defMdef="170/96",
+      class="Boss",
+      family="Fish",
+      property="Poison LV1",
+      size="Medium",
+      expJexp="22920/23340"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-boss-arclouze.gif",
+      name="Sikraus (지크라우스)", 
+      level="122",
+      hp="300600",
+      defMdef="202/108",
+      class="Boss",
+      family="Insect",
+      property="Earth LV2",
+      size="Medium",
+      expJexp="33180/51570"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="fever-boss-high-orc.gif",
+      name="General Orc (장군 오크)", 
+      level="96",
+      hp="125790",
+      defMdef="202/90",
+      class="Boss",
+      family="Demi-Human",
+      property="Fire LV2",
+      size="Large",
+      expJexp="18120/17370"
+    %}
+  </div>
+
+  <h2>Equipment</h2>
+
+  <p>Below are the equipment that is dropped by the above Fever Bosses</p>
+
+  <div class="flex flex-wrap justify-between">
+
+    {% equipCard
+      id="26140",
+      folder="fever-bosses",
+      name="Witch's Broom [1]",
+      requiredLevel="60",
+      canWear="Mage series, Acolyte series",
+      category="One-handed Staff",
+      droppedBy="Erzsebet, Alice",
+      weight="40",
+      atk="50"
+    %}
+      <ul class="border-t p-2">
+        <li>A normal looking broom that feels of power. It seems that ordinary people cannot ride and fly on it.</li>
+        <li>On receiving a physical attack, chance to trigger Quagmire Lvl 1. (Probability is halved when hit by a ranged attack.)</li>
+        <li>MATK +125</li>
+        <li>Increase magic damage against Formless monsters by 5%.</li>
+        <li>If +7 or higher, -10% Variable Cast Time.</li>
+        <li>If +9 or higher, +10% magic damage against Formless monsters.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="15282",
+      folder="fever-bosses",
+      name="Bunny Shirt [1]",
+      requiredLevel="75",
+      canWear="Mage series, Acolyte series",
+      category="Armor",
+      droppedBy="Erzsebet",
+      weight="50",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>A tasteful bunny shirt, worn by any witch with taste.</li>
+        <li>MaxHP +150, MaxSP +75</li>
+        <li>MATK +2 per refine.</li>
+        <li>If +7 or higher, additional MaxHP +75, MaxSP +25.</li>
+        <li>If +9 or higher, additional MaxHP +75, MaxSP +25.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="22188",
+      folder="fever-bosses",
+      name="Safety Shoes [1]",
+      requiredLevel="60",
+      canWear="Swordsman series",
+      category="Shoes",
+      droppedBy="Sikraus",
+      weight="35",
+      def="60"
+    %}
+      <ul class="border-t p-2">
+        <li>By applying iron on the back of the foot, it prevents the foot from being crushed under any impact.</li>
+        <li>Light and solid shoes.</li>
+        <li>Indestructible.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="1856",
+      folder="fever-bosses",
+      name="Joker's Nails [1]",
+      requiredLevel="60",
+      canWear="Monk series, Priest series",
+      category="Knuckle",
+      droppedBy="Extra Joker",
+      weight="40",
+      atk="90"
+    %}
+      <ul class="border-t p-2">
+        <li>The Joker's brilliantly shining nails leave behind an afterimage and take everything from the enemy.</li>
+        <li>STR +2, +10% [Triple Attack] damage.</li>
+        <li>Per +1 refine, +1% [Triple Attack] additional damage.</li>
+        <li>Per +2 refine, +1% ASPD.</li>
+        <li>If +7 or higher, +15% [Chain Combo] damage.</li>
+        <li>If +9 or higher, +15% [Combo Finish] damage.</li>
+        <li>
+      </ul>
+    {% endequipCard %}
+
+  </div>
+
+  <h2>Source(s)</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=15&curpage=4" target="_blank" rel="noopener noreferrer">[지역] 시계탑</a> (post - kRO website)
+    </li>
+  </ul>
+
+</article>
