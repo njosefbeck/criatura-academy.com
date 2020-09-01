@@ -9,9 +9,11 @@ tags: update
 
   <h1 class="text-2xl mb-2">Aldeberan Clock Tower</h1>
 
-  <p>The biggest addition to the Clock Tower is the appearance of various boss monsters after a certain number of monsters are defeated. These boss monsters drop specific gear, which can have Fever Field options. Thus, we call these bosses "Fever Bosses". Besides these new bosses and equipment, Clock Tower also now has daily regional quests which give EXP and Keys needed to access various levels in the Clock Tower.</p>
+  <p>The biggest addition to the Clock Tower is the appearance of various boss monsters after a certain number of monsters are defeated. These boss monsters drop equipment which can have Fever Field options. Thus, we call these bosses "Fever Bosses". Besides these new bosses and equipment, Clock Tower also now has daily regional quests which give EXP and keys needed to access various levels in the Clock Tower.</p>
 
   <h2>Fever Boss Info</h2>
+
+  <p>To spawn each boss, you must kill a certain number of the weaker version of that monster. For example, to spawn Jennifer, you must kill a certain number of Penomena. On the map where each boss is summonable, there is an NPC that explains how many of each monster must be killed. Seek those NPCs out for more information!</p>
 
   <div class="flex flex-wrap justify-between">
     {% monsterCard 
@@ -83,7 +85,7 @@ tags: update
 
   <h2>Equipment</h2>
 
-  <p>Below are the equipment that is dropped by the above Fever Bosses</p>
+  <p>Below is equipment added with the Clock Tower Fever Bosses. Some of the equipment below is craftable, while others drop from the Fever Bosses.</p>
 
   <div class="flex flex-wrap justify-between">
 
@@ -168,6 +170,171 @@ tags: update
       </ul>
     {% endequipCard %}
 
+    {% equipCard
+      id="19333",
+      folder="fever-bosses",
+      name="Clock Tower Manager's Headset",
+      requiredLevel="60",
+      canWear="All",
+      category="Middle Helm",
+      craftedFrom="Various materials",
+      weight="10",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>The Clock Tower Manager's headset.</li>
+        <li>MATK +20</li>
+        <li>When equipped with a Clock Tower Manager card, -15% Variable Cast Time & increased movement speed.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="19334",
+      folder="fever-bosses",
+      name="Pocket Watch Hairpin",
+      requiredLevel="60",
+      canWear="All",
+      category="Middle Helm",
+      craftedFrom="Various materials",
+      weight="10",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>A hairpin decorated with a pocket watch motif.</li>
+        <li>ATK +20.</li>
+        <li>When equipped with a Clock card, DEF +20, MaxSP +100.</li>
+        <li>When equipped with an Alarm card, MaxHP +1000.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2>Cards</h2>
+
+  <p>The below cards were also added with the Clock Tower update.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% card
+      id="27274",
+      widthClass="ca-w-49",
+      name="Sikraus Card",
+      mountedIn="Shoes",
+      prefix="Cunning (얍삽한)"
+    %}
+      <p class="border-t pt-2 px-2">When equipped with Arcrouze Card, FLEE +2 per 1 refine rate of Shield.</p>
+    {% endcard %}
+
+    {% card
+      id="27273",
+      widthClass="ca-w-49",
+      name="General Orc Card",
+      mountedIn="Weapon",
+      prefix="Heavy Assault (헤비 어썰트)"
+    %}
+      <p class="border-t pt-2 px-2">
+        When the weapon is a Mace, CRIT +1 per refine.<br/>
+        If +10 or higher, +10% critical damage.<br/>
+        When the weapon is a Knuckle, +1% ASPD per refine.<br/>
+        If +10 or higher, ASPD +2.<br/>
+        When equipped with High Orc Card, ASPD +2, ATK +25.
+      </p>
+    {% endcard %}
+
+    {% card
+      id="27272",
+      widthClass="ca-w-49",
+      name="Jennifer Card",
+      mountedIn="Weapon",
+      prefix="Of Jennifer (오브 제니퍼)"
+    %}
+      <p class="border-t pt-2 px-2">
+        Reduces ranged physical damage taken by 5%.<br/>
+        For each refinement of armor, +1% additional ranged physical damage reduction.<br/>
+        When equipped with Penomena Card, ASPD +1 per 1 shield refine.
+      </p>
+    {% endcard %}
+
+    {% card
+      id="27270",
+      widthClass="ca-w-49",
+      name="Extra Joker Card",
+      mountedIn="Shield",
+      prefix="Of Joker (오브 조커)"
+    %}
+      <p class="border-t pt-2 px-2">
+        MDEF +10 per 1 shield refine.<br/>
+        When equipped with a Joker card and when attacking physically or magically, chance to transform into a Joker for 7 seconds.<br/>
+        During transformation, ATK +70, MATK +70, lose 77 HP & 7 SP every 1 second.
+      </p>
+    {% endcard %}
+
+    {% card
+      id="27270",
+      widthClass="w-full",
+      name="Erzsebet Card",
+      mountedIn="Shield",
+      prefix="Of Sorceress (오브 소서리스)"
+    %}
+      <p class="border-t pt-2 px-2">
+        MATK +10 per 1 shield refine.<br/>
+        When equipped with a Bathory card, +1 INT per 1 armor refine.
+      </p>
+    {% endcard %}
+  </div>
+
+  <h2>Regional Quests</h2>
+
+  <p>In Aldeberan just outside of the Clock Tower you'll find the Clock Tower Manager (시계탑 관리자) who has 4 different daily quests you can do.<p>
+
+  <div class="border-2 rounded-md mb-4 p-2">
+    <h3 class="mt-0">Clock Tower 1st Floor Cleaning</h3>
+
+    <p>Kill 20 Rideword, 15 Punk</p>
+
+    <h4 class="mt-0">Rewards</h4>
+
+    <ul>
+      <li><b>First Time:</b> Base EXP, Job EXP, 1 20 White Potion Box, 6 Baldur's Blessing, 1 High Quality Meal</b>
+      <li><b>Daily:</b> Base EXP, Job EXP
+    </ul>
+  </div>
+
+  <div class="border-2 rounded-md mb-4 p-2">
+    <h3 class="mt-0">Animated Clock 1</h3>
+
+    <p>Kill 15 Clock</p>
+
+    <h4 class="mt-0">Rewards</h4>
+
+    <ul>
+      <li><b>First Time:</b> Base EXP, Job EXP, 1 Clock Tower Key, 1 Key of the Underground, 1 20 White Potion Box, 6 Baldur's Blessing, 1 High Quality Meal</b>
+      <li><b>Daily:</b> Base EXP, Job EXP, 1 Clock Tower Key, 1 Key of the Underground
+    </ul>
+  </div>
+
+  <div class="border-2 rounded-md mb-4 p-2">
+    <h3 class="mt-0">Animated Clock 2</h3>
+
+    <p>Kill 20 Alarm</p>
+
+    <h4 class="mt-0">Rewards</h4>
+
+    <ul>
+      <li><b>First Time:</b> Base EXP, Job EXP, 1 Clock Tower Key, 1 Key of the Underground, 1 20 White Potion Box, 6 Baldur's Blessing, 1 High Quality Meal</b>
+      <li><b>Daily:</b> Base EXP, Job EXP, 1 Clock Tower Key, 1 Key of the Underground
+    </ul>
+  </div>
+
+  <div class="border-2 rounded-md mb-4 p-2">
+    <h3 class="mt-0">The Sound Of Laughter From The Basement</h3>
+
+    <p>Kill 20 Bathory</p>
+
+    <h4 class="mt-0">Rewards</h4>
+
+    <ul>
+      <li><b>First Time:</b> Base EXP, Job EXP, 1 Clock Tower Key, 1 Key of the Underground, 1 20 White Potion Box, 6 Baldur's Blessing, 1 High Quality Meal</b>
+      <li><b>Daily:</b> Base EXP, Job EXP, 1 Clock Tower Key, 1 Key of the Underground
+    </ul>
   </div>
 
   <h2>Source(s)</h2>
@@ -176,6 +343,7 @@ tags: update
     <li>
       <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=15&curpage=4" target="_blank" rel="noopener noreferrer">[지역] 시계탑</a> (post - kRO website)
     </li>
+    <li>Ingame</li>
   </ul>
 
 </article>

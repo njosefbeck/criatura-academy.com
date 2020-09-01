@@ -55,6 +55,23 @@ function equipCard (description, equip) {
   `
 }
 
+// Card from a monster... card
+function card(description, card) {
+  return `
+  <div class="border-2 rounded-md text-sm mb-4 ${card.widthClass}">
+    <div class="border-b rounded-t-md p-2 bg-blue-100">
+      <a href="https://divine-pride.net/database/item/${card.id}" target="_blank" rel="noopener noreferrer">
+        ${card.name}</a>
+    </div>
+      <ul class="p-2">
+        ${card.mountedIn ? `<li><strong>Mounted In:</strong> ${card.mountedIn}</li>` : ``}
+        ${card.prefix ? `<li><strong>Dropped By:</strong> ${card.prefix}</li>` : ``}
+      </ul>
+    ${description}
+  </div>
+  `
+}
+
 // Item
 function item(item) {
   return `
@@ -68,4 +85,5 @@ module.exports = {
   monsterCard,
   equipCard,
   item,
+  card
 }
