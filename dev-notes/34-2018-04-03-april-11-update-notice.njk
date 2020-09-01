@@ -1,0 +1,322 @@
+---
+layout: /layouts/base.njk
+title: 34 - April 11 Update Notice
+description: kRO Zero dev note discussing April 11 updates
+tags: devNote
+listDate: '2018-04-03'
+---
+
+<article>
+
+  <h1 class="text-2xl mb-4">[34] April 11th Update Notice</h1>
+
+  <p>[ 2018.04.03 ]</p>
+
+  <p>Hi Ragnarok users. Ragnarok Zero team of RO1 studio. Today we'll explain the update scheduled for April 11th.</p>
+
+  <h2>1. Bard & Dancer Update</h2>
+
+  <p>Bard and dancers are finally added. Bards can only be a male character, and a dancer can only be a female character. Bards use performance skills, while dancers use dance skills.</p>
+
+  <p>The performance skills can only be used when an instrument is equipped, and the dancing skills can be used with a whip.</p>
+
+  <h3>1) Bard & Dancer Skill Descriptions</h3>
+
+  <p class="text-red-600 font-bold">Note: This section is just a description of all the Bard and Dancer skills. They will not be reproduced here.</p>
+
+  <h3>2) Bard & Dancer Essences Update</h3>
+
+  <p>At the same time as Bard & Dancer are added, their essences are also added to the enchantment list of the Memorial Dungeon armor.</p>
+
+  <h3>3) Added new instruments and whips</h3>
+
+  <p>Two new instruments and whips will be added.</p>
+
+  <p class="text-red-600 font-bold">Note: One whip and one instrument belong to the Louyang weapons, and so can be seen in <a href="/dev-notes/32-2018-03-12-march-14-2018-updates-released/">Dev Note #32</a>.</p>
+
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Dropped By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/26211/1" target="_blank" rel="noopener noreferrer">Barbed Wire [1] (가시 철사 [1])</a>
+        </td>
+        <td class="text-left">
+          A whip made of wire. It has thorns, so be careful when swinging it.<br/>[Throw Arrow] damage +5%<br/>If +7 or higher, +5% additional [Throw Arrow] damage.<br/>If +9 or higher, +10% additional [Throw Arrow] damage.<br/>Class: Whip<br/>Attack: 120<br/>Weight: 70<br/>Required Level: 60<br/>Can Wear: Dancer series
+        </td>
+        <td>Disguise</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/26211/1" target="_blank" rel="noopener noreferrer">WIP (gotta figure out) [1]</a>
+        </td>
+        <td class="text-left">
+          Lee Ho is filled with desperate longing for someone.<br/>[Musical Strike] damage +5%<br/>If +7 or higher, +5% additional [Musical Strike] damage.<br/>If +9 or higher, +10% additional [Musical Strike] damage.<br/>Class: Whip<br/>Attack: 120<br/>Weight: 70<br/>Required Level: 60<br/>Can Wear: Bard series
+        </td>
+        <td>Yao Jun (Hyegun)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Improving usability</h2>
+
+  <h3>1) Louyang weapon improvement</h3>
+
+  <p>Louyang weapons have a narrow range, but are designed to produce synergy if both attributes and race conditions are met at the same time. In the future, the localized equipment will be given certain element and race damage increase options. For example, in the Amatsu area, there will be additional equipment to increase the damage to demon race monsters and fire element enemies.</p>
+
+  <p>However, in order to "increase the performance more freely", the enchantment function will be deleted. Instead, a random option is granted. Also the ability to update the random option is added. You can use Earth Dragon Stones to get the item for adding options.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/louyang_give_random_options.gif" alt="GIF showing giving random options to Louyang weapon" />
+    <figcaption>
+      (Random options can be given to Louyang weapons! Don't worry, refine rate and cards socketed will not disappear!)
+    </figcaption>
+  </figure>
+
+  <p>One to two options are given from the following tables.</p>
+
+  <h4>Physical options</h4>
+
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Option Number</th>
+        <th>Option</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="12">1st</td>
+        <td>STR</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>AGI</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>VIT</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>ATK</td>
+        <td>20 ~ 55</td>
+      </tr>
+      <tr>
+        <td>HIT</td>
+        <td>10 ~ 30</td>
+      </tr>
+      <tr>
+        <td>MaxHP</td>
+        <td>100 ~ 450</td>
+      </tr>
+      <tr>
+        <td>MaxSP</td>
+        <td>20 ~ 100</td>
+      </tr>
+      <tr>
+        <td>FLEE</td>
+        <td>10 ~ 30</td>
+      </tr>
+      <tr>
+        <td>CRIT</td>
+        <td>5 ~ 10</td>
+      </tr>
+      <tr>
+        <td>Increased amount of healing received</td>
+        <td>10 ~ 20</td>
+      </tr>
+      <tr>
+        <td>ASPD</td>
+        <td>1 ~ 2</td>
+      </tr>
+      <tr class="border-t-4">
+        <td rowspan="7">2nd</td>
+        <td>ASPD (%)</td>
+        <td>7 ~ 16</td>
+      </tr>
+      <tr>
+        <td>ATK (%)</td>
+        <td>5 ~ 10</td>
+      </tr>
+      <tr>
+        <td>Increase ranged weapon damage (%)</td>
+        <td>5 ~ 12</td>
+      </tr>
+      <tr>
+        <td>Critical damage (%)</td>
+        <td>10 ~ 20</td>
+      </tr>
+      <tr>
+        <td>Increase physical damage to small enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase physical damage to medium enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase physical damage to large enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Magical options</h4>
+
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Option Number</th>
+        <th>Option</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="12">1st</td>
+        <td>INT</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>AGI</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>VIT</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>MATK</td>
+        <td>20 ~ 55</td>
+      </tr>
+      <tr>
+        <td>MaxHP</td>
+        <td>100 ~ 450</td>
+      </tr>
+      <tr>
+        <td>MaxSP</td>
+        <td>20 ~ 100</td>
+      </tr>
+      <tr>
+        <td>DEF</td>
+        <td>10 ~ 40</td>
+      </tr>
+      <tr>
+        <td>MDEF</td>
+        <td>1 ~ 4</td>
+      </tr>
+      <tr>
+        <td>FLEE</td>
+        <td>10 ~ 30</td>
+      </tr>
+      <tr>
+        <td>Increased heal amount (%)</td>
+        <td>10 ~ 20</td>
+      </tr>
+      <tr>
+        <td>ASPD</td>
+        <td>1 ~ 2</td>
+      </tr>
+      <tr class="border-t-4">
+        <td rowspan="7">2nd</td>
+        <td>ASPD (%)</td>
+        <td>7 ~ 16</td>
+      </tr>
+      <tr>
+        <td>MATK (%)</td>
+        <td>5 ~ 10</td>
+      </tr>
+      <tr>
+        <td>Reduce variable casting (%)</td>
+        <td>5 ~ 12</td>
+      </tr>
+      <tr>
+        <td>Decrease SP consumption when using skill (%)</td>
+        <td>3 ~ 7</td>
+      </tr>
+      <tr>
+        <td>Increase magic damage to small enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase magic damage to medium enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase magic damage to large enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>2) Louyang headgear material change</h3>
+
+  <p>The materials needed for the Louyang craftable headgears have been changed, making them no longer as difficult to obtain.</p>
+
+  <h4>Baek So-jin Doll Hat [1]</h4>
+
+  <h5>Ingredient List Option A</h5>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>300 Little Ghost Doll (소귀령)</li>
+    <li>5 Mithril Ore (미스릴 원석)</li>
+    <li>10 White Snake's Tear (하얀 뱀의 눈물)</li>
+    <li>300 Denture from Dragon Mask (용의 틀니)</li>
+    <li>500 Dry Sand (말라버린 모래)</li>
+    <li>200 Earth Dragon Stone (지룡석)</li>
+    <li>※ Mithril ore can not be replaced with Gel Stars.</li>
+  </ul>
+
+  <h5>Ingredient List Option B</h5>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>300 Little Ghost Doll (소귀령)</li>
+    <li>5 Mithril Ore (미스릴 원석)</li>
+    <li>300 Denture from Dragon Mask (용의 틀니)</li>
+    <li>500 Dry Sand (말라버린 모래)</li>
+    <li>1200 Earth Dragon Stone (지룡석)</li>
+    <li>※ Mithril ore can not be replaced with Gel Stars.</li>
+  </ul>
+
+  <h4>Green Maiden's Bao Bao [1]</h4>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>1 Bao Bao (머리포자기)</li>
+    <li>1 Mithril Ore (미스릴 원석)</li>
+    <li>50 Blue Scale (파랗게 빛나는 비늘)</li>
+    <li>500 Dry Sand (말라버린 모래)</li>
+    <li>300 Tiger Panty (호랑이 팬티)</li>
+    <li>100 Earth Dragon Stone (지룡석)</li>
+    <li>50 Little Ghost Doll (소귀령)</li>
+    <li>※ Mithril ore can not be replaced with Gel Stars.</li>
+  </ul>
+
+  <p>Ragnarok Zero will be updated on April 11th. For further information, please refer to the notice on the homepage.</p>
+
+  <p>Thank you.</p>
+
+  <h2>Source</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/devnote/View.asp?category=3&seq=757&curpage=1" target="_blank" rel="noopener noreferrer">4월 11일 업데이트 예고</a>
+    </li>
+  </ul>
+
+</article>
