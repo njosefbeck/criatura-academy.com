@@ -1,0 +1,662 @@
+---
+layout: /layouts/base.njk
+title: Craftable Equipment
+description: All about the updates to the craftable equipment in kRO Zero
+tags: update
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Craftable Equipment</h1>
+
+  <p>kRO Zero added a variety of craftable equipment to the game. This page is dedicated to describing the materials needed for crafting such equipment.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% craftableEquipCard
+      id="19358",
+      folder="crafted",
+      name="Black Witch's Hat [1]",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2252", name="1 Wizard Hat", imageFolder="equip" %}</li>
+        <li>{% item id="1061", name="500 Witch Starsand", imageFolder="items" %}</li>
+        <li>{% item id="983", name="5 Black Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="25506", name="1 Cute Broom", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="50 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A hat that seems to be controlled by the mysterious magic of some witch.</li>
+        <li>MATK +1% per 2 refine.</li>
+        <li>If +7 or higher, MaxHP +50, MaxSP +100.</li>
+        <li>If +9 or higher, -5% Variable Cast Time.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 70</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5021",
+      folder="crafted",
+      name="Grief for Greed",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2210", name="1 Hair Band", imageFolder="equip" %}</li>
+        <li>{% item id="969", name="1 Gold", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>The helm of the merchants who lost everything and went bankrupt. Those who wear them can feel the pain of those who have lost their money and have fallen into despair, but due to their strong convictions, can rise up again later.</li>
+        <li>INT +1, DEX +1</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 38</li>
+        <li><strong>Can Wear:</strong> Merchant series</li>
+        <li><strong>DEF:</strong> 8</li>
+        <li><strong>Weight:</strong> 120</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19363",
+      folder="crafted",
+      name="Hot Brazier",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="7150", name="300 Piece of Bamboo", imageFolder="items" %}</li>
+        <li>{% item id="7158", name="150 Broken Liquor Jar", imageFolder="items" %}</li>
+        <li>{% item id="7757", name="1 Mithril", imageFolder="items" %}</li>
+        <li>{% item id="7152", name="200 Glossy Hair", imageFolder="items" %}</li>
+        <li>{% item id="7156", name="150 Broken Shuriken", imageFolder="items" %}</li>
+        <li>{% item id="25628", name="100 Spirit Stone (마령석)", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A helm that looks like a cooking brazier. Because it is for decoration, you cannot actually cook on it, but since it looks so realistic it's often confused with the real thing.</li>
+        <li>Heal amount increased by 10%.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle Helm</li>
+        <li><strong>Required Level:</strong> 70</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 0</li>
+        <li><strong>Weight:</strong> 60</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19360",
+      folder="crafted",
+      name="Lude Mask",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2278", name="1 Mr. Smile", imageFolder="equip" %}</li>
+        <li>{% item id="975", name="2 Scarlet Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="20 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A mask made with Lude's face as a motif. The bright expression makes the viewer smile.</li>
+        <li>2% resistance to shadow attacks.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle & Lower Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 2</li>
+        <li><strong>Weight:</strong> 10</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19359",
+      folder="crafted",
+      name="Lude Hood [1]",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2282", name="1 Halo", imageFolder="equip" %}</li>
+        <li>{% item id="2274", name="1 Ghost Bandana", imageFolder="equip" %}</li>
+        <li>{% item id="982", name="5 White Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="7212", name="50 Hung Doll", imageFolder="items" %}</li>
+        <li>{% item id="7225", name="50 Pumpkin Lantern", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="50 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A hood modeled after the hood used by Lude.</li>
+        <li>Increases physical damage against demon monsters by 1% per 2 refine.</li>
+        <li>If +7 or higher, HIT +15.</li>
+        <li>If +9 or higher, MaxHP +250</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 5</li>
+        <li><strong>Weight:</strong> 30</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5040",
+      folder="crafted",
+      name="Blush",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="7047", name="100 Alice's Apron", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>Wear it if you want to look cute for you and your partner. It seems that it is not an exaggeration to say that is essential for beautiful teens...</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle Helm</li>
+        <li><strong>Required Level:</strong> 1</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 0</li>
+        <li><strong>Weight:</strong> 10</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19361",
+      folder="crafted",
+      name="Wanderer's Sakkat [1]",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2280", name="1 Sakkat", imageFolder="equip" %}</li>
+        <li>{% item id="983", name="5 Black Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="1059", name="50 Fabric", imageFolder="items" %}</li>
+        <li>{% item id="7005", name="50 Skull", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="40 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A shade of a gloomy color that cannot be seen easily.</li>
+        <li>AGI +1, LUK +1 per 2 refine.</li>
+        <li>If +7 or higher, +5% ASPD.</li>
+        <li>If +9 or higher, +5% ASPD, CRIT +5.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle & Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 2</li>
+        <li><strong>Weight:</strong> 50</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19346",
+      folder="crafted",
+      name="Baek So-jin Doll Hat [1]",
+      npc="Louyang"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="7268", name="300 Little Ghost Doll", imageFolder="items" %}</li>
+        <li>{% item id="25622", name="10 White Snake's Tear", imageFolder="items" %}</li>
+        <li>{% item id="7266", name="300 Denture from Dragon Mask", imageFolder="items" %}</li>
+        <li>{% item id="7264", name="500 Dry Sand", imageFolder="items" %}</li>
+        <li>{% item id="25620", name="200 Earth Dragon Stone", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="5 Mithril Ore", imageFolder="items" %}</li>
+        <li class="font-bold">==OR==</li>
+        <li>{% item id="7268", name="300 Little Ghost Doll", imageFolder="items" %}</li>
+        <li>{% item id="7266", name="300 Denture from Dragon Mask", imageFolder="items" %}</li>
+        <li>{% item id="7264", name="500 Dry Sand", imageFolder="items" %}</li>
+        <li>{% item id="25620", name="1200 Earth Dragon Stone", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="5 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A doll made in the likeness of Baek So-jin.</li>
+        <li>MATK +30, MATK +10 per refine.</li>
+        <li>If +7 or higher, -7% Variable Cast Time.</li>
+        <li>If +9 or higher, MATK +10%.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 70</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 90</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5023",
+      folder="crafted",
+      name="Parcel Hat",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="1059", name="15 Fabric", imageFolder="items" %}</li>
+        <li>{% item id="907", name="10 Resin", imageFolder="items" %}</li>
+        <li>{% item id="978", name="1 Cobalt Blue Dyestuffs", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>It is said middle-aged women mainly use it when carrying things. Usually it has a lot of polka dots.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 1</li>
+        <li><strong>Can Wear:</strong> Merchant series</li>
+        <li><strong>DEF:</strong> 0</li>
+        <li><strong>Weight:</strong> 100</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5083",
+      folder="crafted",
+      name="Red Ribbon",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2244", name="1 Big Ribbon", imageFolder="equip" %}</li>
+        <li>{% item id="10007", name="1 Silk Ribbon", imageFolder="equip" %}</li>
+        <li>{% item id="2209", name="1 Ribbon [1]", imageFolder="equip" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>It is said that this big red ribbon is made by a shaman who loves nature.</li>
+        <li>MDEF +10</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 45</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 2</li>
+        <li><strong>Weight:</strong> 20</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5173",
+      folder="crafted",
+      name="Magistrate Hat [1]",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2220", name="1 Hat", imageFolder="equip" %}</li>
+        <li>{% item id="954", name="300 Shining Scale", imageFolder="items" %}</li>
+        <li>{% item id="733", name="5 Cracked Diamond", imageFolder="items" %}</li>
+        <li>{% item id="983", name="5 Black Dyestuffs", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A hat used by an official called a magistrate in the ancient East.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 6</li>
+        <li><strong>Weight:</strong> 40</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5029",
+      folder="crafted",
+      name="Spore Hat",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="7033", name="50 Poison Spore", imageFolder="items" %}</li>
+        <li>{% item id="1015", name="1 Tongue", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>This hat is highly recommended for anyone who wants to become a mushroom-shaped monster spore. Wear it and feel like a mushroom!</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 20</li>
+        <li><strong>Can Wear:</strong> All except Novice</li>
+        <li><strong>DEF:</strong> 6</li>
+        <li><strong>Weight:</strong> 90</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19333",
+      folder="fever-bosses",
+      name="Clock Tower Manager's Headset",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="25505", name="1 Joker's Wild", imageFolder="items" %}</li>
+        <li>{% item id="25506", name="100 Cute Broom", imageFolder="items" %}</li>
+        <li>{% item id="25507", name="100 Colorful Coral", imageFolder="items" %}</li>
+        <li>{% item id="25508", name="100 Orc General Mark", imageFolder="items" %}</li>
+        <li>{% item id="25509", name="100 Shiny Round Shell", imageFolder="items" %}</li>
+        <li>{% item id="7757", name="10 Mithril", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>The Clock Tower Manager's headset.</li>
+        <li>MATK +20</li>
+        <li>When equipped with a Clock Tower Manager card, -15% Variable Cast Time & increased movement speed.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 10</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5436",
+      folder="crafted",
+      name="Bride's Corolla",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="10007", name="1 Silk Ribbon", imageFolder="equip" %}</li>
+        <li>{% item id="1032", name="50 Maneater Blossom", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A neatly made wedding corolla. There is a long, fluffy silk ribbon on the back.</li>
+        <li>LUK +3, MDEF +2.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 1</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 1</li>
+        <li><strong>Weight:</strong> 20</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5050",
+      folder="crafted",
+      name="Wonder Nutshell",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="5037", name="1 Nut Shell", imageFolder="equip" %}</li>
+        <li>{% item id="7053", name="50 Cyfar", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>The mysterious fruit is cut in half and dug out so that it can be used on the head. It's so strong, it's such a mystery!</li>
+        <li>Impossible to refine.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 30</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 30</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5174",
+      folder="crafted",
+      name="Ayam [1]",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="954", name="300 Shining Scale", imageFolder="items" %}</li>
+        <li>{% item id="733", name="5 Cracked Diamond", imageFolder="items" %}</li>
+        <li>{% item id="975", name="5 Scarlet Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="1059", name="50 Fabric", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>Women's hat made of red silk that is beautifully decorated.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 6</li>
+        <li><strong>Weight:</strong> 40</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19362",
+      folder="crafted",
+      name="Helm of Longevity [1]",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="7153", name="300 Worn-out Kimono", imageFolder="items" %}</li>
+        <li>{% item id="25629", name="10 Knotted Letter", imageFolder="items" %}</li>
+        <li>{% item id="7159", name="300 Tengu Nose", imageFolder="items" %}</li>
+        <li>{% item id="7264", name="500 Poisonous Toad Skin", imageFolder="items" %}</li>
+        <li>{% item id="25628", name="200 Spirit Stone (마령석)", imageFolder="items" %}</li>
+        <li>{% item id="7757", name="5 Mithril", imageFolder="items" %}</li>
+        <li class="font-bold">==OR==</li>
+        <li>{% item id="7153", name="300 Worn-out Kimono", imageFolder="items" %}</li>
+        <li>{% item id="7159", name="300 Tengu Nose", imageFolder="items" %}</li>
+        <li>{% item id="7264", name="500 Poisonous Toad Skin", imageFolder="items" %}</li>
+        <li>{% item id="25628", name="1200 Spirit Stone (마령석)", imageFolder="items" %}</li>
+        <li>{% item id="7757", name="5 Mithril", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A helm of longevity.</li>
+        <li>ATK +30.</li>
+        <li>ATK +10 per 2 refine.</li>
+        <li>If +7 or higher, +7% ASPD.</li>
+        <li>If +9 or higher, ATK +10%.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 70</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 90</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19356",
+      folder="crafted",
+      name="Alice Wig [1]",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="7047", name="50 Alice's Apron", imageFolder="items" %}</li>
+        <li>{% item id="1020", name="200 Black Hair", imageFolder="items" %}</li>
+        <li>{% item id="973", name="1 Counteragent", imageFolder="items" %}</li>
+        <li>{% item id="978", name="5 Cobalt Blue Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="50 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A wig modeled after Alice's hairstyle. To embody Alice's neat and tidy hairstyle, it is said that a tremendous effort has been put in.</li>
+        <li>Increases Heal amount by 3% per 2 refine.</li>
+        <li>If +7 or higher, MaxHP +150, MaxSP +50.</li>
+        <li>If +9 or higher, -5% Variable Cast Time.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 70</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="5043",
+      folder="crafted",
+      name="Opera Phantom Mask",
+      npc="Unknown"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2281", name="1 Opera Masque", imageFolder="equip" %}</li>
+        <li>50000 zeny</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A mask that is said to have been worn by the unfortunate protagonist of a tragedy.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle Helm</li>
+        <li><strong>Required Level:</strong> 20</li>
+        <li><strong>Can Wear:</strong> All except Novice</li>
+        <li><strong>DEF:</strong> 2</li>
+        <li><strong>Weight:</strong> 20</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19345",
+      folder="crafted",
+      name="Green Maiden's Bao Bao [1]",
+      npc="Louyang"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="5042", name="1 Bao Bao", imageFolder="equip" %}</li>
+        <li>{% item id="25429", name="1 Mithril Ore", imageFolder="items" %}</li>
+        <li>{% item id="25621", name="50 Blue Scale", imageFolder="items" %}</li>
+        <li>{% item id="7264", name="500 Dry Sand", imageFolder="items" %}</li>
+        <li>{% item id="25620", name="100 Earth Dragon Stone", imageFolder="items" %}</li>
+        <li>{% item id="7267", name="300 Tiger Panty", imageFolder="items" %}</li>
+        <li>{% item id="7268", name="50 Little Ghost Doll", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>The Bao Bao that Green Maiden wears.</li>
+        <li>AGI +3, LUK +3.</li>
+        <li>CRIT +1 per refine rate.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 70</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 0</li>
+        <li><strong>Weight:</strong> 45</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19332",
+      folder="glastheim",
+      name="Khalitzburg's Helm [1]",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="2229", name="1 Helm [1]", imageFolder="equip" %}</li>
+        <li>{% item id="1004", name="5 Chivalry Emblem", imageFolder="items" %}</li>
+        <li>{% item id="978", name="1 Cobalt Blue Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="50 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>Helmet used by honorable Knights.</li>
+        <li>CRIT +3.</li>
+        <li>If +7 or higher, +2 additional CRIT.</li>
+        <li>If +9 or higher, +5% critical damage.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 70</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19357",
+      folder="crafted",
+      name="Clark's Cap [1]",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="1095", name="100 Clock Hands", imageFolder="items" %}</li>
+        <li>{% item id="7026", name="5 Key of Clock Tower", imageFolder="items" %}</li>
+        <li>{% item id="7027", name="5 Key of Underground", imageFolder="items" %}</li>
+        <li>{% item id="978", name="3 Cobalt Blue Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="982", name="3 White Dyestuffs", imageFolder="items" %}</li>
+        <li>{% item id="25429", name="50 Mithril Ore", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A cap worn by the Aldeberan Clock Tower repairman. The clock decoration is particularly attractive.</li>
+        <li>+1% physical damage to Formless monsters per 2 refine.</li>
+        <li>If +7 or higher, HIT +15.</li>
+        <li>If +9 or higher, MaxHP +250.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Upper Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 70</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="2049",
+      folder="glastheim",
+      name="Staff of Blue Flame [1]",
+      npc="Altos (gl_step 110/127)"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="26138", name="1 Blaze Staff [1]", imageFolder="equip/glastheim" %}</li>
+        <li>{% item id="26139", name="1 Ice Staff [1]", imageFolder="equip/glastheim" %}</li>
+        <li>{% item id="7757", name="5 Mithril", imageFolder="items" %}</li>
+        <li>{% item id="23686", name="5 Essence of Blue Flame", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>Contains magic crystals of water and fire.</li>
+        <li>MATK +230, MaxSP +150, INT +5</li>
+        <li>+5% water and fire damage.</li>
+        <li>Chance to reduce Variable Cast Time of magic attacks by 30% for 7 seconds.</li>
+        <li>If +7 or higher, +10% water and fire damage.</li>
+        <li>If +9 or higher, +10% water and fire damage, -5% Variable Cast Time.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Two-handed Staff</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> Mage series</li>
+        <li><strong>ATK:</strong> 45</li>
+        <li><strong>Weight:</strong> 130</li>
+      </ul>
+    {% endcraftableEquipCard %}
+
+    {% craftableEquipCard
+      id="19334",
+      folder="fever-bosses",
+      name="Pocket Watch Hairpin",
+      npc="Atelier"
+    %}
+      <ul class="border-t p-2 space-y-2">
+        <li>{% item id="25505", name="1 Joker's Wild", imageFolder="items" %}</li>
+        <li>{% item id="25506", name="100 Cute Broom", imageFolder="items" %}</li>
+        <li>{% item id="25507", name="100 Colorful Coral", imageFolder="items" %}</li>
+        <li>{% item id="25508", name="100 Orc General Mark", imageFolder="items" %}</li>
+        <li>{% item id="25509", name="100 Shiny Round Shell", imageFolder="items" %}</li>
+        <li>{% item id="7757", name="10 Mithril", imageFolder="items" %}</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li>A hairpin decorated with a pocket watch motif.</li>
+        <li>ATK +20.</li>
+        <li>When equipped with a Clock card, DEF +20, MaxSP +100.</li>
+        <li>When equipped with an Alarm card, MaxHP +1000.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Class:</strong> Middle Helm</li>
+        <li><strong>Required Level:</strong> 60</li>
+        <li><strong>Can Wear:</strong> All</li>
+        <li><strong>DEF:</strong> 10</li>
+        <li><strong>Weight:</strong> 10</li>
+      </ul>
+    {% endcraftableEquipCard %}
+  </div>
+
+  <p class="mt-4">(Last updated on kRO website on 2018.06.27)</p>
+
+  <h2>Source(s)</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10015&seq=17&curpage=4" target="_blank" rel="noopener noreferrer">[아이템] 조합장비 아이템 정보</a> (post - kRO website)
+    </li>
+    <li>Ingame</li>
+  </ul>
+
+</article>
