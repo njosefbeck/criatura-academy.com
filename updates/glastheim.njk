@@ -1,0 +1,1058 @@
+---
+layout: /layouts/base.njk
+title: Glast Heim
+description: All about the updates to Glast Heim in kRO Zero
+tags: update
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Glast Heim</h1>
+
+  <p>kRO Zero added a variety of different content to Glast Heim (GH). From Fever dungeons, daily EXP quests, and new items and gear, there's a lot to do in GH!</p>
+
+  <h2>Fever Dungeons</h2>
+
+  <p>There are four GH Fever Dungeons. Staircase (Steps), Chivalry 2F, Underground Prison 2F, and Underground Cave. This section describes how each map works, the monsters to be found there, and the items that they drop / that can be crafted from what drops there.</p>
+
+  <h3>Staircase Dungeon (gl_step)</h3>
+
+  <img class="mt-6 mb-6 max-w-xs" src="/images/maps/gh-staircase.bmp" alt="Glast Heim Staircase map" />
+
+  <p>The Flame & Ice Ghosts in this Fever Dungeon are divided into factions. There is a counter for each boss, Awakened Flame Ghost or Awakened Ice Ghost. Killing the equivalent monster increases the counter for that boss, while decreasing the counter for the other boss. For example, if you kill a Flame Ghost, the counter to spawn the Awakened Flame Ghost goes up, while the counter to spawn the Awakened Ice Ghost goes down.</p>
+
+  <h4>Monsters</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="wind-ghost.gif",
+      name="Wind Ghost (윈드 고스트)", 
+      level="97",
+      hp="12100",
+      defMdef="64/51",
+      class="Normal",
+      family="Demon",
+      property="Wind LV3",
+      size="Medium",
+      expJexp="1510/1221"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="gargoyle.png",
+      name="Gargoyle (가고일)",
+      id="1253",
+      level="100",
+      hp="9233",
+      defMdef="98/43",
+      class="Normal",
+      family="Demon",
+      property="Wind LV3",
+      size="Medium",
+      expJexp="1387/1316"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="cramp.gif",
+      name="Cramp (크램프)",
+      id="1209",
+      level="82",
+      hp="3935",
+      defMdef="88/42",
+      class="Normal",
+      family="Brute",
+      property="Poison LV2",
+      size="Small",
+      expJexp="970/905"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="raydric.gif",
+      name="Raydric (레이드릭)",
+      id="1163",
+      level="115",
+      hp="21981",
+      defMdef="89/15",
+      class="Normal",
+      family="Demi-human",
+      property="Shadow LV2",
+      size="Large",
+      expJexp="2246/2150"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-corrupt-gargoyle.gif",
+      name="Corrupted Gargoyle (오염된 가고일)",
+      level="105",
+      hp="73864",
+      defMdef="232/114",
+      class="Normal",
+      family="Demon",
+      property="Water LV3",
+      size="Medium",
+      expJexp="13870/13160"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-corrupt-raydric.gif",
+      name="Corrupted Raydric (오염된 레이드릭)",
+      level="120",
+      hp="147264",
+      defMdef="329/60",
+      class="Boss",
+      family="Demi-human",
+      property="Shadow LV2",
+      size="Large",
+      expJexp="18000/13690"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-flame-ghost.gif",
+      name="Flame Ghost (플레임 고스트)",
+      level="107",
+      hp="14100",
+      defMdef="67/102",
+      class="Normal",
+      family="Demon",
+      property="Fire LV3",
+      size="Medium",
+      expJexp="1704/1207"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-ice-ghost.gif",
+      name="Ice Ghost (아이스 고스트)",
+      level="107",
+      hp="14100",
+      defMdef="67/102",
+      class="Normal",
+      family="Demon",
+      property="Water LV3",
+      size="Medium",
+      expJexp="1704/1207"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-flame-ghost.gif",
+      name="Awakened Flame Ghost (각성 플레임 고스트)",
+      level="125",
+      hp="1550000",
+      defMdef="104/151",
+      class="Boss",
+      family="Demon",
+      property="Fire LV3",
+      size="Medium",
+      expJexp="697500/348750"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-ice-ghost.gif",
+      name="Awakened Ice Ghost (각성 아이스 고스트)",
+      level="125",
+      hp="1550000",
+      defMdef="104/151",
+      class="Boss",
+      family="Demon",
+      property="Water LV3",
+      size="Medium",
+      expJexp="697500/348750"
+    %}
+  </div>
+
+  <h4>Items</h4>
+
+  <div class="flex flex-wrap justify-between">
+
+    {% equipCard
+      id="26138",
+      folder="glastheim",
+      name="Blaze Staff [1]",
+      requiredLevel="60",
+      canWear="Mage series, Acolyte series",
+      category="One-handed Staff",
+      droppedBy="Flame Ghost",
+      weight="70",
+      atk="70"
+    %}
+      <ul class="border-t p-2">
+        <li>Contains fire magic. Be careful not to burn yourself while using it.</li>
+        <li>MATK +125, MaxSP +100</li>
+        <li>+10% [Meteor Storm] and [Fire Pillar] damage.</li>
+        <li>If +7 or higher, +5% additional [Meteor Storm] and [Fire Pillar] damage.</li>
+        <li>If +9 or higher, +5% additional [Meteor Storm] and [Fire Pillar] damage.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="26139",
+      folder="glastheim",
+      name="Ice Staff [1]",
+      requiredLevel="60",
+      canWear="Mage series, Acolyte series",
+      category="One-handed Staff",
+      droppedBy="Flame Ghost",
+      weight="70",
+      atk="70"
+    %}
+      <ul class="border-t p-2">
+        <li>Contains water magic. Be careful of frostbite while using it.</li>
+        <li>MATK +125, MaxSP +100</li>
+        <li>+10% [Storm Gust], [Frost Nova] and [Frost Diver] damage.</li>
+        <li>If +7 or higher, +5% additional [Storm Gust], [Frost Nova] and [Frost Diver] damage.</li>
+        <li>If +9 or higher, +5% additional [Storm Gust], [Frost Nova] and [Frost Diver] damage.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="2049",
+      fullWidth="true",
+      folder="glastheim",
+      name="Staff of Blue Flame [1]",
+      requiredLevel="60",
+      canWear="Mage series",
+      category="Two-handed Staff",
+      craftedFrom="See below",
+      weight="130",
+      atk="45"
+    %}
+      <ul class="border-t p-2">
+        <li>Contains magic crystals of water and fire.</li>
+        <li>MATK +230, MaxSP +150, INT +5</li>
+        <li>+5% water and fire damage.</li>
+        <li>Chance to reduce Variable Cast Time of magic attacks by 30% for 7 seconds.</li>
+        <li>If +7 or higher, +10% water and fire damage.</li>
+        <li>If +9 or higher, +10% water and fire damage, -5% Variable Cast Time.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <p>The Blaze and Ice Staffs can get random options.</p>
+
+  <p>To craft the Staff of Blue Flame talk to Altos (알토스) at gl_step 110/127. Combine the Blaze Staff [1] + Ice Staff [1] + 5 Mithril (미스릴) + 5 <a href="https://divine-pride.net/database/item/23686/" target="_blank" rel="noopener noreferrer">Essence of Blue Flame (푸른 불꽃의 정수)</a>.</p>
+
+  <h5>Enchanting Staff of Blue Flame</h5>
+
+  <p>Consumes 1 Mithril or 1 Gel Star and enchants the Staff of Blue Flame [1]. The staff can be enchanted up to two times (2x). Has a 30% chance of destroying the staff when using Mithril, 0% with Gel Star. Different chances are given depending on the level of the enchant, and two of the same enchant can be given.</p>
+
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Enchant</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{% item id="4885", name="Incantation 1", imageFolder="enchants" %}</td>
+        <td>MATK +5, -3% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4886", name="Incantation 2", imageFolder="enchants" %}</td>
+        <td>MATK +10, -3% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4887", name="Incantation 3", imageFolder="enchants" %}</td>
+        <td>MATK +15, -3% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4888", name="Incantation 4", imageFolder="enchants" %}</td>
+        <td>MATK +20, -3% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4889", name="Incantation 5", imageFolder="enchants" %}</td>
+        <td>MATK +30, -5% Variable Cast Time</td>
+      </tr>
+      <tr class="border-t-4">
+        <td>{% item id="4815", name="Spell 1", imageFolder="enchants" %}</td>
+        <td>MATK +6, -4% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4814", name="Spell 2", imageFolder="enchants" %}</td>
+        <td>MATK +9, -6% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4813", name="Spell 3", imageFolder="enchants" %}</td>
+        <td>MATK +12, -8% Variable Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4812", name="Spell 4", imageFolder="enchants" %}</td>
+        <td>MATK +15, -10% Variable Cast Time</td>
+      </tr>
+      <tr class="border-t-4">
+        <td>{% item id="4760", name="MATK 1", imageFolder="enchants" %}</td>
+        <td>MATK +1%, -1% Fixed Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4761", name="MATK 2", imageFolder="enchants" %}</td>
+        <td>MATK +2%, -1% Fixed Cast Time</td>
+      </tr>
+      <tr>
+        <td>{% item id="4806", name="MATK 3", imageFolder="enchants" %}</td>
+        <td>MATK +3%, -1% Fixed Cast Time</td>
+      </tr>
+      <tr class="border-t-4">
+        <td>{% item id="4710", name="INT+1", imageFolder="enchants" %}</td>
+        <td>INT +1</td>
+      </tr>
+      <tr>
+        <td>{% item id="4711", name="INT+2", imageFolder="enchants" %}</td>
+        <td>INT +2</td>
+      </tr>
+      <tr>
+        <td>{% item id="4712", name="INT+3", imageFolder="enchants" %}</td>
+        <td>INT +3</td>
+      </tr>
+      <tr>
+        <td>{% item id="4713", name="INT+4", imageFolder="enchants" %}</td>
+        <td>INT +4</td>
+      </tr>
+      <tr class="border-t-4">
+        <td>{% item id="4740", name="VIT+1", imageFolder="enchants" %}</td>
+        <td>VIT +1</td>
+      </tr>
+      <tr>
+        <td>{% item id="4741", name="VIT+2", imageFolder="enchants" %}</td>
+        <td>VIT +2</td>
+      </tr>
+      <tr>
+        <td>{% item id="4742", name="VIT+3", imageFolder="enchants" %}</td>
+        <td>VIT +3</td>
+      </tr>
+      <tr>
+        <td>{% item id="4743", name="VIT+4", imageFolder="enchants" %}</td>
+        <td>VIT +4</td>
+      </tr>
+      <tr class="border-t-4">
+        <td>{% item id="4795", name="MHP+100", imageFolder="enchants" %}</td>
+        <td>MaxHP +100</td>
+      </tr>
+      <tr>
+        <td>{% item id="4796", name="MHP+200", imageFolder="enchants" %}</td>
+        <td>MaxHP +200</td>
+      </tr>
+      <tr>
+        <td>{% item id="4797", name="MHP+300", imageFolder="enchants" %}</td>
+        <td>MaxHP +300</td>
+      </tr>
+      <tr class="border-t-4">
+        <td>{% item id="4800", name="SP+50", imageFolder="enchants" %}</td>
+        <td>MaxSP +50</td>
+      </tr>
+      <tr>
+        <td>{% item id="4801", name="SP+100", imageFolder="enchants" %}</td>
+        <td>MaxSP +100</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Chivalry 2 (gl_knt02)</h3>
+
+  <img class="mt-6 mb-6 max-w-xs" src="/images/maps/gh-chiv-2.bmp" alt="Glast Heim Chivalry 2 map" />
+
+  <p>Boss stats are determined according to the type of the special monster that was killed the most in the Fever dungeon. <span class="text-red-600 font-bold">Note: It's unclear exactly how this works, and finding sources is difficult. Any information that can be provided would be great!</span></p>
+
+  <h4>Monsters</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="raydric.gif",
+      name="Raydric (레이드릭)",
+      id="1163",
+      level="115",
+      hp="21981",
+      defMdef="89/15",
+      class="Normal",
+      family="Demi-human",
+      property="Shadow LV2",
+      size="Large",
+      expJexp="2246/2150"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-corrupt-raydric.gif",
+      name="Corrupted Raydric (오염된 레이드릭)",
+      level="120",
+      hp="147264",
+      defMdef="329/60",
+      class="Boss",
+      family="Demi-human",
+      property="Shadow LV2",
+      size="Large",
+      expJexp="18000/13690"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="raydric-archer.gif",
+      name="Raydric Archer (레이드릭 아쳐)",
+      id="1276",
+      level="82",
+      hp="4809",
+      defMdef="63/40",
+      class="Normal",
+      family="Demon",
+      property="Shadow LV2",
+      size="Medium",
+      expJexp="970/905"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-corrupt-raydric-archer.gif",
+      name="Corrupted Raydric Archer (오염된 레이드릭 아쳐)",
+      level="105",
+      hp="124232",
+      defMdef="126/80",
+      class="Boss",
+      family="Demon",
+      property="Shadow LV2",
+      size="Medium",
+      expJexp="16529/12190"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="abysmal-knight.gif",
+      name="Abysmal Knight (심연의 기사)",
+      id="1219",
+      level="122",
+      hp="34686",
+      defMdef="102/50",
+      class="Normal",
+      family="Demi-human",
+      property="Shadow LV4",
+      size="Large",
+      expJexp="3071/2948"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="khalitzburg.gif",
+      name="Khalitzburg (칼리츠 버그)",
+      id="1132",
+      level="118",
+      hp="27456",
+      defMdef="125/10",
+      class="Normal",
+      family="Undead",
+      property="Undead LV1",
+      size="Large",
+      expJexp="2866/2368"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="alice.gif",
+      name="Alice (엘리스)",
+      id="1275",
+      level="100",
+      hp="9233",
+      defMdef="93/73",
+      class="Normal",
+      family="Demi-human",
+      property="Neutral LV3",
+      size="Medium",
+      expJexp="1387/1316"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="bloody-knight.gif",
+      name="Bloody Knight (피빛의 기사)",
+      level="116",
+      hp="342500",
+      defMdef="122/50",
+      class="Boss",
+      family="Formless",
+      property="Shadow LV4",
+      size="Large",
+      expJexp="233880/21480"
+    %}
+  </div>
+
+  <h4>Items</h4>
+
+  <div class="flex flex-wrap justify-between">
+
+    {% equipCard
+      id="21039",
+      folder="glastheim",
+      name="Royal Knight's Greatsword [1]",
+      requiredLevel="60",
+      canWear="Swordsman series",
+      category="2handed Sword",
+      droppedBy="Raydric",
+      weight="150",
+      atk="165"
+    %}
+      <ul class="border-t p-2">
+        <li>Heavy Greatsword used by honorable Knights.</li>
+        <li>+10% ASPD, CRIT +5</li>
+        <li>If +7 or higher, +10% critical damage.</li>
+        <li>If +9 or higher, +10% critical damage, ASPD +1.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="26016",
+      folder="glastheim",
+      name="Royal Knight's Lance [1]",
+      requiredLevel="60",
+      canWear="Swordsman series",
+      category="2handed Spear",
+      droppedBy="Raydric",
+      weight="250",
+      atk="180"
+    %}
+      <ul class="border-t p-2">
+        <li>White lance used by honorable Knights.</li>
+        <li>+10% [Holy Cross] and [Pierce] damage.</li>
+        <li>If +7 or higher, +5% additional [Holy Cross] and [Pierce] damage.</li>
+        <li>If +9 or higher, +5% [Holy Cross] and [Pierce] damage.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="15281",
+      folder="glastheim",
+      name="Khalitzburg's Armor [1]",
+      requiredLevel="75",
+      canWear="All",
+      category="2handed Spear",
+      droppedBy="Khalitzburg",
+      weight="100",
+      def="35"
+    %}
+      <ul class="border-t p-2">
+        <li>Armor used by honorable Knights.</li>
+        <li>MaxHP +150.</li>
+        <li>If +7 or higher, +150 additional MaxHP.</li>
+        <li>If +9 or higher, +250 additional MaxHP.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="19332",
+      folder="glastheim",
+      name="Khalitzburg's Helm [1]",
+      requiredLevel="60",
+      canWear="All",
+      category="Uppper Headgear",
+      craftedFrom="See below",
+      weight="70",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>Helmet used by honorable Knights.</li>
+        <li>CRIT +3.</li>
+        <li>If +7 or higher, +2 additional CRIT.</li>
+        <li>If +9 or higher, +5% critical damage.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="26140",
+      fullWidth="true",
+      folder="fever-bosses",
+      name="Witch's Broom [1]",
+      requiredLevel="60",
+      canWear="Mage series, Acolyte series",
+      category="One-handed Staff",
+      droppedBy="Alice",
+      weight="40",
+      atk="50"
+    %}
+      <ul class="border-t p-2">
+        <li>A normal looking broom that feels of power. It seems that ordinary people cannot ride and fly on it.</li>
+        <li>On receiving a physical attack, chance to trigger Quagmire Lvl 1. (Probability is halved when hit by a ranged attack.)</li>
+        <li>MATK +125</li>
+        <li>Increase magic damage against Formless monsters by 5%.</li>
+        <li>If +7 or higher, -10% Variable Cast Time.</li>
+        <li>If +9 or higher, +10% magic damage against Formless monsters.</li>
+      </ul>
+    {% endequipCard %}
+  
+  </div>
+
+  <p>The above non-craftable items can get random options.</p>
+
+  <p>To craft the Khalitzburg's Helm [1], you need: 5 Chivalry Emblem (충절의 증거) + 1 Helm [1] (헬름 [1]) + 5 Blue Dyestuffs (파란색 염료) + 50 Mithril Ore (미스릴 원석).</p>
+
+  <h3>Underprison 2 (gl_prison01)</h3>
+
+  <img class="mt-6 mb-6 max-w-xs" src="/images/maps/gh-prison-2.bmp" alt="Glast Heim Underprison 2 map" />
+
+  <p>Boss stats are determined according to the type of the special monster that was killed the most in the Fever dungeon. <span class="text-red-600 font-bold">Note: It's unclear exactly how this works, and finding sources is difficult. Any information that can be provided would be great!</span></p>
+
+  <h4>Monsters</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="skeleton-prisoner.gif",
+      name="Skeleton Prisoner (스켈 프리즈너)",
+      id="1196",
+      level="91",
+      hp="8378",
+      defMdef="95/41",
+      class="Normal",
+      family="Undead",
+      property="Undead LV3",
+      size="Medium",
+      expJexp="1342/1088"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="zombie-prisoner.gif",
+      name="Zombie Prisoner (좀비 프리즈너)",
+      id="1197",
+      level="89",
+      hp="6902",
+      defMdef="89/28",
+      class="Normal",
+      family="Undead",
+      property="Undead LV3",
+      size="Medium",
+      expJexp="1194/976"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="phendark.gif",
+      name="Phendark (펜 다르크)",
+      id="1202",
+      level="102",
+      hp="12408",
+      defMdef="440/50",
+      class="Normal",
+      family="Demi-human",
+      property="Neutral LV2",
+      size="Large",
+      expJexp="1565/1487"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rybio.gif",
+      name="Rybio (리비오)",
+      id="1201",
+      level="98",
+      hp="9939",
+      defMdef="109/30",
+      class="Normal",
+      family="Demon",
+      property="Neutral LV2",
+      size="Large",
+      expJexp="1349/1278"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="cramp.gif",
+      name="Cramp (크램프)",
+      id="1209",
+      level="82",
+      hp="3935",
+      defMdef="88/42",
+      class="Normal",
+      family="Brute",
+      property="Poison LV2",
+      size="Small",
+      expJexp="970/905"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="injustice.gif",
+      name="Injustice (인저스티스)",
+      id="1257",
+      level="95",
+      hp="8087",
+      defMdef="76/31",
+      class="Normal",
+      family="Demon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="1292/1221"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="prison-breaker.gif",
+      name="Prison Breaker (프리즌 브레이커)",
+      level="109",
+      hp="14761",
+      defMdef="162/70",
+      class="Normal",
+      family="Demi-human",
+      property="Undead LV2",
+      size="Medium",
+      expJexp="1476/1328"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="zealotus.gif",
+      name="Zealotus (지르타스)",
+      level="105",
+      hp="623000",
+      defMdef="91/99",
+      class="Boss",
+      family="Demi-human",
+      property="Neutral LV3",
+      size="Medium",
+      expJexp="123450/61725"
+    %}
+  </div>
+
+  <h4>Items</h4>
+
+  <div class="flex flex-wrap justify-between">
+
+    {% equipCard
+      id="28619",
+      folder="glastheim",
+      name="Prisoner's Diary [1]",
+      requiredLevel="60",
+      canWear="Sage series, Priest series",
+      category="Book",
+      droppedBy="Prison Breaker",
+      weight="50",
+      atk="125"
+    %}
+      <ul class="border-t p-2">
+        <li>A prisoner's diary with some secrets.</li>
+        <li>+10% physical damage against Undead monsters.</li>
+        <li>When worn with Jumpsuit, low chance to increase CRIT rate by 30% for 6 seconds when doing normal physical attack.</li>
+        <li>If +7 or higher, +5% additional physical damage against Undead monsters.</li>
+        <li>If +9 or higher, +10% additional physical damage against Undead monsters, ASPD +1.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="15040",
+      folder="glastheim",
+      name="Jumpsuit",
+      requiredLevel="60",
+      canWear="All",
+      category="Armor",
+      droppedBy="Zombie & Skeleton Prisoner",
+      weight="150",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>Striped uniform worn by all prisoners. Blood smears are everywhere, but they are old and faint.</li>
+        <li>HIT and FLEE increase as the refine rate increases.</li>
+        <li>When worn with Shackles, ATK +5. Additional increased ATK based on refin rate of Shackles.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="28032",
+      folder="glastheim",
+      name="Prison Watcher [1]",
+      requiredLevel="60",
+      canWear="Assassin series",
+      category="Katar",
+      droppedBy="Injustice",
+      weight="100",
+      atk="140"
+    %}
+      <ul class="border-t p-2">
+        <li>A sharp prison katar.</li>
+        <li>+20% [Sonic Blow] damage.</li>
+        <li>+1% ASPD per 2 refine.</li>
+        <li>If +7 or higher, +10% critical damage.</li>
+        <li>If +9 or higher, +10% additional critical damage.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="13487",
+      folder="glastheim",
+      name="Guardian's Sword [1]",
+      requiredLevel="60",
+      canWear="Crusader series",
+      category="One-handed Sword",
+      droppedBy="Rybio",
+      weight="150",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>Ritual sword used by the guardians of the castle.</li>
+        <li>MATK +120, +50 MaxHP per level of [Faith], DEF +2.</li>
+        <li>If +7 or higher, +20 additional MaxHP per level of [Faith].</li>
+        <li>If +9 or higher, +30 additional MaxHP per level of [Faith].</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="2913",
+      folder="glastheim",
+      name="Shackles [1]",
+      requiredLevel="10",
+      canWear="All",
+      category="Accessory",
+      droppedBy="Injustice, Phendark",
+      weight="240",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>A specially-crafted restraint cuff.</li>
+        <li>ATK +5.</li>
+        <li>+1 ATK per Shackles refine.</li>
+        <li>When worn with Bloody Iron, +10 ATK.</li>
+        <li>When worn with Jumpsuit, +2 ATK per Jumpsuit refine.</li>
+        <li>When worn with Blindfold or Blindfold [1], +10 ATK.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="5121",
+      folder="glastheim",
+      name="Zealotus Mask",
+      requiredLevel="70",
+      canWear="All except Novice",
+      category="Upper & Mid Headgear",
+      droppedBy="Zealotus",
+      weight="40",
+      def="3"
+    %}
+      <ul class="border-t p-2">
+        <li>A mask that symbolizes Zealotus, the owner of the Glast Heim Prison.</li>
+        <li>+5% physical damage to Demi-humans</li>
+        <li>-5% damage from Demi-humans</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="13076",
+      fullWidth="true",
+      folder="glastheim",
+      name="Nata Dagger [2]",
+      requiredLevel="100",
+      canWear="Ninja series",
+      category="Dagger",
+      droppedBy="Prison Breaker (Einbroch Weapon Random Options)",
+      weight="70",
+      atk="140"
+    %}
+      <ul class="border-t p-2">
+        <li>A dagger that only some skilled senior ninjas can handle well.</li>
+        <li>ATK +2%.</li>
+        <li>If +7 or higher, +10% Kunai damage.</li>
+        <li>If +9 or higher, +10% additional Kunai damage.</li>
+      </ul>
+    {% endequipCard %}
+
+  </div>
+
+  <h3>Cave 1 (gl_dun01)</h3>
+
+  <img class="mt-6 mb-6 max-w-xs" src="/images/maps/gh-cave-1.bmp" alt="Glast Heim Cave 1 map" />
+
+  <p>Boss monsters spawn normally. Sting and Arclouze with stars in front of their names count towards a 10,000 kill goal, which once reached, enables "Fever Mode".</p>
+
+  <p>"Fever Mode" spawns Sting and Arclouze in significantly greater quantities (without stars). These spawns are easier to kill then their starred counterparts. Fever Mode lasts for 30 minutes.</p>
+
+  <h4>Monsters</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="anolian.gif",
+      name="Anolian (아놀리안)",
+      id="1206",
+      level="109",
+      hp="16615",
+      defMdef="61/11",
+      class="Normal",
+      family="Fish",
+      property="Water LV1",
+      size="Medium",
+      expJexp="1887/1801"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="cramp.gif",
+      name="Cramp (크램프)",
+      id="1209",
+      level="82",
+      hp="3935",
+      defMdef="88/42",
+      class="Normal",
+      family="Brute",
+      property="Poison LV2",
+      size="Small",
+      expJexp="970/905"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="gargoyle.gif",
+      name="Gargoyle (가고일)",
+      id="1253",
+      level="100",
+      hp="9233",
+      defMdef="98/43",
+      class="Normal",
+      family="Demon",
+      property="Wind LV3",
+      size="Medium",
+      expJexp="1387/1316"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="arclouze.gif",
+      name="Arclouze (아크라우스)",
+      id="1194",
+      level="107",
+      hp="14944",
+      defMdef="101/36",
+      class="Normal",
+      family="Insect",
+      property="Earth LV2",
+      size="Medium",
+      expJexp="1937/1759"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="sting.gif",
+      name="Sting (스팅)",
+      id="1207",
+      level="104",
+      hp="12633",
+      defMdef="146/34",
+      class="Normal",
+      family="Formless",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="1685/1527"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="hunter-fly.gif",
+      name="Hunter Fly (헌터플라이)",
+      id="1035",
+      level="63",
+      hp="1902",
+      defMdef="46/20",
+      class="Normal",
+      family="Insect",
+      property="Wind LV2",
+      size="Small",
+      expJexp="588/532"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-corrupted-sting.gif",
+      name="Corrupted Sting (오염된 스팅)",
+      level="109",
+      hp="81114",
+      defMdef="260/86",
+      class="Boss",
+      family="Formless",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="14930/12940"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="fever-corrupt-gargoyle.gif",
+      name="Corrupted Gargoyle (오염된 가고일)",
+      level="105",
+      hp="73864",
+      defMdef="232/114",
+      class="Boss",
+      family="Demon",
+      property="Water LV3",
+      size="Medium",
+      expJexp="13870/13160"
+    %}
+  </div>
+
+  <h4>Items</h4>
+
+  <div class="flex flex-wrap justify-between">
+
+    {% equipCard
+      id="5509",
+      folder="glastheim",
+      name="Sting Hat",
+      requiredLevel="60",
+      canWear="All",
+      category="Upper Headgear",
+      droppedBy="Sting",
+      weight="100",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>A soggy hat that mimics a Sting.</li>
+        <li>STR +2, VIT +1, MDEF +3.</li>
+        <li>+10% Earth damage, +5% Fire damage.</li>
+        <li>-5% damage from Earth element monsters.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="490001",
+      folder="glastheim",
+      name="Fox Armguard [1]",
+      requiredLevel="100",
+      canWear="Ninja series",
+      category="Accessory",
+      droppedBy="Corrupted Sting",
+      weight="20",
+      def="1"
+    %}
+      <ul class="border-t p-2">
+        <li>Armguard that depicts a fascinating fox.</li>
+        <li>ATK +3, -3% Variable Cast.</li>
+        <li>Refinable.</li>
+        <li>If +9 or higher, +2 additional ATK and -2% Variable Cast.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="13313",
+      folder="glastheim",
+      name="Huuma Swirling Petal [2]",
+      requiredLevel="100",
+      canWear="Ninja series",
+      category="Huuma Shuriken",
+      droppedBy="Corrupted Sting, (Einbroch Weapon Random Option)",
+      weight="150",
+      atk="240"
+    %}
+      <ul class="border-t p-2">
+        <li>Using this weapon feels like you're surrounded by numerous petals.</li>
+        <li>ATK +3%.</li>
+        <li>Indestructible.</li>
+        <li>If +7 or higher, +15% [Swirling Petal] damage.</li>
+        <li>If +9 or higher, reduces [Swirling Petal] cooldown by 0.5 seconds.</li>
+      </ul>
+    {% endequipCard %}
+
+    {% equipCard
+      id="13314",
+      folder="glastheim",
+      name="Huuma Fluttering Snow [2]",
+      requiredLevel="100",
+      canWear="Ninja series",
+      category="Huuma Shuriken",
+      droppedBy="Corrupted Gargoyle, (Einbroch Weapon Random Option)",
+      weight="130",
+      atk="180"
+    %}
+      <ul class="border-t p-2">
+        <li>A bright, blue-colored Huuma Shuriken.</li>
+        <li>MATK +260, MATK +5%.</li>
+        <li>Indestructible.</li>
+        <li>If +7 or higher, +35% [Freezing Spear] damage.</li>
+        <li>If +9 or higher, +40% [Snow Flake Drift] damage.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <p>The above weapons can get Random Options.</p>
+
+  <p>(Last updated on kRO website on 2019.04.10)</p>
+
+  <h2>Source(s)</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="http://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=14&curpage=3" target="_blank" rel="noopener noreferrer">[지역] 글래스트 헤임</a> (post - kRO website)
+    </li>
+    <li>Ingame</li>
+  </ul>
+
+</article>

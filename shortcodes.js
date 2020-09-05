@@ -25,8 +25,9 @@ function monsterCard (monster) {
 function equipCard (description, equip) {
   const hasFoundInOrCraftedFrom = (equip.foundIn || equip.craftedFrom || equip.droppedBy);
   const displayStats = hasFoundInOrCraftedFrom && equip.weight && (equip.def || equip.atk);
+  const widthClass = equip.fullWidth ? 'w-full' : 'ca-w-49';
   return `
-  <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+  <div class="border-2 rounded-md text-sm mb-4 ${widthClass}">
     <div class="border-b rounded-t-md p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${equip.id}" target="_blank" rel="noopener noreferrer">
         <img class="inline-block mr-2" src="/images/equip/${equip.folder}/${equip.id}.png" alt="${equip.name}" />
