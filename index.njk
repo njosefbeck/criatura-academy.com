@@ -38,4 +38,13 @@ description: A fansite for the korean version of Ragnarok Zero
       {% endfor %}
     </ul>
   </div>
+
+  <div class="mb-6">
+    <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">News</h2>
+    <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
+      {% for article in collections.news | reverse %}
+        <li><a href="{{ article.url }}">{{ article.data.title }}</a> ({{ article.data.listDate }})</span></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
