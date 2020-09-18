@@ -76,3 +76,58 @@ td figcaption {
   .ca-w-24 { width: 24% }
   .ca-w-49 { width: 49% }
 }
+
+.signup-form form .form-element {
+  width: 100%;
+}
+
+.signup-form form .form-element .label {
+  display: none;
+}
+
+.signup-form form input {
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  height: 45px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.signup-form form button {
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  padding: 10px;
+  margin-top: 10px;
+  display: block;
+}
+
+.signup-form form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.signup-form .message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .signup-form form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .signup-form form .form-element {
+    width: 75%;
+    margin-right: 10px;
+  }
+}
