@@ -1,0 +1,159 @@
+---
+layout: /layouts/base.njk
+title: Orc's Memory Memorial Dungeon
+description: All about the Memorial Dungeon Orc's Memory found in kRO Zero
+tags: memorialDungeon
+---
+
+<article>
+  <h1 class="text-2xl mb-2">Orc's Memory Memorial Dungeon</h1>
+
+  <p>This <b>Memorial Dungeon</b> is located in Orc Village (the map outside of Orc Dungeon). Speak to the Scientist NPC at the location marked with the arrow on the below map to start the instance.</p>
+
+  <img class="mt-6 mb-2" src="/images/maps/orcs-memory-location.bmp" alt="Orc's Memory map location" />
+
+  <h2>General Info</h2>
+
+  <ul class="list-disc pl-8">
+    <li>Must have a base level of at least 59 to enter.</li>
+    <li>When battling the final boss, don't ignore the Shaman's Flowers, as they buff the boss.</li>
+    <li>Several pieces of the <a href="/memorial-dungeons/equipment/#subjugation">Grade IV Memorial Dungeon Equipment</a> can be found here.</li>
+  </ul>
+
+  <h2>Monster Info</h2>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="3897-md-orc-skeleton.png",
+        name="Orc Skeleton", 
+        id="3897",
+        level="60",
+        hp="4458",
+        defMdef="82/10",
+        class="Normal",
+        family="Undead",
+        property="Undead LV1",
+        size="Medium",
+        expJexp="627/562"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="3898-md-orc-zombie.png",
+        name="Orc Zombie", 
+        id="3898",
+        level="60",
+        hp="4475",
+        defMdef="71/5",
+        class="Normal",
+        family="Brute",
+        property="Undead LV1",
+        size="Medium",
+        expJexp="649/600"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="2569-md-anapholes.png",
+        name="Anapholes", 
+        id="2569",
+        level="95",
+        hp="6617",
+        defMdef="7/10",
+        class="Normal",
+        family="Insect",
+        property="Wind LV3",
+        size="Small",
+        expJexp="??/??"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="3903-md-shaman-flower.png",
+        name="Shaman's Flower", 
+        id="3903",
+        level="98",
+        hp="5",
+        defMdef="160/99",
+        class="Boss",
+        family="Plant",
+        property="Earth LV1",
+        size="Medium",
+        expJexp="0"
+    %}
+    {% monsterCard 
+        widthClass="w-full",
+        image="3901-md-fallen-orc-hero.png",
+        name="Fallen Orc Hero", 
+        id="3901",
+        level="70",
+        hp="2110562",
+        defMdef="197/70",
+        class="Boss",
+        family="Demi-human",
+        property="Earth LV2",
+        size="Large",
+        expJexp="166639/118717"
+    %}
+  </div>
+
+  <h2>Treasure Chest Rewards</h2>
+
+  <p>When you clear the dungeon, you are given a variety of rewards.</p>
+
+  <h3>Normal Mode</h3>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      {% item id="25424", name="Shimmering Crystal", imageFolder="items" %}: 1 - 3
+    </li>
+    <li>
+      <a href="/memorial-dungeons/equipment/#subjugation">{% item id="20867", name="Subjugation Sash [1]", imageFolder="equip/subjugation", onlyIcon="true" %} Subjugation Sash [1]</a>: 0 - 1
+    </li>
+    <li>
+      <a href="/memorial-dungeons/equipment/#subjugation">{% item id="15220", name="Subjugation Armor [1]", imageFolder="equip/subjugation", onlyIcon="true" %} Subjugation Armor [1]</a>: 0 - 1
+    </li>
+  </ul>
+
+  <h3>Hard Mode</h3>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      {% item id="25424", name="Shimmering Crystal", imageFolder="items" %}: 6 - 10
+    </li>
+    <li>
+      {% item id="25457", name="Cursed Emerald", imageFolder="items" %}: 0 - 3
+    </li>
+    <li>
+      {% item id="25429", name="Mithril Ore", imageFolder="items" %}: 1 - 4
+    </li>
+    <li>
+      {% item id="985", name="Elunium", imageFolder="items" %}: 1 - 3
+    </li>
+    <li>
+      {% item id="984", name="Oridecon", imageFolder="items" %}: 1 - 3
+    </li>
+    <li>
+      {% item id="757", name="Rough Elunium", imageFolder="items" %}: 2 - 8
+    </li>
+    <li>
+      {% item id="756", name="Rough Oridecon", imageFolder="items" %}: 2 - 8
+    </li>
+    <li>
+      {% item id="992", name="Wind of Verdure", imageFolder="items" %}: 1 - 3
+    </li>
+    <li>
+      {% item id="990", name="Red Blood", imageFolder="items" %}: 1 - 3
+    </li>
+    <li>
+      {% item id="993", name="Green Live", imageFolder="items" %}: 1 - 3
+    </li>
+  </ul>
+
+  <h2>Source(s)</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=2&curpage=4" target="_blank" rel="noopener noreferrer">[던전] 오크의 기억</a> (post - kRO website)
+    </li>
+  </ul>
+
+</article>
