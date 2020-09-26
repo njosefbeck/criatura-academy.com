@@ -83,7 +83,7 @@ function card (description, card) {
     </div>
       <ul class="p-2">
         ${card.mountedIn ? `<li><strong>Mounted In:</strong> ${card.mountedIn}</li>` : ``}
-        ${card.prefix ? `<li><strong>Dropped By:</strong> ${card.prefix}</li>` : ``}
+        ${card.prefix ? `<li><strong>Prefix/Suffix:</strong> ${card.prefix}</li>` : ``}
       </ul>
     ${description}
   </div>
