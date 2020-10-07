@@ -1,0 +1,583 @@
+---
+layout: /layouts/base.njk
+title: Guild Dungeons
+description: All about the updates to Guild Dungeons in kRO Zero
+tags: update
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Guild Dungeons</h1>
+
+  <p>In Guild Dungeons you can not only hunt monsters, but also battle with other players, and acquire various items and equipment that can be used in WoE.</p>
+
+  <p>In a Guild Dungeon, it is possible to battle with all other players except for those in your guild. Even party members not in your same guild are hostile. When you die, you lose experience. Also, Guild Dungeons can not be used during WoE. If you are in a Guild Dungeon (GD) during that time, you will be moved to your save spot.</p>
+
+  <h2>How to enter</h2>
+
+  <p>Anyone can enter a Guild Dungeon after paying the Dungeon Manager NPC. Guild Members who occupy a Castle in the area can enter for free, without paying any fees.</p>
+
+  <h3>Entry locations that cost 30,0000 zeny</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><strong>Valkyrie Realm (Prontera):</strong> prt_gld 156/99</li>
+    <li><strong>Britoniah Realm (Geffen):</strong> gef_fild13 195/241</li>
+    <li><strong>Balder Realm (Payon):</strong> pay_gld 200/180</li>
+    <li><strong>Luina Realm (Aldeberan):</strong> alde_gld 213/148</li>
+  </ul>
+
+  <h3>Entry locations that are free for Castle owners of that realm</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><strong>Valkyrie Realm (Prontera):</strong> prtg_cas01 94/200, prtg_cas02 84/72, prtg_cas04 56/283</li>
+    <li><strong>Britoniah Realm (Geffen):</strong> gefg_cas01 78/84, gefg_cas02 167/40, gefg_cas04 58/75</li>
+    <li><strong>Balder Realm (Payon):</strong> pay_gld 200/180, payg_cas03 38/42, payg_cas04 52/48</li>
+    <li><strong>Luina Realm (Aldeberan):</strong> aldeg_cas01 211/181, aldeg_cas03 200, 177, aldeg_cas05 22/205</li>
+  </ul>
+
+  <h2>Monsters</h2>
+
+  <p class="text-red-600 font-bold">NOTE: When first introduced, the below monsters probably did not have the amount of HP shown here, nor did they probably give as much EXP. They were probably updated post transcendent classes, but would need a source to confirm.</p>
+
+  <h3>Valkyrie Realm (Prontera)</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="creamy-fear.gif",
+        name="Creamy Fear", 
+        level="117",
+        hp="54,633",
+        class="Normal",
+        family="Insect",
+        property="Wind LV1",
+        size="Small",
+        expJexp="7749/7425"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="old-treasure-chest.png",
+        name="Old Treasure Chest", 
+        level="99",
+        hp="20",
+        class="MVP",
+        family="Formless",
+        property="Fire LV4",
+        size="Small",
+        expJexp="0/0"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="caterpillar.gif",
+        name="Caterpillar", 
+        level="121",
+        hp="77,721",
+        class="Normal",
+        family="Insect",
+        property="Earth LV1",
+        size="Small",
+        expJexp="9597/8772"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="caterpillar.gif",
+        name="Enraged Caterpillar", 
+        level="121",
+        hp="388,865",
+        class="Normal",
+        family="Insect",
+        property="Earth LV1",
+        size="Small",
+        expJexp="47985/131580"
+    %}
+  </div>
+
+  <h3>Britoniah Realm (Geffen)</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="wraith-dead.gif",
+        name="Wraith Dead", 
+        level="121",
+        hp="112,260",
+        class="Normal",
+        family="Undead",
+        property="Undead LV4",
+        size="Large",
+        expJexp="10053/8316"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="old-treasure-chest.png",
+        name="Old Treasure Chest", 
+        level="99",
+        hp="20",
+        class="MVP",
+        family="Formless",
+        property="Fire LV4",
+        size="Small",
+        expJexp="0/0"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="zombie-master.gif",
+        name="Zombie Master", 
+        level="119",
+        hp="75,891",
+        class="Normal",
+        family="Undead",
+        property="Undead LV1",
+        size="Medium",
+        expJexp="8673/7170"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="zombie-master.gif",
+        name="Leader Zombie Master", 
+        level="119",
+        hp="379,455",
+        class="Normal",
+        family="Undead",
+        property="Undead LV1",
+        size="Medium",
+        expJexp="43365/107550"
+    %}
+  </div>
+
+  <h3>Balder Realm (Payon)</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="gullinbursti.gif",
+        name="Gullinbursti", 
+        level="118",
+        hp="78,000",
+        class="Normal",
+        family="Brute",
+        property="Earth LV2",
+        size="Large",
+        expJexp="8814/7552"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="savage.gif",
+        name="Savage", 
+        level="59",
+        hp="2301",
+        class="Normal",
+        family="Brute",
+        property="Earth LV2",
+        size="Large",
+        expJexp="0/0"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="leib-olmai.gif",
+        name="Leib Olmai", 
+        level="120",
+        hp="105,000",
+        class="Normal",
+        family="Brute",
+        property="Earth LV1",
+        size="Large",
+        expJexp="9766/8462"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="leib-olmai.gif",
+        name="Robust Leib Olmai", 
+        level="120",
+        hp="1,050,000",
+        class="Normal",
+        family="Brute",
+        property="Earth LV1",
+        size="Large",
+        expJexp="48830/126930"
+    %}
+    {% monsterCard 
+        widthClass="w-full",
+        image="moonlight-flower.gif",
+        name="Moonlight Flower", 
+        level="79",
+        hp="324,000",
+        class="Boss",
+        family="Demon",
+        property="Fire LV3",
+        size="Medium",
+        expJexp="183744/135720"
+    %}
+  </div>
+
+  <h3>Luina Realm (Aldeberan)</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="giant-hornet.gif",
+        name="Giant Hornet", 
+        level="116",
+        hp="52,000",
+        class="Normal",
+        family="Insect",
+        property="Wind LV1",
+        size="Small",
+        expJexp="7882/7076"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="giant-hornet.gif",
+        name="Leader Giant Hornet", 
+        level="116",
+        hp="260,000",
+        class="Normal",
+        family="Insect",
+        property="Wind LV1",
+        size="Small",
+        expJexp="39410/106140"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="ancient-worm.gif",
+        name="Ancient Worm", 
+        level="122",
+        hp="99,000",
+        class="Normal",
+        family="Insect",
+        property="Poison LV1",
+        size="Large",
+        expJexp="10498/9028"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="argiope.gif",
+        name="Argiope", 
+        level="75",
+        hp="3105",
+        class="Normal",
+        family="Insect",
+        property="Poison LV1",
+        size="Large",
+        expJexp="0/0"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="mistress.gif",
+        name="Mistress", 
+        level="78",
+        hp="378000",
+        class="BOss",
+        family="Insect",
+        property="Wind LV4",
+        size="Small",
+        expJexp="184140/150660"
+    %}
+  </div>
+
+  <h2>Items</h2>
+
+  <h3>General Items</h3>
+
+  <p>You can obtain {% item id="25630", name="Guild Coin (길드 아지트 주화)", imageFolder="items" %} and {% item id="1000030", name="Guild Medal (길드 훈장)", imageFolder="items" %} by defeating monsters in the Guild Dungeon, and exchange them for various consumption and equipment items through the Guild Coin Merchant NPC in the Guild Office.</p>
+
+  <p>
+    <strong>Guild Office Location:</strong> prontera 75/102<br/>
+    <strong>Exchange NPC Location:</strong> [Guild Coin Merchant] prt_in 210/161
+  </p>
+
+  <div class="flex flex-wrap justify-between">
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/25630" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/25630.png" alt="Guild Coin" />
+          Guild Coin</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span>Thick Guild Coin Pouch, <a href="https://divine-pride.net/database/item/23712/" target="_blank" rel="noopener noreferrer">Guild Coin Pouch</a>, Creamy Fear, Caterpillar, Enraged Caterpillar, Wraith Dead, Zombie Master, Leader Zombie Master
+      </div>
+      <ul class="border-t p-2">
+        <li>A valuable coin that can be obtained in a Guild Dungeon.</li>
+        <li>You can exchange these for items by taking them to the appropriate NPC.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 0</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/1000030" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/1000030.png" alt="Guild Medal" />
+          Guild Medal</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Ancient Worm, Leib Olmai, Robust Leib Olmai, Gullinbursti, Giant Hornet, Leader Giant Hornet, Old Treasure Chest, 500 Guild Castle Coin
+      </div>
+      <ul class="border-t p-2">
+        <li>A valuable medal that can be obtained in a Guild Dungeon.</li>
+        <li>You can exchange these for items by taking them to the appropriate NPC.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 5</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 w-full">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/100110" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/100110.png" alt="Thick Guild Coin Pouch" />
+          Thick Guild Coin Pouch</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Ancient Worm, Leib Olmai, Robust Leib Olmai, Gullinbursti, Giant Hornet, Leader Giant Hornet, Creamy Fear, Caterpillar, Enraged Caterpillar, Wraith Dead, Zombie Master, Leader Zombie Master, Old Treasure Chest
+      </div>
+      <ul class="border-t p-2">
+        <li>A pouch bursting with Guild Coins. When used, a random number of Guild Coin will appear.</li>
+        <li>Caution! If you open the pouch and exceed your weight or item limit, the item may be lost!</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 20</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/11547" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/11547.png" alt="Violet Siege Potion" />
+          Violet Siege Potion</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Old Treasure Chest, Violet Siege Potion Box, 2 Guild Coin
+      </div>
+      <ul class="border-t p-2">
+        <li>Can only be used in PVP, Town, and WoE areas.</li>
+        <li>It has a rich taste of red and blue and has a feeling of familiarity like the Mjolnir Mountains.</li>
+        <li>Recovers about 500 HP and about 60 SP.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 8</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/1100001" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/1100001.png" alt="Large Violet Siege Potion" />
+          Large Violet Siege Potion</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Ancient Worm, Leib Olmai, Robust Leib Olmai, Gullinbursti, Giant Hornet, Leader Giant Hornet, Old Treasure Chest, 5 Guild Coin
+      </div>
+      <ul class="border-t p-2">
+        <li>Can only be used in PVP, Town, and WoE areas.</li>
+        <li>It has a rich taste of red and blue and has a feeling of familiarity like the Mjolnir Mountains.</li>
+        <li>Boasts a 50% increase in capacity compared to the normal-sized one.</li>
+        <li>Recovers about 750 HP and about 100 SP.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 10</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 w-full">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/12676" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/12676.png" alt="Violet Siege Potion Box" />
+          Violet Siege Potion Box</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Giant Hornet, Leader Giant Hornet, Creamy Fear, 90 Guild Coin
+      </div>
+      <ul class="border-t p-2">
+        <li>Can only be used in PVP, Town, and WoE areas.</li>
+        <li>It has a rich taste of red and blue and has a feeling of familiarity like the Mjolnir Mountains.</li>
+        <li>Boasts a 50% increase in capacity compared to the normal-sized one.</li>
+        <li>Recovers about 750 HP and about 100 SP.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 10</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/23312" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/23312.png" alt="Gunpowder Case" />
+          Gunpowder Case</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> 50 Guild Medal
+      </div>
+      <ul class="border-t p-2">
+        <li>A case commonly used by researchers in the Alchemist Guild.</li>
+        <li>Contains 1 Bottle Grenade (화염병), 1 Acid Bottle (염산병), 1 Plant Bottle (식인식물병), 1 Glistening Coat (코팅약), 1 Marine Sphere Bottle (기뢰병), 1 Poison Bottle (독약병)</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 1</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/22545" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/22545.png" alt="[Event] Speed Potion" />
+          [Event] Speed Potion</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> 3 Guild Medal
+      </div>
+      <ul class="border-t p-2">
+        <li>A mysterious potion that speeds up a character very quickly for a short period of time.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 10</li>
+        <li>Cannot be traded</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 w-full">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/100115" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/items/100115.png" alt="Greater Guild Enchant Box" />
+          Greater Guild Enchant Box</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> 3000 Guild Coin
+      </div>
+      <ul class="border-t p-2">
+        <li>A box containing enchants that can be given to Greater Guild equipment. You don't know what's in it until it opens.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 10</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Cards</h3>
+
+  <p>WIP</p>
+
+  <h3>Equipment</h3>
+
+  <p>Lesser Guild equipment can be purchased with Guild Coins, and Greater Guild equipment can be crafted from Lesser Guild equipment that has been refined to +7 and Guild Coins.</p>
+
+  <p>Lesser Guild equipment NPC location: Guild Office, prt_in 210/161.</p>
+
+  <p>Greater Guild equipment NPC location: Guild Office, prt_in 206/161.</p>
+
+  <h4>Lesser Guild Equipment</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="1329",
+      folder="guild",
+      name="Lesser Guild Cleaver",
+      requiredLevel="70",
+      canWear="Swordsman, Merchant",
+      category="One-handed Ax",
+      craftedFrom="1000 Guild Coin",
+      weight="100",
+      level="3",
+      atk="110"
+    %}
+      <ul class="border-t p-2">
+        <li class="text-red-600">"PVP and WoE-area options only"</li>
+        <li>+20% increase in physical damage against players.</li>
+        <li>Ignores 5% of the player's DEF.</li>
+        <li>Indestructible.</li>
+        <li>Per refine, +1% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +7 or higher, ignores an additional 5% of the player's DEF.</li>
+        <li>If +9 or higher, +15% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +10 or higher, has a chance to inflict Level 1 [Fatal Wound] when using Acid Terror and Mammonite skills.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="16085",
+      folder="guild",
+      name="Lesser Guild Morning Star",
+      requiredLevel="70",
+      canWear="Novice, Swordsman, Merchant, Acolyte",
+      category="Mace",
+      craftedFrom="1000 Guild Coin",
+      weight="90",
+      level="3",
+      atk="110"
+    %}
+      <ul class="border-t p-2">
+        <li class="text-red-600">"PVP and WoE-area options only"</li>
+        <li>+20% increase in physical damage against players.</li>
+        <li>Ignores 5% of the player's DEF.</li>
+        <li>Indestructible.</li>
+        <li>Per refine, +1% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +7 or higher, ignores an additional 5% of the player's DEF.</li>
+        <li>If +9 or higher, +15% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +10 or higher, has a chance to [Stun] when using normal physical attacks, increases ASPD by 10%, and [Stun] rate increases according [Mace Mastery] level.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32015",
+      folder="guild",
+      name="Lesser Guild Pike",
+      requiredLevel="70",
+      canWear="Swordsman",
+      category="One-handed Spear",
+      craftedFrom="1000 Guild Coin",
+      weight="90",
+      level="3",
+      atk="110"
+    %}
+      <ul class="border-t p-2">
+        <li class="text-red-600">"PVP and WoE-area options only"</li>
+        <li>+20% increase in physical damage against players.</li>
+        <li>Ignores 5% of the player's DEF.</li>
+        <li>Indestructible.</li>
+        <li>Per refine, +1% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +7 or higher, ignores an additional 5% of the player's DEF.</li>
+        <li>If +9 or higher, +15% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +10 or higher, increases [Pierce] damage by 20% for 10 seconds when [Provoke] is successful against a target. When using [Pierce] there is a chance to [Stun] and [Blind] the enemy. Depending on the level of [Spear Mastery], the damage, [Stun], and [Blind] probability of [Pierce] are increased.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="13490",
+      folder="guild",
+      name="Lesser Guild Flamberge",
+      requiredLevel="70",
+      canWear="Crusader",
+      category="One-handed Sword",
+      craftedFrom="1000 Guild Coin",
+      weight="70",
+      level="3",
+      atk="110"
+    %}
+      <ul class="border-t p-2">
+        <li class="text-red-600">"PVP and WoE-area options only"</li>
+        <li>+20% increase in physical damage against players.</li>
+        <li>Ignores 5% of the player's DEF.</li>
+        <li>Indestructible.</li>
+        <li>Per refine, +1% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +7 or higher, ignores an additional 5% of the player's DEF.</li>
+        <li>If +9 or higher, +15% additional increase in physical damage against players.</li>
+        <li><hr class="my-2" /></li>
+        <li>If +10 or higher, if [Devotion] is successfully cast on the target, +1000 MaxHP for the caster for 30 seconds, and also an additional +50 MaxHP per 1 refine.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2>Source(s)</h3>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=22&curpage=3" target="_blank" rel="noopener noreferrer">[던전] 길드던전</a> (post - kRO website)
+    </li>
+    <li>Ingame</li>
+  </ul>
+
+</article>

@@ -10,7 +10,7 @@ function monsterCard (monster) {
     <ul>
       <li><strong>Level:</strong> ${monster.level}</li>
       <li><strong>HP:</strong> ${monster.hp}</li>
-      <li><strong>DEF/MDEF:</strong> ${monster.defMdef}</li>
+      ${monster.defMdef ? '<li><strong>DEF/MDEF:</strong> ${monster.defMdef}</li>' : ''}
       <li><strong>Class:</strong> ${monster.class}</li>
       <li><strong>Family:</strong> ${monster.family}</li>
       <li><strong>Property: </strong>${monster.property}</li>
@@ -46,6 +46,7 @@ function equipCard (description, equip) {
           ${equip.weight ? `<strong>Weight:</strong> ${equip.weight}` : ``}
           ${equip.def ? ` &middot; <strong>DEF:</strong> ${equip.def}` : ``}
           ${equip.atk ? ` &middot; <strong>ATK:</strong> ${equip.atk}` : ``}
+          ${equip.level ? ` &middot; <strong>Level:</strong> ${equip.level}` : ``}
         </li>
       </ul>
       `
