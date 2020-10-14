@@ -10,7 +10,7 @@ function monsterCard (monster) {
     <ul>
       <li><strong>Level:</strong> ${monster.level}</li>
       <li><strong>HP:</strong> ${monster.hp}</li>
-      ${monster.defMdef ? '<li><strong>DEF/MDEF:</strong> ${monster.defMdef}</li>' : ''}
+      ${monster.defMdef ? `<li><strong>DEF/MDEF:</strong> ${monster.defMdef}</li>` : ''}
       <li><strong>Class:</strong> ${monster.class}</li>
       <li><strong>Family:</strong> ${monster.family}</li>
       <li><strong>Property: </strong>${monster.property}</li>
