@@ -1,0 +1,188 @@
+---
+layout: /layouts/base.njk
+title: Sunken Ship Memorial Dungeon
+description: All about the Sunken Ship Memorial Dungeon found in kRO Zero
+tags: memorialDungeon
+---
+
+<article>
+  <h1 class="text-2xl mb-2">Sunken Ship Memorial Dungeon</h1>
+
+  <p>This <b>Memorial Dungeon</b> is located one map east of Prontera. Speak to the NPC a short distance from the entrance to get started, and then speak to the Dimensional Rift NPC next to her to enter.</p>
+
+  <img class="mt-6 mb-2" src="/images/maps/gh-ant-hell-1f.bmp" alt="Sunken Ship Memorial Dungeon map location" />
+
+  <h2>General Info</h2>
+
+  <ul class="list-disc pl-8">
+    <li>Must have a base level of at least 99 to enter.</li>
+    <li>Stormy Drake's power increases according to the surrounding conditions during dungeon progression.</li>
+    <li>To clear the dungeon smoothly, you must proceed carefully so that Stormy Drake doesn't become stronger.</li>
+    <li>When clearing Sunken Ship, Stormy Mimic appears with a certain probability, and you can get an additonal treasure chest when you defeat all of them. This treasure chest contains "reinforcement materials" similar to the normal Sunken Ship treasure chest.</li>
+    <li>See the <a href="/memorial-dungeons/equipment-crafting/">Memorial Dungeon Equipment Crafting page</a> for what to do with the items that drop in this instance.</li>
+  </ul>
+
+  <h2>Monster Info</h2>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20113-md-mimic.gif",
+        name="Stormy Mimic", 
+        id="20113",
+        level="99",
+        hp="100",
+        defMdef="63/15",
+        class="Normal",
+        family="Formless",
+        property="Neutral LV3",
+        size="Medium",
+        expJexp="10/10"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20114-md-wraith.gif",
+        name="Stormy Wraith", 
+        id="20114",
+        level="99",
+        hp="19000",
+        defMdef="80/40",
+        class="Normal",
+        family="Formless",
+        property="Undead LV4",
+        size="Large",
+        expJexp="0/0"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20115-md-pirate-skeleton.gif",
+        name="Stormy Pirate Skeleton", 
+        id="20115",
+        level="99",
+        hp="19000",
+        defMdef="53/20",
+        class="Normal",
+        family="Undead",
+        property="Undead LV1",
+        size="Medium",
+        expJexp="2100/1900"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20116-md-whisper.gif",
+        name="Stormy Whisper", 
+        id="20116",
+        level="99",
+        hp="19000",
+        defMdef="20/40",
+        class="Normal",
+        family="Demon",
+        property="Fire LV3",
+        size="Small",
+        expJexp="2100/1900"
+    %}
+    {% monsterCard 
+        widthClass="w-full",
+        image="20111-md-drake.gif",
+        name="Stormy Drake", 
+        id="20111",
+        level="99",
+        hp="7200000",
+        defMdef="279/135",
+        class="Boss",
+        family="Undead",
+        property="Undead LV1",
+        size="Medium",
+        expJexp="670000/510000"
+    %}
+  </div>
+
+  <h2>Treasure Chest Rewards</h2>
+
+  <p>When you clear the dungeon, you are given a variety of rewards. If the number of party members is 7 or more, a little more amount will be dropped. See the <a href="/memorial-dungeons/equipment-crafting/">Memorial Dungeon Equipment Crafting page</a> for what to do with the items that drop in this instance.</p>
+
+  <h3>Normal Mode</h3>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      {% item id="25424", name="Shimmering Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25475", name="Blue Light Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25476", name="Red Magic Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="23649", name="Jello Fragment Box", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25429", name="Mithril Ore", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="985", name="Elunium", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="984", name="Oridecon", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="757", name="Rough Elunium", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="756", name="Rough Oridecon", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="992", name="Wind of Verdure", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="990", name="Red Blood", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="993", name="Green Live", imageFolder="items" %}
+    </li>
+  </ul>
+
+  <h3>Hard Mode</h3>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      {% item id="25424", name="Shimmering Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25460", name="Blood-soaked Ruby", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25429", name="Mithril Ore", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="985", name="Elunium", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="984", name="Oridecon", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="757", name="Rough Elunium", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="756", name="Rough Oridecon", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="992", name="Wind of Verdure", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="990", name="Red Blood", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="993", name="Green Live", imageFolder="items" %}
+    </li>
+  </ul>
+
+  <h2>Source(s)</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=12&curpage=4" target="_blank" rel="noopener noreferrer">[던전] 침몰선</a> (post - kRO website)
+    </li>
+  </ul>
+
+</article>
