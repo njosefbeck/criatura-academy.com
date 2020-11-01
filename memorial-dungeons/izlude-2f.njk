@@ -1,0 +1,159 @@
+---
+layout: /layouts/base.njk
+title: Izlude 2F Memorial Dungeon
+description: All about the Izlude 2F Memorial Dungeon found in kRO Zero
+tags: memorialDungeon
+---
+
+<article>
+  <h1 class="text-2xl mb-2">Izlude 2F Memorial Dungeon</h1>
+
+  <p>This <b>Memorial Dungeon</b> is located one map east of Prontera. Speak to the NPC a short distance from the entrance to get started, and then speak to the Dimensional Rift NPC next to her to enter.</p>
+
+  <img class="mt-6 mb-2" src="/images/maps/gh-ant-hell-1f.bmp" alt="Ant Hell 1F Memorial Dungeon map location" />
+
+  <h2>General Info</h2>
+
+  <ul class="list-disc pl-8">
+    <li>Must have a base level of at least 80 to enter.</li>
+    <li>As you kill monsters in this instance, the other monsters become stronger.</li>
+    <li>See the <a href="/memorial-dungeons/equipment-crafting/">Memorial Dungeon Equipment Crafting page</a> for what to do with the items that drop in this instance.</li>
+  </ul>
+
+  <h2>Monster Info</h2>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20083-md-merman.gif",
+        name="Deepsea Merman", 
+        id="20083",
+        level="80",
+        hp="5000",
+        defMdef="62/8",
+        class="Normal",
+        family="Demi-human",
+        property="Water LV3",
+        size="Medium",
+        expJexp="799/774"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20084-md-obeaune.gif",
+        name="Deepsea Obeaune", 
+        id="20084",
+        level="80",
+        hp="5000",
+        defMdef="48/26",
+        class="Normal",
+        family="Fish",
+        property="Water LV2",
+        size="Medium",
+        expJexp="799/774"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20085-md-cornutus.gif",
+        name="Deepsea Cornutus", 
+        id="20085",
+        level="80",
+        hp="5000",
+        defMdef="42/28",
+        class="Normal",
+        family="Fish",
+        property="Water LV1",
+        size="Small",
+        expJexp="799/774"
+    %}
+    {% monsterCard 
+        widthClass="ca-w-49",
+        image="20082-md-marse.gif",
+        name="Deepsea Marse", 
+        id="20082",
+        level="80",
+        hp="5000",
+        defMdef="38/18",
+        class="Normal",
+        family="Fish",
+        property="Water LV2",
+        size="Small",
+        expJexp="802/711"
+    %}
+    {% monsterCard 
+        widthClass="w-full",
+        image="20081-md-coelacanth.gif",
+        name="Deepsea Coelacanth", 
+        id="20081",
+        level="80",
+        hp="2200000",
+        defMdef="280/280",
+        class="Boss",
+        family="Fish",
+        property="Water LV2",
+        size="Large",
+        expJexp="168000/114000"
+    %}
+  </div>
+
+  <h2>Treasure Chest Rewards</h2>
+
+  <p>When you clear the dungeon, you are given a variety of rewards. If the number of party members is 7 or more, a little more amount will be dropped. See the <a href="/memorial-dungeons/equipment-crafting/">Memorial Dungeon Equipment Crafting page</a> for what to do with the items that drop in this instance.</p>
+
+  <h3>Normal Mode</h3>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      {% item id="25424", name="Shimmering Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25476", name="Red Magic Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="23649", name="Jello Fragment Box", imageFolder="items" %}
+    </li>
+  </ul>
+
+  <h3>Hard Mode</h3>
+
+  <ul class="list-disc pl-8 mb-4">
+    <li>
+      {% item id="25424", name="Shimmering Crystal", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25459", name="Sea Sapphire", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="25429", name="Mithril Ore", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="985", name="Elunium", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="984", name="Oridecon", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="757", name="Rough Elunium", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="756", name="Rough Oridecon", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="992", name="Wind of Verdure", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="990", name="Red Blood", imageFolder="items" %}
+    </li>
+    <li>
+      {% item id="993", name="Green Live", imageFolder="items" %}
+    </li>
+  </ul>
+
+  <h2>Source(s)</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=11&curpage=4" target="_blank" rel="noopener noreferrer">[던전] 이즈루드 던전 2층</a> (post - kRO website)
+    </li>
+  </ul>
+
+</article>
