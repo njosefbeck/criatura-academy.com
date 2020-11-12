@@ -74,6 +74,22 @@ function craftableEquipCard (content, equip) {
   `
 }
 
+// Enchant card
+function enchantCard (content, enchant) {
+  const widthClass = enchant.fullWidth ? 'w-full' : 'ca-w-49';
+  return `
+  <div class="border-2 rounded-md text-sm mb-4 ${widthClass}">
+    <div class="border-b rounded-t-md p-2 bg-blue-100">
+      <a href="https://divine-pride.net/database/item/${enchant.id}" target="_blank" rel="noopener noreferrer">
+        <img class="inline-block mr-2" src="/images/enchants/${enchant.id}.png" alt="${enchant.name}" />
+        ${enchant.name}</a>
+      <span class="font-bold float-right">Enchant</span>
+    </div>
+    ${content}
+  </div>
+  `
+}
+
 // Card from a monster... card
 function card (description, card) {
   return `
@@ -104,6 +120,7 @@ module.exports = {
   monsterCard,
   equipCard,
   craftableEquipCard,
+  enchantCard,
   item,
   card
 }
