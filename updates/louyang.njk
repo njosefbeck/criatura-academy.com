@@ -1,22 +1,13 @@
 ---
 layout: /layouts/base.njk
-title: 32 - March 14 2018 Updates Released
-description: kRO Zero dev note discussing March 14 2018 updates
-tags: devNote
-listDate: '2018-03-12'
+title: Louyang
+description: All about the updates to Louyang in kRO Zero
+tags: update
 ---
 
 <article>
 
-  <h1 class="text-2xl mb-4">[32] March 14, 2018 Updates Released</h1>
-
-  <p>[ 2018.01.10 ]</p>
-
-  <p>Hi Ragnarok users. Ragnarok Zero team of RO1 studio here. Today we will let you know about the planned content update this week.</p>
-
-  <h2>Global Project 1 - Louyang (Castle of Dragon)</h2>
-
-  <p>Global Project 1 Louyang, crafted after the Chinese region, is added.</p>
+  <h1 class="text-2xl mb-2">Louyang</h1>
 
   <figure class="mb-4">
     <img class="mt-6 mb-2" src="/images/dev-notes/louyang_castle.bmp" alt="Louyang castle screenshot" />
@@ -124,28 +115,9 @@ listDate: '2018-03-12'
   <figure class="mb-4">
     <img class="mt-6 mb-2" src="/images/dev-notes/earth_dragon_stone.png" alt="Earth Dragon Stone item description" />
     <figcaption>
-      (Earth Dragon Stone obtained from the Earth monsters)
+      (Earth Dragon Stone obtained from Louyang monsters)
     </figcaption>
   </figure>
-
-  <table class="mt-6 mb-6">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <a href="https://divine-pride.net/database/item/25620/" target="_blank" rel="noopener noreferrer">Earth Dragon Stone (지룡석)</a>
-        </td>
-        <td>
-          A stone with the power of an earth dragon sealed inside. 
-        </td>
-      </tr>
-    </tbody>
-  </table>
 
   <h3>Monsters That Drop Earth Dragon Stones</h3>
 
@@ -155,19 +127,203 @@ listDate: '2018-03-12'
     <li>Jing Guai (이매망량)</li>
     <li>Green Maiden (청이)</li>
     <li>Mao Guai (묘괴)</li>
-    <li>Hyegun (혜군)</li>
+    <li>Yao Jun (Hyegun) (혜군)</li>
   </ul>
 
-  <p>You can exchange Earth Dragon Stones for a random dragon weapon, which is a special weapon of the castle. You can also enchant the weapon using Earth Dragon Stones.</p>
+  <p>You can exchange 20 Earth Dragon Stone for 1 random Earth Dragon Weapon from the Jo Ji-ryong NPC. For 10 Earth Dragon Stone, you can purchase a {% item id="23739", name="Earth Dragon Magic Scroll", imageFolder="items" %} to give magic options to your Earth Dragon Weapon, or {% item id="23738", name="Earth Dragon Scroll", imageFolder="items" %} to give physical options to your Earth Dragon Weapon.</p>
 
-  <p>You can exchange 20 Earth Dragon Stone for 1 random Earth Dragon weapon via the "Zhao Ji Dragon" NPC. You can enchant an Earth Dragon weapon with 10 Earth Dragon Stones via the "Enchant Association Staff" NPC. <span class="text-red-600 font-bold">NOTE: In <a href="/dev-notes/34-2018-04-03-april-11-update-notice/">Dev Note #34</a>, enchanting of Earth Dragon weapons was replaced with random options.</span></p>
+  <h3>Earth Dragon Weapon Random Options</h3>
 
-  <figure class="mb-4">
-    <img class="mt-6 mb-2" src="/images/dev-notes/dragon_weapon_npcs.jpeg" alt="Dragon Weapon NPCs" />
-    <figcaption>
-      (Weapons are random. Please exchange weapons you don't want with others.) + (Jojo Ryung, enchantment association staff - louyang 199, 113)
-    </figcaption>
-  </figure>
+  <ul class="list-disc pl-8 mb-6">
+    <li>You can use both the Earth Dragon Scroll and the Earth Dragon Magic Scroll for all Earth Dragon weapons.</li>
+    <li>When using the Earth Dragon Scroll or Earth Dragon Magic Scroll, options are granted from a minimum of 1 to a maximum of 2.</li>
+    <li>The Earth Dragon Weapon's refine level and slotted cards will not be reset when using the random options scrolls.</li>
+    <li>You can re-grant options by using the Earth Dragon Scroll and Earth Dragon Magic Scroll on Earth Dragon Weapons that already have random options.</li>
+  </ul>
+
+  <h4>Physical options</h4>
+
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Option Number</th>
+        <th>Option</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="12">1st</td>
+        <td>STR</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>AGI</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>VIT</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>ATK</td>
+        <td>20 ~ 55</td>
+      </tr>
+      <tr>
+        <td>HIT</td>
+        <td>10 ~ 30</td>
+      </tr>
+      <tr>
+        <td>MaxHP</td>
+        <td>100 ~ 450</td>
+      </tr>
+      <tr>
+        <td>MaxSP</td>
+        <td>20 ~ 100</td>
+      </tr>
+      <tr>
+        <td>FLEE</td>
+        <td>10 ~ 30</td>
+      </tr>
+      <tr>
+        <td>CRIT</td>
+        <td>5 ~ 10</td>
+      </tr>
+      <tr>
+        <td>Increased amount of healing received</td>
+        <td>10 ~ 20</td>
+      </tr>
+      <tr>
+        <td>ASPD</td>
+        <td>1 ~ 2</td>
+      </tr>
+      <tr class="border-t-4">
+        <td rowspan="7">2nd</td>
+        <td>ASPD (%)</td>
+        <td>7 ~ 16</td>
+      </tr>
+      <tr>
+        <td>ATK (%)</td>
+        <td>5 ~ 10</td>
+      </tr>
+      <tr>
+        <td>Increase ranged weapon damage (%)</td>
+        <td>5 ~ 12</td>
+      </tr>
+      <tr>
+        <td>Critical damage (%)</td>
+        <td>10 ~ 20</td>
+      </tr>
+      <tr>
+        <td>Increase physical damage to small enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase physical damage to medium enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase physical damage to large enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Magical options</h4>
+
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Option Number</th>
+        <th>Option</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="12">1st</td>
+        <td>INT</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>AGI</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>VIT</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td>1 ~ 5</td>
+      </tr>
+      <tr>
+        <td>MATK</td>
+        <td>20 ~ 55</td>
+      </tr>
+      <tr>
+        <td>MaxHP</td>
+        <td>100 ~ 450</td>
+      </tr>
+      <tr>
+        <td>MaxSP</td>
+        <td>20 ~ 100</td>
+      </tr>
+      <tr>
+        <td>DEF</td>
+        <td>10 ~ 40</td>
+      </tr>
+      <tr>
+        <td>MDEF</td>
+        <td>1 ~ 4</td>
+      </tr>
+      <tr>
+        <td>FLEE</td>
+        <td>10 ~ 30</td>
+      </tr>
+      <tr>
+        <td>Increased heal amount (%)</td>
+        <td>10 ~ 20</td>
+      </tr>
+      <tr>
+        <td>ASPD</td>
+        <td>1 ~ 2</td>
+      </tr>
+      <tr class="border-t-4">
+        <td rowspan="7">2nd</td>
+        <td>ASPD (%)</td>
+        <td>7 ~ 16</td>
+      </tr>
+      <tr>
+        <td>MATK (%)</td>
+        <td>5 ~ 10</td>
+      </tr>
+      <tr>
+        <td>Reduce variable casting (%)</td>
+        <td>5 ~ 12</td>
+      </tr>
+      <tr>
+        <td>Decrease SP consumption when using skill (%)</td>
+        <td>3 ~ 7</td>
+      </tr>
+      <tr>
+        <td>Increase magic damage to small enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase magic damage to medium enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+      <tr>
+        <td>Increase magic damage to large enemies (%)</td>
+        <td>5 ~ 15</td>
+      </tr>
+    </tbody>
+  </table>
 
   <h3>Weapons</h3>
 
@@ -289,14 +445,13 @@ listDate: '2018-03-12'
         </td>
         <td class="text-left">
           A ninja dagger imbued with the power of an earth dragon.<br/>MATK +70<br/>+5% ATK/MATK against Formless monsters<br/>+5% ATK/MATK against Earth enemies<br/>If +7 or higher refine, additional +5% ATK/MATK against Formless monsters, +5% ATK/MATK against Earth enemies<br/>If +9 or higher, additional +10% ATK/MATK against Formless, +10% ATK/MATK against Earth enemies<br/>Class: Dagger<br/>Attack: 130<br/>Weight: 80<br/>Weapon Level: 3<br/>Required Level: 70<br/>Can Wear: Ninja series
+          <p class="font-bold text-purple-600 my-2 text-sm">Added later with Ninja</p>
         </td>
       </tr>
     </tbody>
   </table>
 
-  <p class="text-red-600 font-bold">NOTE: Original dev note contains a table with the possible enchants. Omitted here since they were later removed (discussed in <a href="/dev-notes/34-2018-04-03-april-11-update-notice/">Dev Note #34</a>).</p>
-
-  <h2>Louyang Headgear</h2>
+  <h2>Louyang Craftable Headgear</h2>
 
   <p>Talk to Socheon who is standing near the tower to make a special hat.</p>
 
@@ -336,94 +491,297 @@ listDate: '2018-03-12'
     </tbody>
   </table>
 
-  <h3>Headgear Crafting Ingredients</h3>
+  <p>The ingredients needed to make the above headgears changed over time in kRO Zero. To see the most updated ingredients, head to the <a href="/updates/craftable-equipment/">Craftable Equipment page</a>.
 
-  <p class="text-red-600 font-bold">NOTE: These ingredients change in <a href="/dev-notes/34-2018-04-03-april-11-update-notice/">Dev Note #34</a>. To see the updated ingredients, head to the <a href="/updates/craftable-equipment/">Craftable Equipment page</a>.</p>
+  <h2>Additional Equipment</h2>
 
-  <h4>Bacsojin Doll Hat [1]</h4>
+  <p>Shortly after Louyang was released, additional equipment both in Louyang and in other areas were added.</p>
 
-  <ul class="list-disc pl-8 mb-6">
-    <li>500 Fabric (투명한 천조각)</li>
-    <li>30 Mithril Ore (미스릴 원석)</li>
-    <li>50 White Snake's Tear (하얀 뱀의 눈물)</li>
-    <li>5 Violet Dyestuffs (보라색 염료)</li>
-    <li>5 White Dyestuffs (하얀색 염료)</li>
-    <li>300 Earth Dragon Stone (지룡석)</li>
-    <li>※ Mithril ore can not be replaced with Gel Stars.</li>
+  <table class="mt-6 mb-6">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Dropped By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/18176/1" target="_blank" rel="noopener noreferrer">Thunder Bow [1] (천뢰궁 [1])</a>
+        </td>
+        <td class="text-left">
+          A bow that exudes strong power.<br/>ASPD +10%<br/>LUK +5.<br/>If +7 or higher, CRIT +7<br/>If +9 or higher, increases [Blitz Beat] damage by 20%, ASPD +1.<br/>Class: Bow<br/>Attack: 120<br/>Weight: 90<br/>Required Level: 60<br/>Can Wear: Archer series, Rogue series 
+        </td>
+        <td>Mao Guai</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/22194/1" target="_blank" rel="noopener noreferrer">Loli Ruri's Shoes [1] (로리루리의 구두 [1])</a>
+        </td>
+        <td class="text-left">
+          Shoes that Loli Ruri cares for.<br/>FLEE +15<br/>CRIT +3.<br/>If +7 or higher, HIT +15<br/>If +9 or higher, +7% ASPD.<br/>Class: Shoes<br/>Defense: 10<br/>Weight: 50<br/>Required Level: 60<br/>Can Wear: All Jobs 
+        </td>
+        <td>Loli Ruri</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/28949/1" target="_blank" rel="noopener noreferrer">Jewel Shield [1] (쥬얼 쉴드 [1])</a>
+        </td>
+        <td class="text-left">
+          A shield with jewels made from the hard shell of an animal.<br/>MaxHP +200<br/>If +7 or higher, ASPD +1.<br/>If +9 or higher, increases [Shield Boomerang] damage by 30%.<br/>Class: Shield<br/>Defense: 180<br/>Weight: 160<br/>Required Level: 60<br/>Can Wear: Swordsman series, Merchant series, Thief series
+        </td>
+        <td>Assaulter</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/28599/1" target="_blank" rel="noopener noreferrer">White Serpent Ring [1] (하얀 뱀의 반지 [1])</a>
+        </td>
+        <td class="text-left">
+          A ring in the shape of a white serpent that was cherished by Green Maiden.<br/>Can be refined.<br/>CRIT +1<br/>AGI +1<br/>If +7 or higher, additional AGI +1.<br/>If +9 or higher, additional CRIT +1, critical damage +1%.<br/>Class: Accessory<br/>Defense: 1<br/>Weight: 10<br/>Required Level: 60<br/>Can Wear: All Jobs
+        </td>
+        <td>Green Maiden</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/32200/1" target="_blank" rel="noopener noreferrer">Wizard's Gloves [1] (어느 마법사의 장갑 [1])</a>
+        </td>
+        <td class="text-left">
+          Wizard's gloves with traces of someone's use.<br/>Can be refined.<br/>Variable casting -2%<br/>MATK +2<br/>If +7 or higher, additional MATK +2.<br/>If +9 or higher, additional variable casting -1%, fire property magic damage +1%.<br/>Class: Accessory<br/>Defense: 1<br/>Weight: 10<br/>Required Level: 60<br/>Can Wear: All Jobs
+        </td>
+        <td>Sting</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/19376/" target="_blank" rel="noopener noreferrer">Frozen Rose (얼어붙은 장미)</a>
+        </td>
+        <td class="text-left">
+          Roses frozen cold. If you bite down carelessly, you may hurt your mouth.<br/>CRIT +1.<br/>Water property magic damage +1%<br/>Class: Helm<br/>Defense: 0<br/>Position: Bottom<br/>Weight: 1<br/>Required Level: 60<br/>Can Wear: All Jobs
+        </td>
+        <td>Freezer</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/32201/1" target="_blank" rel="noopener noreferrer">Dullahan's Gloves [1] (듀라한의 장갑 [1])</a>
+        </td>
+        <td class="text-left">
+          A glove from Dullahan's hand.<br/>Can be refined.<br/>HIT +1<br/>DEX +1<br/>If +7 or higher, additional DEX +1.<br/>If +9 or higher, additional HIT +1, ATK +2%.<br/>Class: Accessory<br/>Defense: 0<br/>Weight: 10<br/>Required Level: 60<br/>Can Wear: All Jobs
+        </td>
+        <td>Dullahan</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/26148/d-1" target="_blank" rel="noopener noreferrer">Owl Duke Cane [1] (아울.D.스틱 [1])</a>
+        </td>
+        <td class="text-left">
+          A cane that Owl Duke sometimes uses instead of an umbrella.<br/>Indestructible.<br/>MATK +140<br/>Variable casting -10%<br/>If +7 or higher, heal recovery +12%.<br/>If +9 or higher, +20% Magnus Exorcismus damage.<br/>Class: One-handed Staff<br/>Attack: 60<br/>Weight: 80<br/>Required Level: 60<br/>Can Wear: Acolyte series
+        </td>
+        <td>Owl Duke</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://divine-pride.net/database/item/26211/1" target="_blank" rel="noopener noreferrer">Barbed Wire [1] (가시 철사 [1])</a>
+        </td>
+        <td class="text-left">
+          A whip made of wire. It has thorns, so be careful when swinging it.<br/>[Throw Arrow] damage +5%<br/>If +7 or higher, +5% additional [Throw Arrow] damage.<br/>If +9 or higher, +10% additional [Throw Arrow] damage.<br/>Class: Whip<br/>Attack: 120<br/>Weight: 70<br/>Required Level: 60<br/>Can Wear: Dancer series
+        </td>
+        <td>Disguise</td>
+      </tr>
+      <tr>
+        <td>
+          Erhu of Earnest [1]
+        </td>
+        <td class="text-left">
+          Erhu filled with desperate longing for someone.<br/>[Musical Strike] damage +5%<br/>If +7 or higher, +5% additional [Musical Strike] damage.<br/>If +9 or higher, +10% additional [Musical Strike] damage.<br/>Class: Whip<br/>Attack: 120<br/>Weight: 70<br/>Required Level: 60<br/>Can Wear: Bard series
+        </td>
+        <td>Yao Jun (Hyegun)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Weapons and shoes will have random options.</p>
+
+  <p>※ Some items drop with a very low probability.</p>
+
+  <h2>Louyang Monsters</h2>
+
+  <p class="font-bold text-purple-600 my-4 text-sm">These monsters changed over time in the following ways:</p>
+
+  <ul class="font-bold text-purple-600 text-sm mb-6">
+    <li>
+      <u>2018.09.23 Page Update</u><br/>
+      &rarr; Mao Guai: Level decreased from 119 to 109. HP decreased from 60,115 to 48,092.<br/>
+      &rarr; Green Maiden: Level increased from 112 to 118. HP decreased from 41,540 to 33,232.<br/>
+      &rarr; Zhu Po Long: Level decreased from 112 to 102.<br/>
+      &rarr; Elusive Zhu Po Long: Level decreased from 112 to 102. HP increased from 56,070 to 70,294.<br/>
+      &rarr; Yao Jun: Level decreased from 117 to 107. HP decreased from 57,717 to 46,173.<br/>
+      &rarr; Yao Jun Ringleader: Level decreased from 117 to 107.<br/>
+      &rarr; Jin Guai: Level decreased from 110 to 100.<br/>
+      &rarr; Elusive Jin Guai: Level decreased from 110 to 100. HP decreased from 99,850 to 63,904.<br/>
+    </li>
   </ul>
 
-  <h4>Green Maiden's Bao Bao [1]</h4>
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="mi_gao.gif",
+      name="Mi Gao (식양)",
+      level="107",
+      hp="14,697",
+      defMdef="224/47",
+      class="Normal",
+      family="Formless",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="1937/1759"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="mi_gao.gif",
+      name="Elusive Mi Gao (떠도는 식양)",
+      level="107",
+      hp="122,475",
+      defMdef="224/47",
+      class="Normal",
+      family="Formless",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="9685/8795"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="mao_guai.gif",
+      name="Mao Guai (묘괴)",
+      level="109",
+      hp="48,092",
+      defMdef="180/67",
+      class="Normal",
+      family="Brute",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="6984/6516"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="green_maiden.gif",
+      name="Green Maiden (청이)",
+      level="118",
+      hp="33,232",
+      defMdef="138/18",
+      class="Normal",
+      family="Demi-human",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="5820/5521"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="zhu_po_long.gif",
+      name="Zhu Po Long (저파룡)",
+      level="102",
+      hp="18,693",
+      defMdef="166/43",
+      class="Normal",
+      family="Dragon",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="2180/2084"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="zhu_po_long.gif",
+      name="Elusive Zhu Po Long (저파룡)",
+      level="102",
+      hp="70,294",
+      defMdef="166/43",
+      class="Normal",
+      family="Dragon",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="10900/10420"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="yao_jun.gif",
+      name="Yao Jun (혜군)",
+      level="107",
+      hp="46,173",
+      defMdef="168/52",
+      class="Normal",
+      family="Undead",
+      property="Undead LV2",
+      size="Medium",
+      expJexp="6595/5330"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="yao_jun.gif",
+      name="Yao Jun Ringleader (두목 혜군)",
+      level="107",
+      hp="173,151",
+      defMdef="168/52",
+      class="Normal",
+      family="Undead",
+      property="Undead LV2",
+      size="Medium",
+      expJexp="32975/31977"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="jing_guai.gif",
+      name="Jing Guai (이매망량)",
+      level="100",
+      hp="11,982",
+      defMdef="220/44",
+      class="Normal",
+      family="Demon",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="6595/5330"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="jing_guai.gif",
+      name="Elusive Jing Guai (이매망량)",
+      level="100",
+      hp="63,904",
+      defMdef="220/44",
+      class="Normal",
+      family="Demon",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="9540/9110"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="bacsojin.gif",
+      name="Bacsojin (백소진)",
+      level="127",
+      hp="2,882,000",
+      defMdef="210/178",
+      class="Boss",
+      family="Demi-human",
+      property="Wind LV3",
+      size="Large",
+      expJexp="1,603,584/1,085,760"
+    %}
+  </div>
 
-  <ul class="list-disc pl-8 mb-6">
-    <li>1 Bao Bao (머리포자기)</li>
-    <li>20 Mithril Ore (미스릴 원석)</li>
-    <li>500 Blue Scale (파랗게 빛나는 비늘)</li>
-    <li>3 Scarlet Dyestuffs (보라색 염료)</li>
-    <li>10 White Dyestuffs (하얀색 염료)</li>
-    <li>100 Earth Dragon Stone (지룡석)</li>
-    <li>50 Iris (창포)</li>
-    <li>※ Mithril ore can not be replaced with Gel Stars.</li>
-  </ul>
+  <div class="mb-6 text-sm">
+    <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">kRO Zero Changelogs</h2>
+    <p class="border-r border-l p-2 mb-0">The information for this piece of content changed over time on kRO Zero. This section links to the different versions of the original source article on the kRO Zero website.</p>
+    <ul class="border-r border-l border-b rounded-b-md pt-1 pb-3 pl-8 list-disc">
+      <li>2018-03-23 - Original</li>
+      <li><a href="https://web.archive.org/web/20180520222703/http://roz.gnjoy.com:80/news/update/View.asp?seq=18&curpage=1" target="_blank" rel="noopener noreferrer">2018-04-11 - Updated</a></li>
+      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=18&curpage=4">2018-09-23 - Updated</a></li>
+    </ul>
+  </div>
 
-  <h2>Job Balance Adjustment</h2>
-
-  <p>After this adjustment, the balance adjustment updates will continue, and we will guide you through the dev notes before the update.</p>
-
-  <h3>Knight (나이트)</h3>
-
-  <p>When equipping a Two-Handed sword, the base ASPD is increased.</p>
-
-  <figure class="mb-4">
-    <img class="mt-6 mb-2" src="/images/dev-notes/knight_base_aspd_increase.png" alt="Knight base ASPD increase screenshot" />
-  </figure>
-
-  <h3>Rogue (로그)</h3>
-
-  <p>When equipping a Shield, the base ASPD is increased.</p>
-
-  <figure class="mb-4">
-    <img class="mt-6 mb-2" src="/images/dev-notes/rogue_base_aspd_increase.png" alt="Rogue base ASPD increase screenshot" />
-  </figure>
-
-  <h3>Sage</h3>
-
-  <p>Land Protector, Volcano, Deluge, & Violent Gale casting will change.</p>
-
-  <ul class="list-disc pl-8 mb-6">
-    <li><b>Fixed Cast</b>: 1 second &rarr; 0.5 seconds</li>
-    <li><b>Variable Cast</b>: 4 seconds &rarr; 3 seconds</li>
-  </ul>
-
-  <h3>Hunter</h3>
-
-  <p>Land Mine, Blast Mine, Claymore Trap casting will change.</p>
-
-  <ul class="list-disc pl-8 mb-6">
-    <li><b>Fixed Cast</b>: 0.5 seconds &rarr; 0 seconds</li>
-    <li><b>Variable Cast</b>: 0 seconds &rarr; 0.5 seconds</li>
-  </ul>
-
-  <p>A trap box is added.</p>
-
-  <figure class="mb-4">
-    <img class="mt-6 mb-2" src="/images/dev-notes/hunter_trap_box.png" alt="Hunter trap box item description" />
-  </figure>
-
-  <p>Those were the updates for March 14, 2018.</p>
-
-  <p>The possible manufacturing weapons for the Blacksmith have been updated to the following list: Dagger, One-Handed Sword, Two-Handed Sword, Knuckle, One-Handed Axe, Two-Handed Axe, Mace, One-Handed Spear, and Two-Handed Spear.</p>
-
-  <p>Of course, with the addition of this weapon list, the types and numbers of random options that are awarded according to the rankings will also be revised.</p>
-
-  <p>For further information, please refer to the notice on the homepage.</p>
-
-  <p>Thank you.</p>
-
-  <h2>Source</h2>
+  <h2>Source(s)</h2>
 
   <ul class="list-disc pl-8">
     <li>
-      <a href="http://roz.gnjoy.com/news/devnote/View.asp?category=3&seq=742&curpage=2" target="_blank" rel="noopener noreferrer">2018년 3월 14일 업데이트 내용 공개</a>
+      <a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=18&curpage=4" target="_blank" rel="noopener noreferrer">[지역] 고도 용지성</a> (post - kRO website)
     </li>
   </ul>
 
