@@ -1,10 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ renderData.title or title or metadata.title }} | Criatura Academy</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <meta name="description" content="{{ renderData.description or description or metadata.description }}" />
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }} | Criatura Academy" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
+    <meta property="og:image" content="{{ renderData.image or image or metadata.image or '/images/meta/criatura-academy-welcome.png' }}" />
+    <link rel="canonical" href="{{ page.url }}" />
     <link rel="stylesheet" href="/css/index.css?v={% version %}">
   </head>
   <body class="p-2">
@@ -21,10 +26,15 @@
           <li><a href="/timeline">Timeline</a></li>
         </ul>
       </nav>
-      <div class="bg-gray-200 max-w-md mx-auto mt-6" style="height: 2px"></div>
+      <div class="mx-auto max-w-3xl mt-8 px-2">
+        <input type="search" class="rounded-md border-2 p-2 block" placeholder="Type to search" />
+      </div>
+      <!--<div class="bg-gray-200 max-w-md mx-auto mt-6" style="height: 2px"></div>-->
     </header>
     <main class="mx-auto max-w-3xl mb-10">
-      {{ content | safe }}
+      <div class="mx-2">
+        {{ content | safe }}
+      </div>
     </main>
     <footer class="text-sm text-center mx-auto max-w-3xl">
       <div class="signup-form border-2 py-6 px-6 mb-6 mx-2 rounded-md">
@@ -51,6 +61,19 @@
         Most icons and sprites from <a href="https://divine-pride.net/" target="_blank" rel="noreferrer nofollower">Divine Pride</a>. Ragnarok Online is &copy; <a href="http://www.gravity.co.kr/" target="_blank" rel="noreferrer nofollower">Gravity Co., Ltd.</a>
       </p>
     </footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: '0PAQZL6OOF',
+        apiKey: '19c35e2c25702d6363c6992355efb2a2',
+        siteId: 'd8b8c14c-c145-4510-a79b-8552bfc277ce',
+        branch: 'master',
+        autocomplete: {
+          inputSelector: 'input[type=search]',
+        },
+      });
+    </script>
     <script>
       function handleFormSubmit(event) {
         event.preventDefault();

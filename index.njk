@@ -2,57 +2,56 @@
 layout: /layouts/base.njk
 title: Home
 description: A fansite for the korean version of Ragnarok Zero
+image: '/images/meta/criatura-academy-home.png'
 ---
 
-<div class="mx-2">
-  <div class="mb-6">
-    <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Memorial Dungeons</h2>
-    <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
-      <li><a href="/memorial-dungeons/poring-village/">Poring Village</a></li>
-      <li><a href="/memorial-dungeons/orcs-memory/">Orc's Memory</a></li>
-      <li><a href="/memorial-dungeons/prontera-culvert/">Prontera Culvert</a></li>
-      <li><a href="/memorial-dungeons/ant-hell-1f/">Ant Hell 1F</a></li>
-      <li><a href="/memorial-dungeons/izlude-2f/">Izlude 2F</a></li>
-      <li><a href="/memorial-dungeons/sunken-ship/">Sunken Ship</a></li>
-      <li><a href="/memorial-dungeons/equipment/">Equipment</a></li>
-      <li><a href="/memorial-dungeons/equipment-crafting/">Equipment Crafting</a></li>
-      <li><a href="/memorial-dungeons/equipment-enchanting/">Equipment Enchanting</a></li>
-    </ul>
-  </div>
+<div class="mb-6">
+  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Memorial Dungeons</h2>
+  <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
+    <li><a href="/memorial-dungeons/poring-village/">Poring Village</a></li>
+    <li><a href="/memorial-dungeons/orcs-memory/">Orc's Memory</a></li>
+    <li><a href="/memorial-dungeons/prontera-culvert/">Prontera Culvert</a></li>
+    <li><a href="/memorial-dungeons/ant-hell-1f/">Ant Hell 1F</a></li>
+    <li><a href="/memorial-dungeons/izlude-2f/">Izlude 2F</a></li>
+    <li><a href="/memorial-dungeons/sunken-ship/">Sunken Ship</a></li>
+    <li><a href="/memorial-dungeons/equipment/">Equipment</a></li>
+    <li><a href="/memorial-dungeons/equipment-crafting/">Equipment Crafting</a></li>
+    <li><a href="/memorial-dungeons/equipment-enchanting/">Equipment Enchanting</a></li>
+  </ul>
+</div>
 
-  <div class="mb-6">
-    <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Updates</h2>
-    <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
-      <li><a href="/updates/clock-tower/">Clock Tower</a></li>
-      <li><a href="/updates/glastheim/">Glast Heim</a></li>
-      <li><a href="/updates/craftable-equipment/">Craftable Equipment</a></li>
-      <li><a href="/updates/louyang/">Louyang</a></li>
-      <li><a href="/updates/guild-dungeons/">Guild Dungeons</a></li>
-    </ul>
-  </div>
+<div class="mb-6">
+  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Updates</h2>
+  <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
+    <li><a href="/updates/clock-tower/">Clock Tower</a></li>
+    <li><a href="/updates/glastheim/">Glast Heim</a></li>
+    <li><a href="/updates/craftable-equipment/">Craftable Equipment</a></li>
+    <li><a href="/updates/louyang/">Louyang</a></li>
+    <li><a href="/updates/guild-dungeons/">Guild Dungeons</a></li>
+  </ul>
+</div>
 
-  <div class="mb-6">
-    <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Quests</h2>
-    <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
-      <li><a href="/quests/izlude/">Izlude</a></li>
-    </ul>
-  </div>
+<div class="mb-6">
+  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Quests</h2>
+  <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
+    <li><a href="/quests/izlude/">Izlude</a></li>
+  </ul>
+</div>
 
-  <div class="mb-6">
-    <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Dev Notes</h2>
-    <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
-      {% for note in collections.devNote | reverse %}
-        <li><a href="{{ note.url }}">{{ note.data.title }}</a> ({{ note.data.listDate }})</span></li>
-      {% endfor %}
-    </ul>
-  </div>
+<div class="mb-6">
+  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Dev Notes</h2>
+  <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
+    {% for note in collections.devNote | reverse %}
+      <li><a href="{{ note.url }}">{{ note.data.title }}</a> ({{ note.data.listDate }})</span></li>
+    {% endfor %}
+  </ul>
+</div>
 
-  <div class="mb-6">
-    <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">News</h2>
-    <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
-      {% for article in collections.news | reverse %}
-        <li><a href="{{ article.url }}">{{ article.data.title }}</a> ({{ article.data.listDate }})</span></li>
-      {% endfor %}
-    </ul>
-  </div>
+<div class="mb-6">
+  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">News</h2>
+  <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
+    {% for article in collections.news | reverse %}
+      <li><a href="{{ article.url }}">{{ article.data.title }}</a> ({{ article.data.listDate }})</span></li>
+    {% endfor %}
+  </ul>
 </div>
