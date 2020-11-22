@@ -8,8 +8,9 @@
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }} | Criatura Academy" />
     <meta property="og:url" content="{{ page.url }}" />
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
-    <meta property="og:image" content="{{ renderData.image or image or metadata.image or '/images/meta/criatura-academy-welcome.png' }}" />
+    <meta property="og:image" content="https://criatura-academy.com{{ renderData.image or image or metadata.image or '/images/meta/criatura-academy-welcome.png' }}" />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="{{ page.url }}" />
     <link rel="stylesheet" href="/css/index.css?v={% version %}">
   </head>
