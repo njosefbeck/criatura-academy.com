@@ -10,7 +10,10 @@ image: '/images/meta/criatura-academy-home.png'
 <input type="search" class="rounded-md border-2 p-2 mt-8 mb-8 block" placeholder="Type to search site" />
 
 <div class="mb-6">
-  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Memorial Dungeons</h2>
+  <h2 class="bg-gradient py-2 px-2 uppercase font-bold text-sm rounded-t-md">
+    Memorial Dungeons
+    <span class="block font-normal normal-case py-1">Memorial Dungeons are dungeon instances that a party can do daily. Though each instance is unique they ultimately involve killing some type of Boss monster with a treasure chest being rewarded on completion.</span>
+  </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     <li><a href="/memorial-dungeons/poring-village/">Poring Village</a></li>
     <li><a href="/memorial-dungeons/orcs-memory/">Orc's Memory</a></li>
@@ -25,7 +28,10 @@ image: '/images/meta/criatura-academy-home.png'
 </div>
 
 <div class="mb-6">
-  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Updates</h2>
+  <h2 class="bg-gradient py-2 px-2 uppercase font-bold text-sm rounded-t-md">
+    Updates
+    <span class="block font-normal normal-case py-1">These are the various updates posted about on the kRO Zero website.</span>
+  </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     <li><a href="/updates/clock-tower/">Clock Tower</a></li>
     <li><a href="/updates/glastheim/">Glast Heim</a></li>
@@ -36,14 +42,20 @@ image: '/images/meta/criatura-academy-home.png'
 </div>
 
 <div class="mb-6">
-  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Quests</h2>
+  <h2 class="bg-gradient py-2 px-2 uppercase font-bold text-sm rounded-t-md">
+    Quests
+    <span class="block font-normal normal-case py-1">Learn more about various quests one can find on kRO Zero.</span>
+  </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     <li><a href="/quests/izlude/">Izlude</a></li>
   </ul>
 </div>
 
 <div class="mb-6">
-  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">Dev Notes</h2>
+  <h2 class="bg-gradient py-2 px-2 uppercase font-bold text-sm rounded-t-md">
+    Dev Notes
+    <span class="block font-normal normal-case py-1">Read through translations of the dev notes as posted on the official kRO Zero website.</span>
+  </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     {% for note in collections.devNote | reverse %}
       <li><a href="{{ note.url }}">{{ note.data.title }}</a> ({{ note.data.listDate }})</span></li>
@@ -52,7 +64,10 @@ image: '/images/meta/criatura-academy-home.png'
 </div>
 
 <div class="mb-6">
-  <h2 class="bg-gradient py-1 px-2 uppercase font-bold text-sm rounded-t-md">News</h2>
+  <h2 class="bg-gradient py-2 px-2 uppercase font-bold text-sm rounded-t-md">
+    News
+    <span class="block font-normal normal-case py-1">Read through translations of the most of the maintenance notes from the kRO Zero website. I've chosen to translate only the maintenance notes that might be interesting to know about.</span>
+  </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     {% for article in collections.news | reverse %}
       <li><a href="{{ article.url }}">{{ article.data.title }}</a> ({{ article.data.listDate }})</span></li>
