@@ -4,6 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ renderData.title or title or metadata.title }} | Criatura Academy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#a163eb">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <meta name="description" content="{{ renderData.description or description or metadata.description }}" />
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }} | Criatura Academy" />
     <meta property="og:url" content="{{ page.url }}" />
@@ -60,17 +69,16 @@
         Most icons and sprites from <a href="https://divine-pride.net/" target="_blank" rel="noreferrer nofollower">Divine Pride</a>. Ragnarok Online is &copy; <a href="http://www.gravity.co.kr/" target="_blank" rel="noreferrer nofollower">Gravity Co., Ltd.</a>
       </p>
     </footer>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
     <script type="text/javascript">
       algoliasearchNetlify({
         appId: '0PAQZL6OOF',
         apiKey: '19c35e2c25702d6363c6992355efb2a2',
         siteId: 'd8b8c14c-c145-4510-a79b-8552bfc277ce',
         branch: 'master',
-        autocomplete: {
-          inputSelector: 'input[type=search]',
-        },
+        selector: 'div#search',
+        placeholder: 'Type to search site...'
       });
     </script>
     <script>
