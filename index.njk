@@ -5,7 +5,7 @@ description: A fansite for the korean version of Ragnarok Zero
 image: '/images/meta/criatura-academy-home.png'
 ---
 
-<p class="text-center text-lg">Criatura Academy is your definitive source for information about the official korean Ragnarok Online Zero server. I strive to provide accurate translations of the content found on the official website, as well as adding information I learn of and experience ingame. If you find any errors, or want to get in touch feel free send me an email at nathan@criatura-academy.com.</p>
+<p class="text-center text-lg">Criatura Academy is your definitive source for information about the official korean Ragnarok Online Zero servers. I strive to provide accurate translations of the content found on the official website, as well as adding information I learn of and experience ingame. If you find any errors, or want to get in touch feel free send me an email at nathan@criatura-academy.com.</p>
 
 <div id="search" class="mt-8 mb-8"></div>
 
@@ -58,8 +58,11 @@ image: '/images/meta/criatura-academy-home.png'
   </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     {% for note in collections.devNote | reverse %}
+      {% if loop.index0 < 10 %}
       <li><a href="{{ note.url }}">{{ note.data.title }}</a> ({{ note.data.listDate }})</span></li>
+      {% endif %}
     {% endfor %}
+    <li><a href="/dev-notes">See all...</a></li>
   </ul>
 </div>
 
@@ -70,7 +73,10 @@ image: '/images/meta/criatura-academy-home.png'
   </h2>
   <ul class="border-r border-l border-b rounded-b-md py-2 pl-8 list-disc">
     {% for article in collections.news | reverse %}
+      {% if loop.index0 < 10 %}
       <li><a href="{{ article.url }}">{{ article.data.title }}</a> ({{ article.data.listDate }})</span></li>
+      {% endif %}
     {% endfor %}
+    <li><a href="/news">See all...</a></li>
   </ul>
 </div>

@@ -1,0 +1,19 @@
+---
+layout: /layouts/base.njk
+title: kRO Zero News Translations
+description: A list of all of the kRO Zero maintenance notes that we've translated into English.
+---
+
+<section>
+
+  <h1 class="text-2xl mb-4">kRO Zero News Translations</h1>
+
+  <p>Read through translations of most of the maintenance notes from the kRO Zero website. I've chosen to translate only the maintenance notes that might be interesting to know about.</p>
+
+  <ul class="list-disc pl-8">
+    {% for article in collections.news | reverse %}
+      <li><a href="{{ article.url }}">{{ article.data.title }}</a> ({{ article.data.listDate }})</span></li>
+    {% endfor %}
+  </ul>
+
+</section>
