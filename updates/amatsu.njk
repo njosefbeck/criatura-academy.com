@@ -1,0 +1,742 @@
+---
+layout: /layouts/base.njk
+title: Amatsu
+description: Read about the implementation of Amatsu on korean Ragnarok Online Zero. Discover the updates made to this classic regional area of Ragnarok Online.
+tags: update
+image: '/images/meta/criatura-academy-meta-amatsu.png'
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Amatsu</h1>
+
+  <p>Amatsu is inspired by the country of Japan. It is one of a number of localized regions added to Ragnarok Online. Amatsu boasts a variety of quests, a field and dungeon filled with challenging monsters, and regional Yin Yang weapons. The lore of Amatsu, also referred to as "The Land of Heaven", goes a little like this: "In the long ago past, a stranger traveling from Alberta was caught in a horrible storm, and washed up on the foreign village of Amatsu. This was how Amatsu was discovered. Later, the King of Rune Midgard and the Lord of Amatsu established a booming full-scale trade relationship, causing countless adventurers and merchants to flock to Amatsu in anticipation of unfamiliar landscapes and new adventures."</p>
+  
+  <p>Amatsu was also when the Ninja class was added to Ragnarok Zero, as well as a new consumable called Syrups. Read on to learn more about Amatsu in Ragnarok Zero!</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/amatsu_scene.png" alt="Amatsu scene" />
+    <figcaption>
+      (View of Amatsu)
+    </figcaption>
+  </figure>
+
+  <p>If you pay 10,000 zeny to the "Amatsu Ambassador" (“아마쯔 홍보 사신”) (alberta 246 34), you can go to Amatsu. All quests in Amatsu only work for characters with a base level of 70 or higher.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/amatsu_ambassador.png" alt="Ambassador of Amatsu screenshot" />
+    <figcaption>
+      (The Amatsu Ambassador at the southern end of the port city of Alberta)
+    </figcaption>
+  </figure>
+
+  <h2>Amatsu Quests</h2>
+
+  <p>Amatsu has a variety of one-time and daily quests you can do. Some of these quests will be familiar to long-time players of RO, while others are new. Also the old quests have been mostly reworked!</p>
+
+  <h3 class="underline">Secrets of Touko Castle (토우코 성의 비밀)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/amatsu_secrets_of_touko.jpg" alt="Munji Soldier screenshot" />
+    <figcaption>
+      (Let's help the Lord of Amatsu!)
+    </figcaption>
+  </figure>
+
+  <p>NPC: ▷ Munji Soldier (amatsu 164 174)</p>
+
+  <p>Mrs. Chiyo, the mother of Lord Amatsu, has come down with a strange illness. The Lord wants to use the wisdom of the "Outlanders" to cure Mrs. Chiyo's illness.</p>
+
+  <h3>Rewards</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Base & Job EXP</li>
+    <li>Ability to enter the Amatsu Dungeon</li>
+    <li>7 different daily quests provided by the following NPCs: Mrs. Chiyo (ama_in01 22, 111), Access Control Officer (ama_in02 116, 178), and Takehue (ama_in01 180, 173).</li>
+  </ul>
+
+  <h3 class="underline">Momotaro Experience Exhibition (모모타로 체험전)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/amatsu_momotaro.jpg" alt="Momonta NPC screenshot" />
+    <figcaption>
+      (Let's experience the story with Momonta!)
+    </figcaption>
+  </figure>
+
+  <p>NPC: ▷ Momonta (amatsu 223 236)</p>
+
+  <p>The classical, popular book, "Momotaro" has sold one million copies! Experience the story with this quest.</p>
+
+  <h3>Rewards</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Base EXP</li>
+    <li>First time: First Class Meal (+10 stat food)</li>
+  </ul>
+
+  <h2>Amatsu Souvenirs - Yin Yang Weapons</h2>
+
+  <p>Outside of the quests, the other draw for players to Amatsu have to do with the Yin Yang Weapons. This section is all about how to obtain these weapons, a description of each weapon, and the random options they can be given.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/spirit_stone.png" alt="Spirit Stone item description" />
+    <figcaption>
+      (Spirit Stone obtained from Amatsu monsters)
+    </figcaption>
+  </figure>
+
+  <h3>Monsters That Drop Spirit Stones</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Karakasa</li>
+    <li>Tengu</li>
+    <li>Kapha</li>
+    <li>Miyabi Doll</li>
+    <li>Shinobi</li>
+    <li>Firelock Soldier</li>
+    <li>Poisonous Toad</li>
+  </ul>
+
+  <p>You can exchange 20 Spirit Stone for 1 random Yin Yang Weapon from the NPC named Reisei. For 10 Spirit Stone, you can purchase a {% item id="23741", name="Yin Yang Magical Scroll", imageFolder="items" %} to give magic options to your Yin Yang Weapon, or {% item id="23740", name="Yin Yang Physical Scroll", imageFolder="items" %} to give physical options to your Yin Yang Weapon.</p>
+
+  <h3>Yin Yang Weapon Random Options</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>You can use both the Yin Yang Physical Scroll and the Yin Yang Magical Scroll for all Yin Yang weapons.</li>
+    <li>When using the Yin Yang Physical Scroll or Yin Yang Magical Scroll, options are granted from a minimum of 1 to a maximum of 2.</li>
+    <li>The Yin Yang Weapon's refine level and slotted cards will not be reset when using the random options scrolls.</li>
+    <li>You can re-grant options by using the Yin Yang Physical Scroll or Yin Yang Magical Scroll on Yin Yang Weapons that already have random options.</li>
+  </ul>
+
+  <p>The options that each scroll can grant are the same as those for the Louyang weapons. <a href="/updates/louyang/#random_options">Click here to visit that section of the Louyang page.</a>
+
+  <h3>Weapons</h3>
+
+  <p>Below are descriptions of all of the Yin Yang weapons.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="13489",
+      folder="amatsu",
+      name="Yin Yang Sword [2]",
+      category="1Handed Sword",
+      craftedFrom="20 Spirit Stone",
+      canWear="Swordsman, Merchant",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A sword imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="18173",
+      folder="amatsu",
+      name="Yin Yang Bow [2]",
+      category="Bow",
+      craftedFrom="20 Spirit Stone",
+      canWear="Archer, Rogue",
+      requiredLevel="70",
+      level="3",
+      weight="100",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A bow imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28749",
+      folder="amatsu",
+      name="Yin Yang Dagger [2]",
+      category="Dagger",
+      craftedFrom="20 Spirit Stone",
+      canWear="Swordsman, Thief, Merchant",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A dagger imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="21043",
+      folder="amatsu",
+      name="Yin Yang Broadsword [2]",
+      category="2Handed Sword",
+      craftedFrom="20 Spirit Stone",
+      canWear="Swordsman",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="180"
+    %}
+      <ul class="border-t p-2">
+        <li>A sword imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28132",
+      folder="amatsu",
+      name="Yin Yang Axe [2]",
+      category="2Handed Axe",
+      craftedFrom="20 Spirit Stone",
+      canWear="Merchant",
+      requiredLevel="70",
+      level="3",
+      weight="140",
+      atk="180"
+    %}
+      <ul class="border-t p-2">
+        <li>An axe imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28035",
+      folder="amatsu",
+      name="Yin Yang Katar [2]",
+      category="Katar",
+      craftedFrom="20 Spirit Stone",
+      canWear="Merchant",
+      requiredLevel="70",
+      level="3",
+      weight="120",
+      atk="150"
+    %}
+      <ul class="border-t p-2">
+        <li>A katar imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28625",
+      folder="amatsu",
+      name="Yin Yang Book [2]",
+      category="Book",
+      craftedFrom="20 Spirit Stone",
+      canWear="Sage, Priest",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A book imbued with the power of yin and yang.</li>
+        <li>+5% ATK/MATK against Demon monsters</li>
+        <li>+5% ATK/MATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK/MATK against Demon monsters, +5% ATK/MATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK/MATK against Demon monsters, +10% ATK/MATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26145",
+      folder="amatsu",
+      name="Yin Yang Staff [2]",
+      category="1Handed Staff",
+      craftedFrom="20 Spirit Stone",
+      canWear="Novice, Mage, Acolyte",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="40"
+    %}
+      <ul class="border-t p-2">
+        <li>A staff imbued with the power of yin and yang.</li>
+        <li>MATK +130</li>
+        <li>Indestructible</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26018",
+      folder="amatsu",
+      name="Yin Yang Spear [2]",
+      category="2Handed Spear",
+      craftedFrom="20 Spirit Stone",
+      canWear="Swordsman",
+      requiredLevel="70",
+      level="3",
+      weight="140",
+      atk="180"
+    %}
+      <ul class="border-t p-2">
+        <li>A spear imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="16084",
+      folder="amatsu",
+      name="Yin Yang Mace [2]",
+      category="Mace",
+      craftedFrom="20 Spirit Stone",
+      canWear="Novice, Swordsman, Acolyte, Merchant",
+      requiredLevel="70",
+      level="3",
+      weight="120",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A mace imbued with the power of yin and yang.</li>
+        <li>Indestructible</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="1858",
+      folder="amatsu",
+      name="Yin Yang Knuckles [2]",
+      category="Knuckles",
+      craftedFrom="20 Spirit Stone",
+      canWear="Monk, Priest",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A knuckles imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26209",
+      folder="amatsu",
+      name="Yin Yang Whip [2]",
+      category="Whip",
+      craftedFrom="20 Spirit Stone",
+      canWear="Dancer",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A whip imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32102",
+      folder="amatsu",
+      name="Yin Yang Guitar [2]",
+      category="Instrument",
+      craftedFrom="20 Spirit Stone",
+      canWear="Bard",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A guitar imbued with the power of yin and yang.</li>
+        <li>+5% ATK against Demon monsters</li>
+        <li>+5% ATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK against Demon monsters, +5% ATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK against Demon monsters, +10% ATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28750",
+      folder="amatsu",
+      name="Yin Yang Asura [2]",
+      category="Dagger",
+      craftedFrom="20 Spirit Stone",
+      canWear="Ninja",
+      requiredLevel="70",
+      level="3",
+      weight="80",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A ninja dagger imbued with the power of yin and yang.</li>
+        <li>MATK +70</li>
+        <li>+5% ATK/MATK against Demon monsters</li>
+        <li>+5% ATK/MATK against Fire enemies</li>
+        <li>If +7 or higher, additional +5% ATK/MATK against Demon monsters, +5% ATK/MATK against Fire enemies</li>
+        <li>If +9 or higher, additional +10% ATK/MATK against Demon monsters, +10% ATK/MATK against Fire enemies</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2>Amatsu Craftable Headgear</h2>
+
+  <p>Besides the above Amatsu weapons, there are also two craftable headgear in Amatsu. Talk to "A Foreign Minstrel" (이국의 음유시인) at ama_in01 171, 17 to make the Dragon General Helm [1] (어느 장수의 투구[1]). Talk to "Object Head" (오브젝트 헤드) at ama_in01 180, 75 to make the Charcoal Stove (뜨거운 화로[0).</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/amatsu_craftable_headgear_npcs.png" alt="Amatsu Craftable Headgear NPCs screenshot" />
+    <figcaption>
+      (A Foreign Minstrel (ama_in01 171, 17), Object Head (ama_in01 180, 75))
+    </figcaption>
+  </figure>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="19362",
+      folder="crafted",
+      name="Dragon General Helm [1]",
+      category="Upper Helm",
+      craftedFrom="Various ingredients",
+      canWear="All Jobs",
+      requiredLevel="70",
+      weight="90",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>A helm of longevity.</li>
+        <li>ATK +30.</li>
+        <li>ATK +10 per 2 refine.</li>
+        <li>If +7 or higher, +7% ASPD.</li>
+        <li>If +9 or higher, ATK +10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19363",
+      folder="crafted",
+      name="Charcoal Stove",
+      category="Upper Helm",
+      craftedFrom="Various ingredients",
+      canWear="All Jobs",
+      requiredLevel="70",
+      weight="60",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>A helm that looks like a cooking brazier. Because it is for decoration, you cannot actually cook on it, but since it looks so realistic it's often confused with the real thing.</li>
+        <li>Heal amount increased by 10%.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <p>The ingredients needed to make the above headgears can be found on the <a href="/updates/craftable-equipment/">Craftable Equipment page</a>.</p>
+
+  <h2>Additional Equipment</h2>
+
+  <p>Beyond the Yin Yang weapons, additional equipment was added with Amatsu as well.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="28628",
+      folder="amatsu",
+      name="Forbidden Grimoire [1]",
+      category="Book",
+      droppedBy="Miyabi Doll",
+      canWear="Sage, Priest, Taekwon Master",
+      requiredLevel="60",
+      level="3",
+      weight="50",
+      atk="90"
+    %}
+      <ul class="border-t p-2">
+        <li>A forbidden book with magical powers.</li>
+        <li>Increases damage done by Fire Bolt, Colt Bolt and Lightning Bolt by 5%.</li>
+        <li>If +7 or higher, +5% additional damage done by Fire Bolt, Colt Bolt and Lightning Bolt.</li>
+        <li>If +9 or higher, +10% additional damage done by Fire Bolt, Colt Bolt and Lightning Bolt.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28754",
+      folder="amatsu",
+      name="Koikiri [1]",
+      category="Dagger",
+      droppedBy="Shinobi",
+      canWear="Ninja",
+      requiredLevel="60",
+      level="3",
+      weight="70",
+      atk="120"
+    %}
+      <ul class="border-t p-2">
+        <li>A dagger (wakizashi) surrounded by a thick fog.</li>
+        <li>+5% increase in [Shadow Slash] damage.</li>
+        <li>If +7 or higher, +5% additional [Shadow Slash] damage.</li>
+        <li>If +9 or higher, +10% additional [Shadow Slash] damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19388",
+      folder="amatsu",
+      name="Crow Tengu Mask",
+      category="Middle Helm",
+      droppedBy="Tengu",
+      canWear="All Jobs",
+      requiredLevel="60",
+      weight="3",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>A mask used by Tengu.</li>
+        <li>CRIT +3.</li>
+        <li>Critical damage +3%.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2>Amatsu Monsters</h2>
+
+  <p>The Amatsu field and dungeon are filled with monsters! The monster stats below reflect the most recent update to the Amatsu page on the kRO Zero website. Unfortunately, we haven't been able to locate the older versions, so we're not able to say how the monsters' stats changed over time. Read about the latest version of them below.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="karakasa.gif",
+      name="Karakasa (카라카사)",
+      level="100",
+      hp="12108",
+      defMdef="186/35",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV3",
+      size="Medium",
+      expJexp="1955/1799"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="karakasa.gif",
+      name="Swift Karakasa (빠른 카라카사)",
+      level="100",
+      hp="45405",
+      defMdef="186/35",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV3",
+      size="Medium",
+      expJexp="9776/8996"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="kapha.gif",
+      name="Kapha (캇파)",
+      level="102",
+      hp="14697",
+      defMdef="122/46",
+      class="Normal",
+      family="Fish",
+      property="Water LV1",
+      size="Medium",
+      expJexp="2169/2026"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="miyabi_doll.gif",
+      name="Miyabi Doll (미야비 인형)",
+      level="105",
+      hp="20332",
+      defMdef="114/23",
+      class="Normal",
+      family="Demon",
+      property="Shadow LV1",
+      size="Medium",
+      expJexp="2341/2192"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="miyabi_doll.gif",
+      name="Miyabi Doll Ringleader (두목 미야비 인형)",
+      level="105",
+      hp="76245",
+      defMdef="114/23",
+      class="Normal",
+      family="Demon",
+      property="Shadow LV1",
+      size="Medium",
+      expJexp="11707/10960"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="poisonous_toad.gif",
+      name="Poisonous Toad (독두꺼비)",
+      level="105",
+      hp="17846",
+      defMdef="160/50",
+      class="Normal",
+      family="Brute",
+      property="Poison LV2",
+      size="Medium",
+      expJexp="2104/1974"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="poisonous_toad.gif",
+      name="Swift Poisonous Toad (빠른 독두꺼비)",
+      level="105",
+      hp="53539",
+      defMdef="160/50",
+      class="Normal",
+      family="Brute",
+      property="Poison LV2",
+      size="Medium",
+      expJexp="10520/9870"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="firelock_soldier.gif",
+      name="Firelock Soldier (구식 조총병)",
+      level="107",
+      hp="41683",
+      defMdef="144/36",
+      class="Normal",
+      family="Undead",
+      property="Undead LV2",
+      size="Medium",
+      expJexp="6463/5231"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="tengu.gif",
+      name="Tengu (천구)",
+      level="110",
+      hp="49872",
+      defMdef="268/55",
+      class="Normal",
+      family="Demon",
+      property="Earth LV2",
+      size="Large",
+      expJexp="7080/6390"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="shinobi.gif",
+      name="Shinobi (시노비)",
+      level="108",
+      hp="47875",
+      defMdef="98/54",
+      class="Normal",
+      family="Demi-Human",
+      property="Fire LV3",
+      size="Medium",
+      expJexp="6848/6471"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="shinobi.gif",
+      name="Swift Shinobi (빠른 시노비)",
+      level="108",
+      hp="179531",
+      defMdef="98/54",
+      class="Normal",
+      family="Demi-Human",
+      property="Fire LV3",
+      size="Medium",
+      expJexp="34238/32357"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="mimic.gif",
+      name="Mimic (미믹)",
+      level="56",
+      hp="1707",
+      defMdef="63/15",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV3",
+      size="Medium",
+      expJexp="477/424"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="horong.gif",
+      name="Horong (호롱)",
+      level="66",
+      hp="1701",
+      defMdef="84/35",
+      class="Normal",
+      family="Formless",
+      property="Fire LV4",
+      size="Small",
+      expJexp="625/569"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="the_paper.gif",
+      name="The Paper (더 페이퍼)",
+      level="97",
+      hp="8939",
+      defMdef="32/39",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV3",
+      size="Medium",
+      expJexp="1330/1259"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="samurai_specter.gif",
+      name="Samurai Specter (원령무사)",
+      level="127",
+      hp="2,973,300",
+      defMdef="210/178",
+      class="Boss",
+      family="Demi-Human",
+      property="Shadow LV3",
+      size="Large",
+      expJexp="1804032/1309176"
+    %}
+  </div>
+
+  <div class="mb-6 text-sm">
+    <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">kRO Zero Changelogs</h2>
+    <p class="border-r border-l p-2 mb-0">The information for this piece of content changed over time on kRO Zero. When possible, this section links to the different versions of the original source article on the kRO Zero website.</p>
+    <ul class="border-r border-l border-b rounded-b-md pt-1 pb-3 pl-8 list-disc">
+      <li>2018-05-21 - Original</li>
+      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=26&curpage=3">2018-09-23 - Updated</a></li>
+    </ul>
+  </div>
+
+  <h2>Related Pages</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="/news/185-2018-05-21-may-23-maint/">News #185 - 2018.05.21</a>
+    </li>
+    <li>
+      <a href="/updates/craftable-equipment/">Craftable Equipment</a>
+    </li>
+  </ul>
+
+</article>
+
+</article>

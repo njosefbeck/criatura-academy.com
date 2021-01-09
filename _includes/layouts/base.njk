@@ -72,14 +72,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
     <script type="text/javascript">
-      algoliasearchNetlify({
-        appId: '0PAQZL6OOF',
-        apiKey: '19c35e2c25702d6363c6992355efb2a2',
-        siteId: 'd8b8c14c-c145-4510-a79b-8552bfc277ce',
-        branch: 'master',
-        selector: 'div#search',
-        placeholder: 'Type to search site...'
-      });
+      const searchElement = document.getElementById('search');
+      if (searchElement) {
+        algoliasearchNetlify({
+          appId: '0PAQZL6OOF',
+          apiKey: '19c35e2c25702d6363c6992355efb2a2',
+          siteId: 'd8b8c14c-c145-4510-a79b-8552bfc277ce',
+          branch: 'master',
+          selector: 'div#search',
+          placeholder: 'Type to search site...'
+        });
+      }
     </script>
     <script>
       function handleFormSubmit(event) {
