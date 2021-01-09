@@ -1,0 +1,88 @@
+---
+layout: /layouts/base.njk
+title: 39 - June Development Details Part 1
+description: kRO Zero dev note discussing Part 1 of the dev work planned for June
+tags: devNote
+listDate: '2018-06-01'
+image: '/images/meta/criatura-academy-meta-dev-note.png'
+---
+
+<article>
+
+  <h1 class="text-2xl mb-4">[39] June Development Details - Part 1</h1>
+
+  <p>[ 2018.06.01 ]</p>
+
+  <p>Hello Ragnarok Zero users, this is the Ragnarok Zero team from RO1 Studio. Today we will let you know about some of the updates that will be made in June.</p>
+
+  <h2>1. New recovery item</h2>
+
+  <p>A new recovery consumable, <b>Syrup</b> (시럽) will be added. All Syrups have a required base level of 60. HP Syrups have a cooldown of 1 second, Blue Syrups have a cooldown of 6 seconds.</p>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>{% item id="11621", name="Red Syrup", imageFolder="items" %}</li>
+    <li>{% item id="11622", name="Yellow Syrup", imageFolder="items" %}</li>
+    <li>{% item id="11623", name="White Syrup", imageFolder="items" %}</li>
+    <li>{% item id="11624", name="Blue Syrup", imageFolder="items" %}</li>
+  </ul>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/syrup_merchant.png" alt="Syrup Merchant NPC screenshot" />
+    <figcaption>
+      (New recovery item is sold by the Advanced Potion Merchant in the Tool Shop!)
+    </figcaption>
+  </figure>
+
+  <h2>2. Ninja skill cast time adjustments</h2>
+
+  <p>Some skill cast time and cooldowns will be adjusted for Ninja.</p>
+
+  <h3>Flaming Petals (홍염화) / Freezing Spear (빙섬창) / Wind Blade (풍인)</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Fixed cast reduced from 1 second to 0.5 seconds on a 10 level basis.</li>
+    <li>Variable cast reduced from 2.8 seconds to 1.5 seconds on a 10 level basis.</li>
+  </ul>
+
+  <h3>Exploding Dragon (폭염룡)</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Fixed cast reduced from 0.8 seconds to 0.5 seconds on a 5-level basis.</li>
+    <li>Variable cast reduced from 2.5 seconds to 1.5 seconds on a 5-level basis.</li>
+  </ul>
+
+  <h3>Snow Flake Drift (빙정락)</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Variable cast reduced from 1.7 seconds to 0.8 seconds on a 5-level basis.</li>
+  </ul>
+
+  <h3>First Wind (삭풍)</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Variable cast reduced from 1.2 seconds to 0.8 seconds on a 5-level basis.</li>
+  </ul>
+
+  <h3>Throw Huuma Shuriken (풍마수리검 던지기)</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Variable cast reduced from 1 second to 0.5 seconds on a 5-level basis.</li>
+  </ul>
+
+  <h3>Killing Stroke (일섬)</h3>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Fixed cast of 1 second added.</li>
+    <li>Variable cast of 0.5 seconds added.</li>
+    <li>Skill cooldown increased from 2.7 seconds to 5 seconds.</li>
+  </ul>
+
+  <h2>Source</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/devnote/View.asp?category=3&seq=778&curpage=2" target="_blank" rel="noopener noreferrer">6월 개발내용 안내 - 1부</a>
+    </li>
+  </ul>
+
+</article>
