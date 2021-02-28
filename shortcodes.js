@@ -2,7 +2,7 @@
 function monsterCard (monster) {
   const monsterName = monster.id ? `<a href="https://divine-pride.net/database/monster/${monster.id}/" target="_blank" rel="noreferrer noopener">${monster.name}</a>` : `<u>${monster.name}</u>`;
   return `
-  <div class="border-2 rounded-md p-2 text-sm mb-4 ${monster.widthClass}">
+  <div class="border-2 rounded-md p-2 text-sm mb-4 ${monster.widthClass}" id="${monster.name}">
     <img src="/images/monsters/${monster.image}" class="float-right ml-2" alt="${monster.name}" />
     <span class="block leading-tight mb-2">
       ${monsterName}
@@ -17,6 +17,9 @@ function monsterCard (monster) {
       <li><strong>Size:</strong> ${monster.size}</li>
       <li><strong>EXP/JEXP:</strong> ${monster.expJexp}</li>
     </ul>
+    <span class="block mt-2 text-xs">
+      <i><a class="font-normal" href="#${monster.name}">Link here</a></i>
+    </span>
   </div>
   `
 }
@@ -53,6 +56,9 @@ function equipCard (description, equip) {
       : ``
     }
     ${description}
+    <span class="block mt-2 px-2 pb-2 text-xs">
+      <i><a class="font-normal" href="#${equip.name}">Link here</a></i>
+    </span>
   </div>
   `
 }
@@ -70,6 +76,9 @@ function craftableEquipCard (content, equip) {
       <span class="font-bold">NPC:</span> ${equip.npc}
     </div>
     ${content}
+    <span class="block mt-2 px-2 pb-2 text-xs">
+      <i><a class="font-normal" href="#${equip.name}">Link here</a></i>
+    </span>
   </div>
   `
 }
@@ -86,6 +95,9 @@ function enchantCard (content, enchant) {
       <span class="font-bold float-right">Enchant</span>
     </div>
     ${content}
+    <span class="block mt-2 px-2 pb-2 text-xs">
+      <i><a class="font-normal" href="#${enchant.name}">Link here</a></i>
+    </span>
   </div>
   `
 }
@@ -103,6 +115,9 @@ function card (description, card) {
         ${card.prefix ? `<li><strong>Prefix/Suffix:</strong> ${card.prefix}</li>` : ``}
       </ul>
     ${description}
+    <span class="block mt-2 text-xs">
+      <i><a class="font-normal" href="#${card.name}">Link here</a></i>
+    </span>
   </div>
   `
 }
