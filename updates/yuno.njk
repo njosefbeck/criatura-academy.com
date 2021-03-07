@@ -1,0 +1,836 @@
+---
+layout: /layouts/base.njk
+title: Yuno
+description: Read about the implementation of Yuno on korean Ragnarok Online Zero. Discover the updates made to this area of Ragnarok Online.
+tags: update
+image: ''
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Yuno</h1>
+
+  <p>INTRO HERE.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/yuno.png" alt="Yuno art" />
+    <figcaption>
+      (View of Yuno)
+    </figcaption>
+  </figure>
+
+  <h2 id="how-to-get-to-yuno">How To Get To Yuno</h2>
+
+  <p>WIP</p>
+
+  <h2 id="yuno-quests">Yuno Quests</h2>
+
+  <p>WIP</p>
+
+  <h2 id="nogg-road-3">Fever Dungeon: Nogg Road 3<sup>rd</sup> Floor</h2>
+
+  <p>A fever dungeon was added to the Nogg Road Dungeon (Magma Dungeon). A character must be base level 75 or higher to enter.</p>
+
+  <h3>Monsters</h3>
+
+  <p>WIP</p>
+
+  <h3>Equipment</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="15378",
+      folder="yuno",
+      name="Lava Leather Armor [1]",
+      category="Armor",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="200",
+      def="50"
+    %}
+      <ul class="border-t p-2">
+        <li>This armor, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>Max HP +400.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>If +7 or higher, additional +150 MaxHP and increased healing received by +5%.</li>
+        <li>If +9 or higher, additional +250 MaxHP and increased healing received by an additional +5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="15380",
+      folder="yuno",
+      name="Lava Leather Robe [1]",
+      category="Armor",
+      droppedBy="Hardened Air Deleter (굳은 공중 딜리터)",
+      canWear="All",
+      requiredLevel="75",
+      weight="50",
+      def="20"
+    %}
+      <ul class="border-t p-2">
+        <li>This robe, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>Max HP +300, MaxSP +100, SP Recovery Rate +10%, MDEF +5.</li>
+        <li>Reduces SP consumption of [Blessing] and [Increase Agility] by 20%.</li>
+        <li>If +7 or higher, an additional MaxHP +125, MaxSP +50 and +10% SP Recovery Rate, +5% Heal, MATK +5<sup>*This MATK +5 is in the DP entry, but not on the kRO Zero website.</sup>.</li>
+        <li>If +9 or higher, an additional MaxHP +125, MaxSP +50 and +10% SP Recovery Rate, +7% Heal, MATK +5<sup>*This MATK +5 is in the DP entry, but not on the kRO Zero website.</sup>.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="15379",
+      folder="yuno",
+      name="Lava Leather Suit [1]",
+      category="Armor",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="80",
+      def="25"
+    %}
+      <ul class="border-t p-2">
+        <li>This suit, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>Max HP +350, AGI +3, DEX +3.</li>
+        <li>If +7 or higher, MaxHP +125, HIT +10, FLEE +5, Critical damage +3%.</li>
+        <li>If +9 or higher, an additional MaxHP +125, HIT +15, FLEE +10, and +7% Critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="20935",
+      folder="yuno",
+      name="Lava Leather Manteau [1]",
+      category="Garment",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="40",
+      def="20"
+    %}
+      <ul class="border-t p-2">
+        <li>This manteau, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>VIT +2.</li>
+        <li>When equipped with Lava Leather Armor and Boots, and the sum of refinement is +21 or higher: healing received +10%, damage received from Water, Wind, Earth, and Fire elements -5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="20936",
+      folder="yuno",
+      name="Lava Leather Muffler [1]",
+      category="Garment",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="13"
+    %}
+      <ul class="border-t p-2">
+        <li>This muffler, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>DEX +2.</li>
+        <li>When equipped with Lava Leather Suit and Shoes, and the sum of refinement is +21 or higher: critical damage +10%, HIT +10.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="20937",
+      folder="yuno",
+      name="Lava Leather Hood [1]",
+      category="Garment",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="15",
+      def="7"
+    %}
+      <ul class="border-t p-2">
+        <li>This hood, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>INT +2.</li>
+        <li>When equipped with Lava Leather Robe and Sandals, and the sum of refinement is +21 or higher: Variable Cast Time -10%, magic damage of Water, Wind, Earth and Fire Skills +5%, Heal +5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="22199",
+      folder="yuno",
+      name="Lava Leather Boots [1]",
+      category="Shoes",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="90",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>These boots, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>MaxHP +300, MaxSP +50, HP Recovery Rate +50%.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>If +7 or higher, MaxHP +100, increased healing received by 2%.</li>
+        <li>If +9 or higher, an additional MaxHP +150 and increased healing received by 3%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="22200",
+      folder="yuno",
+      name="Lava Leather Shoes [1]",
+      category="Shoes",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="60",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>These shoes, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>MaxHP +200, MaxSP +75, ASPD +5%, FLEE +15, HIT +10.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>If +7 or higher, MaxHP +100, critical damage +2%.</li>
+        <li>If +9 or higher, an additional MaxHP +150 and +3% critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="22201",
+      folder="yuno",
+      name="Lava Leather Sandals [1]",
+      category="Shoes",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="40",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>These sandals, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>MaxHP +150, MaxSP +125, SP Recovery Rate +20%.</li>
+        <li>If +7 or higher, MaxHP +100, Healing Power +2%, MATK +4.</li>
+        <li>If +9 or higher, an additional MaxHP +150, +3% Healing Power, and MATK +3.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h3>Items</h3>
+
+  <div class="flex flex-wrap justify-between">
+  <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/25727" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/25727.png" alt="Lava Ore" />
+          Lava Ore</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Not Sure Yet
+      </div>
+      <ul class="border-t p-2">
+        <li>An ore containing various types of minerals.</li>
+        <li>Once extracted, the ore will be destroyed.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 1</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/23814" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/23814.png" alt="Lava Ore Extractor" />
+          Lava Ore Extractor</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Not Sure Yet
+      </div>
+      <ul class="border-t p-2">
+        <li>A mysterious extractor that can extract Mythril Ore from a particular ore.</li>
+        <li>Once used, it is destroyed by the heat.</li>
+        <li>You can extract 1 Mythril Ore from 30 Lava Ore, with a small chance of something special coming out instead.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 5</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/23815" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/23815.png" alt="Lava Essence" />
+          Lava Essence</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Dropped By:</span> Hardened Air Deleter (굳은 공중 딜리터) -- probably more than just that one
+      </div>
+      <ul class="border-t p-2">
+        <li>A mysterious essence from the depths of Nogg Road.</li>
+        <li>Can improve the following items:</li>
+        <li>Lava Leather Armor</li>
+        <li>Lava Leather Suit</li>
+        <li>Lava Leather Robe</li>
+        <li>Only two Random Options are available.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 5</li>
+        <li><strong>Level Requirement:</strong> 75</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>WIP</p>
+
+  <h2 id="juperos">Juperos</h2>
+
+  <p>INTRO HERE.</p>
+
+  <h3>Monsters</h3>
+
+  <p>WIP</p>
+
+  <h3>Equipment</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="32215",
+      folder="yuno",
+      name="Vesper Gear 01 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to have a clear mind.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>INT +2.</li>
+        <li>When equipped with Vesper Core 01 and the total refinement is 15 or above, SP Recovery Rate +15%, Variable Cast Time -10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32216",
+      folder="yuno",
+      name="Vesper Gear 02 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be stronger.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>STR +2.</li>
+        <li>When equipped with Vesper Core 02 and the total refinement is 15 or above, HP Recovery Rate +30%, ATK +20.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32217",
+      folder="yuno",
+      name="Vesper Gear 03 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more agile.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>AGI +2.</li>
+        <li>When equipped with Vesper Core 03 and the total refinement is 15 or above, FLEE +20, ASPD +5%, healing received +5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32218",
+      folder="yuno",
+      name="Vesper Gear 04 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more dexterous and more accurate.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>DEX +1, LUK +1.</li>
+        <li>When equipped with Vesper Core 04 and the total refinement is 15 or above, HIT +10, CRIT +3, Critical Damage +7%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32211",
+      folder="yuno",
+      name="Vesper Core 01 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to have a clear mind.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, INT +2, MaxSP +3%, MATK +5.</li>
+        <li>If +7 or higher, SP Recovery Rate +5%, MATK +3.</li>
+        <li>If +9 or higher, Heal +5%, +5% additional SP Recovery Rate and MATK +5.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32212",
+      folder="yuno",
+      name="Vesper Core 02 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be stronger.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, STR +2, ATK +5.</li>
+        <li>If +7 or higher, HP Recovery Rate +5%, ATK +3.</li>
+        <li>If +9 or higher, +10% additional HP Recovery Rate and ATK +5.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32213",
+      folder="yuno",
+      name="Vesper Core 03 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more agile.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, AGI +2, FLEE +5.</li>
+        <li>If +7 or higher, healing received +2%, an additional FLEE +5.</li>
+        <li>If +9 or higher, an additional healing received +3% and FLEE +7.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32214",
+      folder="yuno",
+      name="Vesper Core 04 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more dexterous and more accurate.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, DEX +2, HIT +5.</li>
+        <li>If +7 or higher, an additional HIT +3.</li>
+        <li>If +9 or higher, an additional HIT +5.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19392",
+      folder="yuno",
+      name="Memory of Lovers",
+      category="Middle Headgear",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="10",
+      def="25"
+    %}
+      <ul class="border-t p-2">
+        <li>A component left by a robotic doll which mourned the death of its owner.</li>
+        <li>It's filled with their memories of love.</li>
+        <li>MaxHP +300, MaxSP +30, MDEF +7.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>When equipped with Vesper Core 01, Heal +10%, MATK +20.</li>
+        <li>When equipped with Vesper Core 02, ATK +20.</li>
+        <li>When equipped with Vesper Core 03, ASPD +1.</li>
+        <li>When equipped with Vesper Core 04, HIT +15.</li>
+        <li><em>Can be exchanged for a costume Memory of Lovers with Gelstar.</em></li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h3>Items</h3>
+
+  <div class="flex flex-wrap justify-between">
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/25718" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/25718.png" alt="Vesper's Memory" />
+          Vesper's Memory</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Not Sure Yet
+      </div>
+      <ul class="border-t p-2">
+        <li>A chip that contains some of Vesper's memories.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 10</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="craftable-equipment">Craftable Equipment</h2>
+
+  <p>With the Yuno update, the following craftable headgear was added. To see more information about each headgear, including NPC location, ingredients needed, and an item description, <a href="/updates/craftable-equipment/">head to the Craftable Equipment page</a>.</p>
+
+  <ul class="list-disc pl-8">
+    <li>Ayam [1]</li>
+    <li>Bride's Corolla</li>
+    <li>Spore Hat</li>
+    <li>Red Ribbon</li>
+    <li>Wonder Nutshell</li>
+    <li>Parcel Hat</li>
+    <li>Grief for Greed</li>
+    <li>Opera Phantom Mask</li>
+    <li>Blush</li>
+    <li>Magistrate Hat [1]</li>
+  </ul>
+
+  <h2 id="droppable-equipment">Droppable Equipment</h2>
+
+  <p>New equipment drops were also added to monsters that already existed in Yuno in previous iterations of RO. This section describes these pieces of equipment. Note: since they are new equipment, they will have Fever Field random options.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="28756",
+      folder="yuno",
+      name="Ninja's Excalibur [1]",
+      category="Dagger",
+      droppedBy="Venatu 1",
+      canWear="Ninja",
+      requiredLevel="60",
+      level="3",
+      weight="70",
+      atk="70"
+    %}
+      <ul class="border-t p-2">
+        <li>A godly dagger for magic-wielding Ninjas.</li>
+        <li>An immense amount of energy lives within this dagger.</li>
+        <li>MATK +110.</li>
+        <li>Increases damage of [Exploding Dragon], [Snow Flake Drift], [Frost Wind] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Exploding Dragon], [Snow Flake Drift], [Frost Wind] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Exploding Dragon], [Snow Flake Drift], [Frost Wind] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="13344",
+      folder="yuno",
+      name="Huuma Ebony [1]",
+      category="Huuma Shuriken",
+      droppedBy="Venatu II",
+      canWear="Ninja",
+      requiredLevel="60",
+      level="3",
+      weight="100",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A jet-black Huuma Shuriken.</li>
+        <li>It is made of very light material, so it is easy to throw.</li>
+        <li>Indestructible.</li>
+        <li>Increases damage of [Throw Huuma Shuriken] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Throw Huuma Shuriken] by an additional 10%.</li>
+        <li>If +9 or higher, decreases skill cooldown of [Throw Huuma Shuriken] by 1 second.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="18181",
+      folder="yuno",
+      name="Hellfire Bow [1]",
+      category="Bow",
+      droppedBy="Gig",
+      canWear="Archer, Rogue",
+      requiredLevel="60",
+      level="3",
+      weight="70",
+      atk="115"
+    %}
+      <ul class="border-t p-2">
+        <li>A bow crafted from hellfire.</li>
+        <li>ATK +3%</li>
+        <li>If +7 or higher, increases bow damage by 15%.</li>
+        <li>If +9 or higher, increases damage of [Double Strafe] by 15%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28952",
+      folder="yuno",
+      name="Alloy Shield [1]",
+      category="Shield",
+      droppedBy="Archdam",
+      canWear="All",
+      requiredLevel="60",
+      weight="80",
+      def="75"
+    %}
+      <ul class="border-t p-2">
+        <li>A shield that is alloyed with special metals.</li>
+        <li>It is light but sturdy, which makes it suitable for anyone.</li>
+        <li>Reduces physical/magical damage taken from Medium enemies by 5%.</li>
+        <li>If +7 or higher, ASPD +5%.</li>
+        <li>If +9 or higher, reduces physical/magical damage taken from Medium enemies by an additional 2%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="16090",
+      folder="yuno",
+      name="Meteor Hammer [1]",
+      category="Mace",
+      droppedBy="Dimik 1",
+      canWear="Acolyte",
+      requiredLevel="60",
+      level="3",
+      weight="120",
+      atk="150"
+    %}
+      <ul class="border-t p-2">
+        <li>A hammer made entirely out of metal.</li>
+        <li>Looking closely, it doesn't look like a metal from this world.</li>
+        <li>Indestructible.</li>
+        <li>Increases damage of [Investigate] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Investigate] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Investigate] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19398",
+      folder="yuno",
+      name="Falcon Feather",
+      category="Lower Headgear",
+      droppedBy="Grand Peco",
+      canWear="Hunter",
+      requiredLevel="80",
+      weight="10",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>A bird's tail feather.</li>
+        <li>It is said that it can help tame a falcon.</li>
+        <li>AGI +1, LUK +1.</li>
+        <li>Increases damage of [Blitz Beat] by 5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32220",
+      folder="yuno",
+      name="Falcon Claw",
+      category="Accessory (Right)",
+      droppedBy="Harpy",
+      canWear="Hunter",
+      requiredLevel="80",
+      weight="10",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>A sharp claw accessory that increases the falcon's efficiency.</li>
+        <li>AGI +1, LUK +1.</li>
+        <li>Increases damage of [Blitz Beat] by 5%.</li>
+        <li>When equipped with Falcon Feather, increases [Blitz Beat] damage by an additional 10%, and adds a high chance to autocast [Blitz Beat] when doing ranged physical attacks (according to the learned level of the skill and will not activate if it's not learned).</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32020",
+      folder="yuno",
+      name="Piercing Spear [1]",
+      category="1Handed Spear",
+      droppedBy="Apocalypse",
+      canWear="Swordsman",
+      requiredLevel="60",
+      level="3",
+      weight="120",
+      atk="135"
+    %}
+      <ul class="border-t p-2">
+        <li>A one-handed spear that is great for stabbing your opponents.</li>
+        <li>ASPD +10%.</li>
+        <li>If +7 or higher, increases damage of [Pierce] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Pierce] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="16091",
+      folder="yuno",
+      name="Hellfire Mace [1]",
+      category="Mace",
+      droppedBy="Grizzly",
+      canWear="Novice, Swordsman, Merchant, Acolyte",
+      requiredLevel="60",
+      level="3",
+      weight="110",
+      atk="135"
+    %}
+      <ul class="border-t p-2">
+        <li>A mace that was smelted at extremely high temperatures.</li>
+        <li>It is said to be very durable.</li>
+        <li>Indestructible.</li>
+        <li>Increases damage of [Bash] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Bash] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Bash] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26153",
+      folder="yuno",
+      name="Holyfire Staff [1]",
+      category="1Handed Staff",
+      droppedBy="Earth Deleter",
+      canWear="Acolyte",
+      requiredLevel="60",
+      level="3",
+      weight="80",
+      atk="60"
+    %}
+      <ul class="border-t p-2">
+        <li>A staff burning with divine fire.</li>
+        <li>It is said to be able to punish the wicked with its divine light.</li>
+        <li>MATK +150, Indestructible.</li>
+        <li>Increases damage of [Magnus Exorcismus] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Magnus Exorcismus] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Magnus Exorcismus] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19399",
+      folder="yuno",
+      name="Grand Peco Headband [1]",
+      category="Upper Headgear",
+      droppedBy="Grand Peco",
+      canWear="All",
+      requiredLevel="60",
+      weight="80",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>A gorgeous headdress made with the feathers of Grand Peco Peco.</li>
+        <li>Increases magical damage against human and animal monsters by 7%.</li>
+        <li>If +7 or higher, increases Fire magical damage by 3%.</li>
+        <li>If +9 or higher, increases Fire magical damage by an additional 5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19400",
+      folder="yuno",
+      name="Sleeper Hat [1]",
+      category="Upper Headgear",
+      droppedBy="Sleeper",
+      canWear="All",
+      requiredLevel="60",
+      weight="100",
+      def="20"
+    %}
+      <ul class="border-t p-2">
+        <li>A hat that mimics the Sleeper from Yuno.</li>
+        <li>Increases physical damage against Formless and Demon monsters by 7%.</li>
+        <li>If +7 or higher, ATK +15.</li>
+        <li>If +9 or higher, ATK +20.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="1863",
+      folder="yuno",
+      name="Nippy Claw [1]",
+      category="Fist",
+      droppedBy="Dimik 2",
+      canWear="Monk, Priest",
+      requiredLevel="60",
+      level="3",
+      weight="100",
+      atk="110"
+    %}
+      <ul class="border-t p-2">
+        <li>A fist capable of very fast attacks.</li>
+        <li>It is made out of an unknown metal and seems to be quite sharp.</li>
+        <li>ASPD +5%.</li>
+        <li>If +7 or higher, increases damage of [Chain Combo] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Combo Finish] by 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28757",
+      folder="yuno",
+      name="Blazing Dagger [1]",
+      category="Dagger",
+      droppedBy="Blazzer",
+      canWear="Thief, Rogue",
+      requiredLevel="60",
+      level="3",
+      weight="90",
+      atk="115"
+    %}
+      <ul class="border-t p-2">
+        <li>A dagger smelted in hot lava flames.</li>
+        <li>HIT +5.</li>
+        <li>If +7 or higher, increases damage of [Raid] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Back Stab] by 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26022",
+      folder="yuno",
+      name="Burning Nightmare [1]",
+      category="2Handed Spear",
+      droppedBy="Nightmare Terror",
+      canWear="Swordsman",
+      requiredLevel="60",
+      level="3",
+      weight="185",
+      atk="170"
+    %}
+      <ul class="border-t p-2">
+        <li>A two-handed spear burning with the nightmare flame.</li>
+        <li>It's better to swing than stab with it.</li>
+        <li>ATK +3%.</li>
+        <li>If +7 or higher, increases damage of [Brandish Spear] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Brandish Spear] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2 id="doomed-swords">Doomed Swords</h2>
+
+  <p>With Yuno it became possible to craft the three Doomed Swords: Executioner, Mysteltainn, and Grimtooth via a quest. This section describes the three swords.</p>
+
+  <p>WIP</p>
+
+  <h2 id="yuno-monsters">Yuno Monsters</h2>
+
+  <p>WIP</p>
+
+  <div id="kro-zero-changelogs" class="mb-6 text-sm">
+    <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">kRO Zero Changelogs</h2>
+    <p class="border-r border-l p-2 mb-0">The information for this piece of content changed over time on kRO Zero. When possible, this section links to the different versions of the original source article on the kRO Zero website.</p>
+    <ul class="border-r border-l border-b rounded-b-md pt-1 pb-3 pl-8 list-disc">
+      <li>2018-06-27 - Original</li>
+      <li>2018-07-03 - Updated</li>
+      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=36&curpage=3">2020-06-22 - Updated</a></li>
+    </ul>
+  </div>
+
+  <h2>Related Pages</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="">Dev Note # - 2018.02.13</a>
+    </li>
+  </ul>
+
+</article>
