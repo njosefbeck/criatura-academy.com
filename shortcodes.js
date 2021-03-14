@@ -16,6 +16,12 @@ function monsterCard (monster) {
       <li><strong>Property: </strong>${monster.property}</li>
       <li><strong>Size:</strong> ${monster.size}</li>
       <li><strong>EXP/JEXP:</strong> ${monster.expJexp}</li>
+      ${monster.str ? `<li><strong>STR:</strong> ${monster.str}</li>` : ''}
+      ${monster.dex ? `<li><strong>DEX:</strong> ${monster.dex}</li>` : ''}
+      ${monster.agi ? `<li><strong>AGI:</strong> ${monster.agi}</li>` : ''}
+      ${monster.vit ? `<li><strong>VIT:</strong> ${monster.vit}</li>` : ''}
+      ${monster.int ? `<li><strong>INT:</strong> ${monster.int}</li>` : ''}
+      ${monster.luk ? `<li><strong>LUK:</strong> ${monster.luk}</li>` : ''}
     </ul>
     <span class="block mt-2 text-xs">
       <i><a class="font-normal" href="#${monster.name}">Link here</a></i>

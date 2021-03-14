@@ -3,14 +3,16 @@ layout: /layouts/base.njk
 title: Yuno
 description: Read about the implementation of Yuno on korean Ragnarok Online Zero. Discover the updates made to this area of Ragnarok Online.
 tags: update
-image: ''
+image: '/images/meta/criatura-academy-meta-yuno.png'
 ---
 
 <article>
 
-  <h1 class="text-2xl mb-2">Yuno</h1>
+  <h1 class="text-2xl mb-2">Yuno (유노)</h1>
 
-  <p>INTRO HERE.</p>
+  <p>Beyond the Mjolnir Mountains lies Yuno, the capital of the Republic of Schwartzvald. This city is also known as the "City of Sage". The city of Yuno floats above El Mes Plateau and has three different islands: Solomon, Sonotora, and Mineta. The Heart of Ymir allows for the city to float. Many scholars and wise men come to Yuno to study and share knowledge. Also, since it is the capital of the Republic, the government office and presidential residence are here. The air is fresher than in other parts of Schwartzvald and many tourists come to Yuno to admire the ancient building style.</p>
+
+  <p>On iRO and other English servers, Yuno is referred to as "Juno".</p>
 
   <figure class="mb-4">
     <img class="mt-6 mb-2" src="/images/dev-notes/yuno.png" alt="Yuno art" />
@@ -18,6 +20,19 @@ image: ''
       (View of Yuno)
     </figcaption>
   </figure>
+
+  <h2>Table of Contents</h2>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><a href="#how-to-get-to-yuno">How To Get To Yuno</a></li>
+    <li><a href="#yuno-quests">Yuno Quests</a></li>
+    <li><a href="#nogg-road-3">Fever Dungeon: Nogg Road 3<sup>rd</sup> Floor</a></li>
+    <li><a href="#juperos">Juperos</a></li>
+    <li><a href="#craftable-equipment">Craftable Equipment</a></li>
+    <li><a href="#droppable-equipment">Droppable Equipment</a></li>
+    <li><a href="#doomed-swords">Doomed Swords</a></li>
+    <li><a href="#yuno-monsters">Yuno Monsters</a></li>
+  </ul>
 
   <h2 id="how-to-get-to-yuno">How To Get To Yuno</h2>
 
@@ -102,7 +117,7 @@ image: ''
     <li><b>Start Location:</b> Hariburn (prontera 209, 107), Bjob (prontera 104, 26), Setz (morocc 287, 181), and Gatu (yuno 93, 96).</li>
   </ul>
 
-  <p>Known on iRO as the <a href="https://irowiki.org/wiki/Doomed_Swords_and_Comodo_Cheese_Quest" target="_blank" rel="noopener noreferrer">Doomed Swords & Comodo Cheese Quest</a>. These quests are how a player can get one of the Doomed Swords: Executioner, Mysteltainn, or Grimtooth. For the kRO version of the quest to obtain Grimtooth, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=249" target="_blank" rel="noopener noreferrer">see this inven post</a>. For the kRO version of the quest to obtain Executioner, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=250" target="_blank" rel="noopener noreferrer">see this inven post</a>. And, for the kRO version of the quest to obtain Mysteltainn, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=251" target="_blank" rel="noopener noreferrer">see this inven post</a>. <strong>Note that the kRO quest may differ slightly from the kRO Zero quest.</strong></p>
+  <p>Known on iRO as the <a href="https://irowiki.org/wiki/Doomed_Swords_and_Comodo_Cheese_Quest" target="_blank" rel="noopener noreferrer">Doomed Swords & Comodo Cheese Quest</a>. These quests are how a player can get one of the Doomed Swords: Executioner, Mysteltainn, or Grimtooth. For the kRO version of the quest to obtain Grimtooth, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=249" target="_blank" rel="noopener noreferrer">see this inven post</a>. For the kRO version of the quest to obtain Executioner, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=250" target="_blank" rel="noopener noreferrer">see this inven post</a>. And, for the kRO version of the quest to obtain Mysteltainn, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=251" target="_blank" rel="noopener noreferrer">see this inven post</a>. <strong>Note that the kRO quests may differ from the kRO Zero quests.</strong></p>
 
   <h3 id="nogg-road-daily-quests-1" class="underline">Nogg Road Daily Quests (나이트메어 테러 포획, 굳어버린 용암 수집, 딜리터 포획)</h3>
 
@@ -238,7 +253,7 @@ image: ''
     <li><b>Start Location:</b> Prairie (yuno_fild09 308, 80)</li>
   </ul>
 
-  <p>This quest can be done daily. A rivalry exists between the Schwarzwald Guards and the 702nd Squad as they're doing their trainings. The captain of the Schwarzwald Guards wants your help, but something seems fishy about the training...</p>
+  <p>This quest can be done daily. A rivalry exists between the Schwartzwald Guards and the 702nd Squad as they're doing their trainings. The captain of the Schwartzwald Guards wants your help, but something seems fishy about the training...</p>
 
   <h3 id="a-prayer-for-rain-quest" class="underline">A Prayer For Rain (비를 부르는 기도)</h3>
 
@@ -256,13 +271,149 @@ image: ''
 
   <h2 id="nogg-road-3">Fever Dungeon: Nogg Road 3<sup>rd</sup> Floor</h2>
 
-  <p>A fever dungeon was added to the Nogg Road Dungeon (Magma Dungeon). A character must be base level 75 or higher to enter.</p>
+  <p>A fever dungeon was added to the Nogg Road Dungeon (also known as Magma Dungeon). A character must be base level 75 or higher to enter the Fever Dungeon. Nogg Road is located one south and one east of Yuno.</p>
 
-  <h3>Monsters</h3>
+  <h3 id="nogg-road-3-monsters">Monsters</h3>
 
-  <p>WIP</p>
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="hardened-blazer.png",
+      name="Rigid Blazer (굳은 블레이저)",
+      level="117",
+      hp="131023",
+      defMdef="291/2",
+      class="Boss",
+      family="Demon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="14558/13102",
+      str="110",
+      dex="109",
+      agi="76",
+      vit="83",
+      int="61",
+      luk="64"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-flying-deleter.png",
+      name="Rigid Sky Deleter (굳은 공중 딜리터)",
+      level="105",
+      hp="62925",
+      defMdef="197/60",
+      class="Normal",
+      family="Dragon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="6992/6293",
+      str="72",
+      dex="117",
+      agi="97",
+      vit="78",
+      int="113",
+      luk="77"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-ground-deleter.png",
+      name="Rigid Ground Deleter (굳은 지상 딜리터)",
+      level="104",
+      hp="62389",
+      defMdef="312/10",
+      class="Normal",
+      family="Dragon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="6932/6239",
+      str="90",
+      dex="108",
+      agi="110",
+      vit="109",
+      int="75",
+      luk="110"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-explosion.png",
+      name="Rigid Explosion (굳은 익스플로젼)",
+      level="109",
+      hp="65340",
+      defMdef="90/113",
+      class="Normal",
+      family="Brute",
+      property="Neutral LV2",
+      size="Small",
+      expJexp="7260/6534",
+      str="67",
+      dex="89",
+      agi="97",
+      vit="90",
+      int="64",
+      luk="80"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-kaho.png",
+      name="Rigid Kaho (굳은 카호)",
+      level="101",
+      hp="60534",
+      defMdef="38/220",
+      class="Normal",
+      family="Formless",
+      property="Shadow LV2",
+      size="Medium",
+      expJexp="6726/6053",
+      str="79",
+      dex="167",
+      agi="38",
+      vit="78",
+      int="117",
+      luk="39"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-lava-golem.png",
+      name="Rigid Lava Golem (굳은 라바 골렘)",
+      level="116",
+      hp="130022",
+      defMdef="700/13",
+      class="Boss",
+      family="Formless",
+      property="Neutral LV2",
+      size="Large",
+      expJexp="14447/13002",
+      str="91",
+      dex="167",
+      agi="10",
+      vit="116",
+      int="30",
+      luk="28"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="rigid-nightmare-terror.png",
+      name="Rigid Nightmare Terror (굳은 나이트메어 테러)",
+      level="121",
+      hp="148793",
+      defMdef="10/317",
+      class="Boss",
+      family="Demon",
+      property="Shadow LV3",
+      size="Large",
+      expJexp="16533/14879",
+      str="80",
+      dex="137",
+      agi="110",
+      vit="20",
+      int="131",
+      luk="63"
+    %}
+  </div>
 
   <h3 id="nogg-road-3-equipment">Equipment</h3>
+
+  <p>Some of the equipment below can be found in other versions of RO, but Zero seems to have expanded on the number of pieces of equipment that are obtainable, and also updated the equipment effects.</p>
 
   <div class="flex flex-wrap justify-between">
     {% equipCard
@@ -289,7 +440,7 @@ image: ''
       folder="yuno",
       name="Lava Leather Robe [1]",
       category="Armor",
-      droppedBy="Hardened Air Deleter (굳은 공중 딜리터)",
+      droppedBy="Rigid Sky Deleter",
       canWear="All",
       requiredLevel="75",
       weight="50",
@@ -326,7 +477,7 @@ image: ''
       folder="yuno",
       name="Lava Leather Manteau [1]",
       category="Garment",
-      droppedBy="",
+      droppedBy="Rigid Nightmare Terror",
       canWear="All",
       requiredLevel="75",
       weight="40",
@@ -360,7 +511,7 @@ image: ''
       folder="yuno",
       name="Lava Leather Hood [1]",
       category="Garment",
-      droppedBy="",
+      droppedBy="Rigid Kaho",
       canWear="All",
       requiredLevel="75",
       weight="15",
@@ -477,7 +628,7 @@ image: ''
           Lava Essence</a>
       </div>
       <div class="border-t p-2">
-        <span class="font-bold">Dropped By:</span> Hardened Air Deleter (굳은 공중 딜리터) -- probably more than just that one
+        <span class="font-bold">Dropped By:</span> Rigid Sky Deleter (굳은 공중 딜리터) -- probably more than just that one
       </div>
       <ul class="border-t p-2">
         <li>A mysterious essence from the depths of Nogg Road.</li>
@@ -495,15 +646,223 @@ image: ''
     </div>
   </div>
 
-  <p>WIP</p>
-
   <h2 id="juperos">Juperos</h2>
 
-  <p>INTRO HERE.</p>
+  <p>"Underneath El Mes Plateau lies the ruins of the city of Juperos , an ancient but highly advanced civilization. Juperos is well protected by automated guards and security devices to prevent unauthorized entry to prohibited areas. Although many of Juno's Scholars have their own speculations on the cause of the fall of such a technologically advanced race, no one is really sure what went wrong. One of the most popular theories is that Vesper Newton, a mad scientist conducting experiments with the famed Heart of Ymir has something to do with it." - <a href="https://irowiki.org/wiki/Juno#Juperos_Ruins" target="_blank" rel="noopener noreferrer">iRO Wiki</a></p>
 
   <h3 id="juperos-monsters">Monsters</h3>
 
-  <p>WIP</p>
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-1.gif",
+      name="Venatu 1 (베나투 1)",
+      level="113",
+      hp="36126",
+      defMdef="159/25",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="3284/2956",
+      str="61",
+      dex="110",
+      agi="91",
+      vit="51",
+      int="75",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-2.gif",
+      name="Venatu 2 (베나투 2)",
+      level="114",
+      hp="36455",
+      defMdef="138/17",
+      class="Normal",
+      family="Formless",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="3314/2983",
+      str="77",
+      dex="111",
+      agi="81",
+      vit="90",
+      int="29",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-3.gif",
+      name="Venatu 3 (베나투 3)",
+      level="113",
+      hp="36485",
+      defMdef="247/28",
+      class="Normal",
+      family="Formless",
+      property="Earth LV2",
+      size="Medium",
+      expJexp="3317/2985",
+      str="64",
+      dex="117",
+      agi="76",
+      vit="90",
+      int="90",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-4.gif",
+      name="Venatu 4 (베나투 4)",
+      level="113",
+      hp="36804",
+      defMdef="213/16",
+      class="Normal",
+      family="Formless",
+      property="Water LV2",
+      size="Medium",
+      expJexp="3067/2760",
+      str="80",
+      dex="109",
+      agi="71",
+      vit="90",
+      int="29",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-1.gif",
+      name="Dimik 1 (디미크 1)",
+      level="116",
+      hp="37068",
+      defMdef="136/21",
+      class="Normal",
+      family="Formless",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="3370/3033",
+      str="75",
+      dex="128",
+      agi="67",
+      vit="35",
+      int="55",
+      luk="41"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-2.gif",
+      name="Dimik 2 (디미크 2)",
+      level="116",
+      hp="37073",
+      defMdef="129/22",
+      class="Normal",
+      family="Formless",
+      property="Water LV2",
+      size="Medium",
+      expJexp="3370/3033",
+      str="70",
+      dex="133",
+      agi="71",
+      vit="40",
+      int="60",
+      luk="38"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-3.gif",
+      name="Dimik 3 (디미크 3)",
+      level="116",
+      hp="37123",
+      defMdef="203/17",
+      class="Normal",
+      family="Formless",
+      property="Earth LV2",
+      size="Medium",
+      expJexp="3375/3037",
+      str="68",
+      dex="119",
+      agi="49",
+      vit="90",
+      int="35",
+      luk="35"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-4.gif",
+      name="Dimik 4 (디미크 4)",
+      level="116",
+      hp="37083",
+      defMdef="193/13",
+      class="Normal",
+      family="Formless",
+      property="Fire LV2",
+      size="Medium",
+      expJexp="3371/3034",
+      str="97",
+      dex="120",
+      agi="78",
+      vit="50",
+      int="15",
+      luk="47"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="akudam.gif",
+      name="Zakudam (아크담)",
+      level="121",
+      hp="63795",
+      defMdef="187/96",
+      class="Normal",
+      family="Demi-Human",
+      property="Neutral LV3",
+      size="Large",
+      expJexp="5800/5220",
+      str="90",
+      dex="106",
+      agi="110",
+      vit="38",
+      int="79",
+      luk="25"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="apocalypse.gif",
+      name="Apocalypse (아포칼립스)",
+      level="126",
+      hp="66507",
+      defMdef="413/6",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV3",
+      size="Large",
+      expJexp="6046/5441",
+      str="106",
+      dex="121",
+      agi="74",
+      vit="90",
+      int="30",
+      luk="15"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="vesper.gif",
+      name="Vesper (베스퍼)",
+      level="128",
+      hp="3802000",
+      defMdef="402/109",
+      class="Boss",
+      family="Brute",
+      property="Holy LV2",
+      size="Large",
+      expJexp="345636/311073",
+      str="177",
+      dex="255",
+      agi="195",
+      vit="165",
+      int="130",
+      luk="102"
+    %}
+  </div>
 
   <h3 id="juperos-equipment">Equipment</h3>
 
@@ -763,7 +1122,7 @@ image: ''
       folder="yuno",
       name="Huuma Ebony [1]",
       category="Huuma Shuriken",
-      droppedBy="Venatu II",
+      droppedBy="Venatu 2",
       canWear="Ninja",
       requiredLevel="60",
       level="3",
@@ -1036,11 +1395,103 @@ image: ''
 
   <p>With Yuno it became possible to craft the three Doomed Swords: Executioner, Mysteltainn, and Grimtooth via a quest. This section describes the three swords.</p>
 
-  <p>WIP</p>
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="28758",
+      folder="yuno",
+      name="Doomed Sword Grimtooth [2]",
+      category="Dagger",
+      craftedFrom="Doomed Swords Quest",
+      canWear="Swordsman, Archer, Thief, Mage, Merchant, Ninja, Soul Linker",
+      requiredLevel="60",
+      level="4",
+      weight="80",
+      atk="100"
+    %}
+      <ul class="border-t p-2">
+        <li>The longer you use this dagger made from a monster's tooth, the more violent you will become.</li>
+        <li>66 HP lost every 5 seconds that it is equipped. 666 HP lost when unequipped.</li>
+        <li>If +3 or higher, increases physical damage to all enemies by 10%.</li>
+        <li>If +6 or higher, increases physical damage to Medium-size monsters by 10%.</li>
+        <li>If +9 or higher, increases physical damage to Medium-size monsters by an additional 10% and has a low probability, on physical attack, to eliminate the weapon-size penalty for 5 seconds.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="21048",
+      folder="yuno",
+      name="Doomed Sword Executioner [2]",
+      category="2Hand Sword",
+      craftedFrom="Doomed Swords Quest",
+      canWear="Swordsman",
+      requiredLevel="60",
+      level="4",
+      weight="220",
+      atk="185"
+    %}
+      <ul class="border-t p-2">
+        <li>A terrifying two-handed sword that is said to have severed the heads off countless death row inmates, destroying their souls in the process as well.</li>
+        <li>66 HP lost every 5 seconds that it is equipped. 666 HP lost when unequipped.</li>
+        <li>Increases physical damage to Demi-Human monsters by 20%.</li>
+        <li>If +7 or higher, increases physical damage to Demi-Human monsters by an additional 10%.</li>
+        <li>If +9 or higher, has a low probability of ignoring 50% of a Demi-Human monster's DEF for 5 seconds.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="13494",
+      fullWidth="true",
+      folder="yuno",
+      name="Doomed Sword Mysteltainn [2]",
+      category="1Handed Sword",
+      craftedFrom="Doomed Swords Quest",
+      canWear="Swordsman, Merchant, Thief",
+      requiredLevel="60",
+      level="4",
+      weight="100",
+      atk="150"
+    %}
+      <ul class="border-t p-2">
+        <li>A young branch that stabbed the God of Light to death.</li>
+        <li>MATK +85, +50% increased [Soul Strike] damage.</li>
+        <li>Increases physical damage to Ghost-element monsters by 30%.</li>
+        <li>If +7 or higher, increases physical damage to Ghost monsters by an additional 20%.</li>
+        <li>If +9 or higher, has a high chance of casting [Soul Strike] Level 10 on close physical attack.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
 
   <h2 id="yuno-monsters">Yuno Monsters</h2>
 
-  <p>WIP</p>
+  <p>The Yuno monsters listed on the kRO Zero update page for Yuno contain the same stats as those found in general Renewal versions of the game. Below you'll find a list of these monsters, with links to their Divine-Pride pages. I have also included the Champion mobs in the list as well, though the DP pages won't list the optioned gear drops.</p>
+
+  <ul class="list-disc pl-8">
+    <li><a href="https://divine-pride.net/database/monster/1368/" target="_blank" rel="noopener noreferrer">Geographer (지오그래퍼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2824/" target="_blank" rel="noopener noreferrer">Swift Geographer</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2825/" target="_blank" rel="noopener noreferrer">Solid Geographer</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1372/" target="_blank" rel="noopener noreferrer">Goat (고우트)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2815/" target="_blank" rel="noopener noreferrer">Solid Goat</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2816/" target="_blank" rel="noopener noreferrer">Goat Ringleader</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1376/" target="_blank" rel="noopener noreferrer">Harpy (하피)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2806/" target="_blank" rel="noopener noreferrer">Harpy Ringleader</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2807/" target="_blank" rel="noopener noreferrer">Furious Harpy (분노의 하피)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1369/" target="_blank" rel="noopener noreferrer">Grand Peco (그랜드 페코)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2810/" target="_blank" rel="noopener noreferrer">Solid Grand Peco</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2811/" target="_blank" rel="noopener noreferrer">Grand Peco Ringleader</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1386/" target="_blank" rel="noopener noreferrer">Sleeper (슬리퍼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2655/" target="_blank" rel="noopener noreferrer">Elusive Sleeper</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2656/" target="_blank" rel="noopener noreferrer">Swift Sleeper</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1072/" target="_blank" rel="noopener noreferrer">Kaho (카호)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1383/" target="_blank" rel="noopener noreferrer">Explosion (익스플로젼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2837/" target="_blank" rel="noopener noreferrer">Furious Explosion (분노의 익스플로젼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1366/" target="_blank" rel="noopener noreferrer">Lava Golem (라바 골렘)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1367/" target="_blank" rel="noopener noreferrer">Blazer (블레이저)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1381/" target="_blank" rel="noopener noreferrer">Grizzly (그리즐리)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1384/" target="_blank" rel="noopener noreferrer">Sky Deleter (공중 딜리터)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1385/" target="_blank" rel="noopener noreferrer">Ground Deleter (지상 딜리터)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1382/" target="_blank" rel="noopener noreferrer">Diabolic (디아볼릭)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1379/" target="_blank" rel="noopener noreferrer">Nightmare Terror (나이트메어 테러)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2732/" target="_blank" rel="noopener noreferrer">Furious Nightmare Terror (분노의 나이트메어 테러)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1387/" target="_blank" rel="noopener noreferrer">Gig (기그)</a></li>
+  </ul>
 
   <div id="kro-zero-changelogs" class="mb-6 text-sm">
     <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">kRO Zero Changelogs</h2>
@@ -1048,7 +1499,7 @@ image: ''
     <ul class="border-r border-l border-b rounded-b-md pt-1 pb-3 pl-8 list-disc">
       <li>2018-06-27 - Original</li>
       <li>2018-07-03 - Updated</li>
-      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=36&curpage=3">2020-06-22 - Updated</a></li>
+      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=36&curpage=3">2020-06-22 - Updated</a> (Dimik 1, fixed incomplete DEF/MDEF value)</li>
     </ul>
   </div>
 
@@ -1056,7 +1507,19 @@ image: ''
 
   <ul class="list-disc pl-8">
     <li>
-      <a href="">Dev Note # - 2018.02.13</a>
+      <a href="/news/205-2018-07-09-july-11-maint/">News #205 - 2018.07.02</a>
+    </li>
+    <li>
+      <a href="/news/204-2018-07-02-july-4-maint/">News #204 - 2018.07.02</a>
+    </li>
+    <li>
+      <a href="/news/200-2018-06-25-june-27-maint/">News #200 - 2018.06.25</a>
+    </li>
+    <li>
+      <a href="/dev-notes/40-2018-06-12-jun-dev-details-2/">Dev Note #40 - 2018.06.12</a>
+    </li>
+    <li>
+      <a href="/updates/craftable-equipment/">Craftable Equipment</a>
     </li>
   </ul>
 
