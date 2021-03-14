@@ -1,0 +1,1526 @@
+---
+layout: /layouts/base.njk
+title: Yuno
+description: Read about the implementation of Yuno on korean Ragnarok Online Zero. Discover the updates made to this area of Ragnarok Online.
+tags: update
+image: '/images/meta/criatura-academy-meta-yuno.png'
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Yuno (유노)</h1>
+
+  <p>Beyond the Mjolnir Mountains lies Yuno, the capital of the Republic of Schwartzvald. This city is also known as the "City of Sage". The city of Yuno floats above El Mes Plateau and has three different islands: Solomon, Sonotora, and Mineta. The Heart of Ymir allows for the city to float. Many scholars and wise men come to Yuno to study and share knowledge. Also, since it is the capital of the Republic, the government office and presidential residence are here. The air is fresher than in other parts of Schwartzvald and many tourists come to Yuno to admire the ancient building style.</p>
+
+  <p>On iRO and other English servers, Yuno is referred to as "Juno".</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/yuno.png" alt="Yuno art" />
+    <figcaption>
+      (View of Yuno)
+    </figcaption>
+  </figure>
+
+  <h2>Table of Contents</h2>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><a href="#how-to-get-to-yuno">How To Get To Yuno</a></li>
+    <li><a href="#yuno-quests">Yuno Quests</a></li>
+    <li><a href="#nogg-road-3">Fever Dungeon: Nogg Road 3<sup>rd</sup> Floor</a></li>
+    <li><a href="#juperos">Juperos</a></li>
+    <li><a href="#craftable-equipment">Craftable Equipment</a></li>
+    <li><a href="#droppable-equipment">Droppable Equipment</a></li>
+    <li><a href="#doomed-swords">Doomed Swords</a></li>
+    <li><a href="#yuno-monsters">Yuno Monsters</a></li>
+  </ul>
+
+  <h2 id="how-to-get-to-yuno">How To Get To Yuno</h2>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/airship_entrance.png" alt="Airship entrance screenshot" />
+    <figcaption>
+      (Airship entrance NPC)
+    </figcaption>
+  </figure>
+
+  <p>To get to Yuno, you can take the Airship! You can board the Airship from the south of Izlude. If you're not interested in flying, you can also get there by heading north from Aldebaran, passing through the Republic of Schwartzvald border checkpoint.</p>
+
+  <h2 id="yuno-quests">Yuno Quests</h2>
+
+  <p>Yuno brings with it a fair amount of one-time and daily quests you can do. Some of these quests will be familiar to long-time players of RO, while others are new. Also some old quests have been reworked!</p>
+
+  <h3 id="curse-of-gaebolg-2" class="underline">Curse of Gaebolg 2 (게오보르그가의 저주 (2부))</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/curse_of_gaebolg_npc.png" alt="Curse of Gaebolg II Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Curse of Gaebolg 1 completed</li>
+    <li><b>Level Requirement:</b> Base level 60 or higher</li>
+    <li><b>Start Location:</b> Royal Librarian (prt_cas 335, 51)</li>
+  </ul>
+
+  <p>You decide to talk to Tora, the royal librarian, who tells you he's waiting for a book delivery. Once Dittmar shows up with the books, Tora asks you to deliver the books to Yuno.</p>
+
+  <h3 id="reforming-metto" class="underline">Reforming Metto! (매드 사이언티스트를 갱생시켜라!)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/reforming_metto_quest_npc.png" alt="Reforming Metto Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 65 or higher</li>
+    <li><b>Start Location:</b> Weigon (yuno_in01 17, 30)</li>
+  </ul>
+
+  <p>Known on iRO as the <a href="https://irowiki.org/wiki/Stop_Metto%27s_Research" target="_blank" rel="noopener noreferrer">Stop Metto's Research</a>. Somewhere in Yuno, they say a bad scientist is doing evil by destroying public facilities and causing noise pollution under the pretext of research. We should do whatever it takes to stop this evil.</p>
+
+  <h3 id="juperos-expedition-quest" class="underline">Juperos Expedition (유페로스 탐험)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/juperos_expedition_npc.png" alt="Juperos Expedition Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 90 or higher</li>
+    <li><b>Start Location:</b> Bundle Of Documents (yuno_in04 186, 125)</li>
+  </ul>
+
+  <p>Known on iRO as the <a href="https://irowiki.org/wiki/Juperos_Ruins_History_Quest" target="_blank" rel="noopener noreferrer">Juperos Ruins History Quest</a>. Yuno's library collection ranges from useless books to highly specialized ones. While looking at some books, you stop to look at a part someone was writing, and wonder, "Could this paper be completed if I go to Juperos?".</p>
+
+  <h3 id="vespers-memory-quest" class="underline">Vesper's Memory (베스퍼의 기억)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/vespers_memory_npc.png" alt="Vesper's Memory Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Root Jay (yuno_in04 180, 111)</li>
+  </ul>
+
+  <p>Bring this NPC 3 Vesper's Memory to exchange it for one of the 4 different Vesper Core. This is also where you can get the Memory of Lovers headgear. <a href="#juperos-equipment">See the Juperos Equipment section on this page for more information about these pieces of equipment.</a></p>
+
+  <h3 id="doomed-swords-quest" class="underline">Doomed Swords (마검)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/doomed_swords_quest_npc.png" alt="Doomed Swords Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 80 or higher</li>
+    <li><b>Start Location:</b> Hariburn (prontera 209, 107), Bjob (prontera 104, 26), Setz (morocc 287, 181), and Gatu (yuno 93, 96).</li>
+  </ul>
+
+  <p>Known on iRO as the <a href="https://irowiki.org/wiki/Doomed_Swords_and_Comodo_Cheese_Quest" target="_blank" rel="noopener noreferrer">Doomed Swords & Comodo Cheese Quest</a>. These quests are how a player can get one of the Doomed Swords: Executioner, Mysteltainn, or Grimtooth. For the kRO version of the quest to obtain Grimtooth, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=249" target="_blank" rel="noopener noreferrer">see this inven post</a>. For the kRO version of the quest to obtain Executioner, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=250" target="_blank" rel="noopener noreferrer">see this inven post</a>. And, for the kRO version of the quest to obtain Mysteltainn, <a href="http://ro.inven.co.kr/dataninfo/area/view.php?class=1899&idx=251" target="_blank" rel="noopener noreferrer">see this inven post</a>. <strong>Note that the kRO quests may differ from the kRO Zero quests.</strong></p>
+
+  <h3 id="nogg-road-daily-quests-1" class="underline">Nogg Road Daily Quests (나이트메어 테러 포획, 굳어버린 용암 수집, 딜리터 포획)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/nogg_daily_quest_2_npc.png" alt="Nogg Road Daily Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 90 or higher</li>
+    <li><b>Start Location:</b> Museum Staff (yuno 273, 292 & yuno_fild03 40, 150)</li>
+  </ul>
+
+  <p>There are three daily quests for Nogg Road (aka Magma Dungeon) that you can do. The quests all start at the NPC located at yuno 273, 292. The quests are as follows:</p>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li>Hunt 30 Nightmare Terror</li>
+    <li>Hunt 30 of each type of Deleter</li>
+    <li>Collect 10 Lava</li>
+  </ul>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/magma_daily_quest_1_npc.png" alt="Nogg Road Daily Quest NPC" />
+  </figure>
+
+  <h3 id="moms-handmade-lunchbox-quest" class="underline">Mom's Handmade Lunchbox (엄마손 도시락)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/moms_handmade_lunchbox_quest_npc.png" alt="Mom's Handmade Lunchbox Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Middle-aged Woman (aldebaran 114, 180)</li>
+  </ul>
+
+  <p>This quest can be done daily. Help a mom deliver lunch to her always-working son at the border checkpoint north of Aldebaran.</p>
+
+  <h3 id="border-checkpoint-quest" class="underline">Border Checkpoint Work (국경검문소의 일)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/border_checkpoint_work_quest_npc.png" alt="Border Checkpoint Work Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Checkpoint Manager Chezare (yuno_fild01 193, 158)</li>
+  </ul>
+
+  <p>This quest can be done daily. The Aldebaran Northern Border Patrol is trying to ensure the safety of travelers, but it's not easy. The always-tired Checkpoint Manager wants a rest.</p>
+
+  <h3 id="soft-and-fluffy-quest" class="underline">Soft And Fluffy (보들보들 푹신푹신)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/soft_and_fluffy_quest_npc.png" alt="Soft And Fluffy Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Kiel Hyre Academy Student (yuno_fild01 189, 154)</li>
+  </ul>
+
+  <p>This quest can be done daily. The girl you met at the northern border checkpoint in Aldebaran seems to have come up with a good idea when she saw the Goat around.</p>
+
+  <h3 id="soft-and-fluffy-quest" class="underline">School Safety (학원 안전 강화)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/reinforce_academy_safety_quest_npc.png" alt="School Safety Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Academy Guard (yuno_fild08 198, 200)</li>
+  </ul>
+
+  <p>This quest can be done daily. The security office at Kiel Hyre Academy in northwestern Aldebaran, southeast of Yuno, is plagued by a recent increase in the number of Harpy near the academy.</p>
+
+  <h3 id="adventurers-poem-quest" class="underline">Adventurers' Poem (학원 안전 강화)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/adventurers_poem_quest_npc.png" alt="Adventurers' Poem Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 75 or higher</li>
+    <li><b>Start Location:</b> Alfredo (yuno_fild02 146, 186)</li>
+  </ul>
+
+  <p>Let's listen to Alfredo and help him solve his problems.</p>
+
+  <h3 id="find-the-lost-items-quest" class="underline">Find The Lost Items (잃어버린 물건들을 찾아서)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/find_the_lost_items_quest_npc.png" alt="Find The Lost Items Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 75 or higher</li>
+    <li><b>Start Location:</b> Emilia (yuno_fild04 257, 210)</li>
+  </ul>
+
+  <p>This quest can be done daily. What should we do if something precious flies away in the wind while we're enjoying Yuno's famous lookout spot? Here you've found a special team that collects such lost items. Why don't we help the Valkyrie Air Lost & Found team collect the lost items?</p>
+
+  <h3 id="guards-and-librarians-quest" class="underline">Guards And Librarians' Work (사서와 가드의 일)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/guards_and_librarians_work_quest_npcs.png" alt="Guards And Librarians' Work Quest NPCs" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Du-ri (yuno_fild06 308, 170)</li>
+  </ul>
+
+  <p>This quest can be done daily. In a corner of Yuno, the librarians and guards are trying to find the magic book that escaped from the library's special section. Let's help them catch the magic book and stop the destruction of Yuno!</p>
+
+  <h3 id="daily-training-quest" class="underline">Misusing The Training (훈련은 이용당했다)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/daily_training_quest_npc.png" alt="Daily Training Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Prairie (yuno_fild09 308, 80)</li>
+  </ul>
+
+  <p>This quest can be done daily. A rivalry exists between the Schwartzwald Guards and the 702nd Squad as they're doing their trainings. The captain of the Schwartzwald Guards wants your help, but something seems fishy about the training...</p>
+
+  <h3 id="a-prayer-for-rain-quest" class="underline">A Prayer For Rain (비를 부르는 기도)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/prayer_for_rain_quest_npc.png" alt="A Prayer For Rain Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Angelo (yuno_fild11 71, 363)</li>
+  </ul>
+
+  <p>This quest can be done daily. Angelo is investigating an illegal magic experiment. Let's help him in his investigation!</p>
+
+  <h2 id="nogg-road-3">Fever Dungeon: Nogg Road 3<sup>rd</sup> Floor</h2>
+
+  <p>A fever dungeon was added to the Nogg Road Dungeon (also known as Magma Dungeon). A character must be base level 75 or higher to enter the Fever Dungeon. Nogg Road is located one south and one east of Yuno.</p>
+
+  <h3 id="nogg-road-3-monsters">Monsters</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="hardened-blazer.png",
+      name="Rigid Blazer (굳은 블레이저)",
+      level="117",
+      hp="131023",
+      defMdef="291/2",
+      class="Boss",
+      family="Demon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="14558/13102",
+      str="110",
+      dex="109",
+      agi="76",
+      vit="83",
+      int="61",
+      luk="64"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-flying-deleter.png",
+      name="Rigid Sky Deleter (굳은 공중 딜리터)",
+      level="105",
+      hp="62925",
+      defMdef="197/60",
+      class="Normal",
+      family="Dragon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="6992/6293",
+      str="72",
+      dex="117",
+      agi="97",
+      vit="78",
+      int="113",
+      luk="77"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-ground-deleter.png",
+      name="Rigid Ground Deleter (굳은 지상 딜리터)",
+      level="104",
+      hp="62389",
+      defMdef="312/10",
+      class="Normal",
+      family="Dragon",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="6932/6239",
+      str="90",
+      dex="108",
+      agi="110",
+      vit="109",
+      int="75",
+      luk="110"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-explosion.png",
+      name="Rigid Explosion (굳은 익스플로젼)",
+      level="109",
+      hp="65340",
+      defMdef="90/113",
+      class="Normal",
+      family="Brute",
+      property="Neutral LV2",
+      size="Small",
+      expJexp="7260/6534",
+      str="67",
+      dex="89",
+      agi="97",
+      vit="90",
+      int="64",
+      luk="80"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-kaho.png",
+      name="Rigid Kaho (굳은 카호)",
+      level="101",
+      hp="60534",
+      defMdef="38/220",
+      class="Normal",
+      family="Formless",
+      property="Shadow LV2",
+      size="Medium",
+      expJexp="6726/6053",
+      str="79",
+      dex="167",
+      agi="38",
+      vit="78",
+      int="117",
+      luk="39"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rigid-lava-golem.png",
+      name="Rigid Lava Golem (굳은 라바 골렘)",
+      level="116",
+      hp="130022",
+      defMdef="700/13",
+      class="Boss",
+      family="Formless",
+      property="Neutral LV2",
+      size="Large",
+      expJexp="14447/13002",
+      str="91",
+      dex="167",
+      agi="10",
+      vit="116",
+      int="30",
+      luk="28"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="rigid-nightmare-terror.png",
+      name="Rigid Nightmare Terror (굳은 나이트메어 테러)",
+      level="121",
+      hp="148793",
+      defMdef="10/317",
+      class="Boss",
+      family="Demon",
+      property="Shadow LV3",
+      size="Large",
+      expJexp="16533/14879",
+      str="80",
+      dex="137",
+      agi="110",
+      vit="20",
+      int="131",
+      luk="63"
+    %}
+  </div>
+
+  <h3 id="nogg-road-3-equipment">Equipment</h3>
+
+  <p>Some of the equipment below can be found in other versions of RO, but Zero seems to have expanded on the number of pieces of equipment that are obtainable, and also updated the equipment effects.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="15378",
+      folder="yuno",
+      name="Lava Leather Armor [1]",
+      category="Armor",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="200",
+      def="50"
+    %}
+      <ul class="border-t p-2">
+        <li>This armor, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>Max HP +400.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>If +7 or higher, additional +150 MaxHP and increased healing received by +5%.</li>
+        <li>If +9 or higher, additional +250 MaxHP and increased healing received by an additional +5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="15380",
+      folder="yuno",
+      name="Lava Leather Robe [1]",
+      category="Armor",
+      droppedBy="Rigid Sky Deleter",
+      canWear="All",
+      requiredLevel="75",
+      weight="50",
+      def="20"
+    %}
+      <ul class="border-t p-2">
+        <li>This robe, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>Max HP +300, MaxSP +100, SP Recovery Rate +10%, MDEF +5.</li>
+        <li>Reduces SP consumption of [Blessing] and [Increase Agility] by 20%.</li>
+        <li>If +7 or higher, an additional MaxHP +125, MaxSP +50 and +10% SP Recovery Rate, +5% Heal, MATK +5<sup>*This MATK +5 is in the DP entry & ingame, but not on the kRO Zero website.</sup>.</li>
+        <li>If +9 or higher, an additional MaxHP +125, MaxSP +50 and +10% SP Recovery Rate, +7% Heal, MATK +5<sup>*This MATK +5 is in the DP entry & ingame, but not on the kRO Zero website.</sup>.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="15379",
+      folder="yuno",
+      name="Lava Leather Suit [1]",
+      category="Armor",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="80",
+      def="25"
+    %}
+      <ul class="border-t p-2">
+        <li>This suit, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>Max HP +350, AGI +3, DEX +3.</li>
+        <li>If +7 or higher, MaxHP +125, HIT +10, FLEE +5, Critical damage +3%.</li>
+        <li>If +9 or higher, an additional MaxHP +125, HIT +15, FLEE +10, and +7% Critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="20935",
+      folder="yuno",
+      name="Lava Leather Manteau [1]",
+      category="Garment",
+      droppedBy="Rigid Nightmare Terror",
+      canWear="All",
+      requiredLevel="75",
+      weight="40",
+      def="20"
+    %}
+      <ul class="border-t p-2">
+        <li>This manteau, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>VIT +2.</li>
+        <li>When equipped with Lava Leather Armor and Boots, and the sum of refinement is +21 or higher: healing received +10%, damage received from Water, Wind, Earth, and Fire elements -5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="20936",
+      folder="yuno",
+      name="Lava Leather Muffler [1]",
+      category="Garment",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="13"
+    %}
+      <ul class="border-t p-2">
+        <li>This muffler, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>DEX +2.</li>
+        <li>When equipped with Lava Leather Suit and Shoes, and the sum of refinement is +21 or higher: critical damage +10%, HIT +10.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="20937",
+      folder="yuno",
+      name="Lava Leather Hood [1]",
+      category="Garment",
+      droppedBy="Rigid Kaho",
+      canWear="All",
+      requiredLevel="75",
+      weight="15",
+      def="7"
+    %}
+      <ul class="border-t p-2">
+        <li>This hood, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>INT +2.</li>
+        <li>When equipped with Lava Leather Robe and Sandals, and the sum of refinement is +21 or higher: Variable Cast Time -10%, magic damage of Water, Wind, Earth and Fire Skills +5%, Heal +5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="22199",
+      folder="yuno",
+      name="Lava Leather Boots [1]",
+      category="Shoes",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="90",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>These boots, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>MaxHP +300, MaxSP +50, HP Recovery Rate +50%.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>If +7 or higher, MaxHP +100, increased healing received by 2%.</li>
+        <li>If +9 or higher, an additional MaxHP +150 and increased healing received by 3%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="22200",
+      folder="yuno",
+      name="Lava Leather Shoes [1]",
+      category="Shoes",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="60",
+      def="10"
+    %}
+      <ul class="border-t p-2">
+        <li>These shoes, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>MaxHP +200, MaxSP +75, ASPD +5%, FLEE +15, HIT +10.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>If +7 or higher, MaxHP +100, critical damage +2%.</li>
+        <li>If +9 or higher, an additional MaxHP +150 and +3% critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="22201",
+      folder="yuno",
+      name="Lava Leather Sandals [1]",
+      category="Shoes",
+      droppedBy="",
+      canWear="All",
+      requiredLevel="75",
+      weight="40",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>These sandals, made from the skin of creatures living in Nogg Road, still radiates with heat.</li>
+        <li>MaxHP +150, MaxSP +125, SP Recovery Rate +20%.</li>
+        <li>If +7 or higher, MaxHP +100, Healing Power +2%, MATK +4.</li>
+        <li>If +9 or higher, an additional MaxHP +150, +3% Healing Power, and MATK +3.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h3 id="nogg-road-3-items">Items</h3>
+
+  <div class="flex flex-wrap justify-between">
+  <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/25727" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/25727.png" alt="Lava Ore" />
+          Lava Ore</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Not Sure Yet
+      </div>
+      <ul class="border-t p-2">
+        <li>An ore containing various types of minerals.</li>
+        <li>Once extracted, the ore will be destroyed.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 1</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/23814" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/23814.png" alt="Lava Ore Extractor" />
+          Lava Ore Extractor</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Not Sure Yet
+      </div>
+      <ul class="border-t p-2">
+        <li>A mysterious extractor that can extract Mythril Ore from a particular ore.</li>
+        <li>Once used, it is destroyed by the heat.</li>
+        <li>You can extract 1 Mythril Ore from 30 Lava Ore, with a small chance of something special coming out instead.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 5</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/23815" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/23815.png" alt="Lava Essence" />
+          Lava Essence</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Dropped By:</span> Rigid Sky Deleter (굳은 공중 딜리터) -- probably more than just that one
+      </div>
+      <ul class="border-t p-2">
+        <li>A mysterious essence from the depths of Nogg Road.</li>
+        <li>Can improve the following items:</li>
+        <li>Lava Leather Armor</li>
+        <li>Lava Leather Suit</li>
+        <li>Lava Leather Robe</li>
+        <li>Only two Random Options are available.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 5</li>
+        <li><strong>Level Requirement:</strong> 75</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="juperos">Juperos</h2>
+
+  <p>"Underneath El Mes Plateau lies the ruins of the city of Juperos , an ancient but highly advanced civilization. Juperos is well protected by automated guards and security devices to prevent unauthorized entry to prohibited areas. Although many of Juno's Scholars have their own speculations on the cause of the fall of such a technologically advanced race, no one is really sure what went wrong. One of the most popular theories is that Vesper Newton, a mad scientist conducting experiments with the famed Heart of Ymir has something to do with it." - <a href="https://irowiki.org/wiki/Juno#Juperos_Ruins" target="_blank" rel="noopener noreferrer">iRO Wiki</a></p>
+
+  <h3 id="juperos-monsters">Monsters</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-1.gif",
+      name="Venatu 1 (베나투 1)",
+      level="113",
+      hp="36126",
+      defMdef="159/25",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV2",
+      size="Medium",
+      expJexp="3284/2956",
+      str="61",
+      dex="110",
+      agi="91",
+      vit="51",
+      int="75",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-2.gif",
+      name="Venatu 2 (베나투 2)",
+      level="114",
+      hp="36455",
+      defMdef="138/17",
+      class="Normal",
+      family="Formless",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="3314/2983",
+      str="77",
+      dex="111",
+      agi="81",
+      vit="90",
+      int="29",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-3.gif",
+      name="Venatu 3 (베나투 3)",
+      level="113",
+      hp="36485",
+      defMdef="247/28",
+      class="Normal",
+      family="Formless",
+      property="Earth LV2",
+      size="Medium",
+      expJexp="3317/2985",
+      str="64",
+      dex="117",
+      agi="76",
+      vit="90",
+      int="90",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="venatu-4.gif",
+      name="Venatu 4 (베나투 4)",
+      level="113",
+      hp="36804",
+      defMdef="213/16",
+      class="Normal",
+      family="Formless",
+      property="Water LV2",
+      size="Medium",
+      expJexp="3067/2760",
+      str="80",
+      dex="109",
+      agi="71",
+      vit="90",
+      int="29",
+      luk="30"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-1.gif",
+      name="Dimik 1 (디미크 1)",
+      level="116",
+      hp="37068",
+      defMdef="136/21",
+      class="Normal",
+      family="Formless",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="3370/3033",
+      str="75",
+      dex="128",
+      agi="67",
+      vit="35",
+      int="55",
+      luk="41"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-2.gif",
+      name="Dimik 2 (디미크 2)",
+      level="116",
+      hp="37073",
+      defMdef="129/22",
+      class="Normal",
+      family="Formless",
+      property="Water LV2",
+      size="Medium",
+      expJexp="3370/3033",
+      str="70",
+      dex="133",
+      agi="71",
+      vit="40",
+      int="60",
+      luk="38"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-3.gif",
+      name="Dimik 3 (디미크 3)",
+      level="116",
+      hp="37123",
+      defMdef="203/17",
+      class="Normal",
+      family="Formless",
+      property="Earth LV2",
+      size="Medium",
+      expJexp="3375/3037",
+      str="68",
+      dex="119",
+      agi="49",
+      vit="90",
+      int="35",
+      luk="35"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dimik-4.gif",
+      name="Dimik 4 (디미크 4)",
+      level="116",
+      hp="37083",
+      defMdef="193/13",
+      class="Normal",
+      family="Formless",
+      property="Fire LV2",
+      size="Medium",
+      expJexp="3371/3034",
+      str="97",
+      dex="120",
+      agi="78",
+      vit="50",
+      int="15",
+      luk="47"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="akudam.gif",
+      name="Zakudam (아크담)",
+      level="121",
+      hp="63795",
+      defMdef="187/96",
+      class="Normal",
+      family="Demi-Human",
+      property="Neutral LV3",
+      size="Large",
+      expJexp="5800/5220",
+      str="90",
+      dex="106",
+      agi="110",
+      vit="38",
+      int="79",
+      luk="25"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="apocalypse.gif",
+      name="Apocalypse (아포칼립스)",
+      level="126",
+      hp="66507",
+      defMdef="413/6",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV3",
+      size="Large",
+      expJexp="6046/5441",
+      str="106",
+      dex="121",
+      agi="74",
+      vit="90",
+      int="30",
+      luk="15"
+    %}
+    {% monsterCard 
+      widthClass="w-full",
+      image="vesper.gif",
+      name="Vesper (베스퍼)",
+      level="128",
+      hp="3802000",
+      defMdef="402/109",
+      class="Boss",
+      family="Brute",
+      property="Holy LV2",
+      size="Large",
+      expJexp="345636/311073",
+      str="177",
+      dex="255",
+      agi="195",
+      vit="165",
+      int="130",
+      luk="102"
+    %}
+  </div>
+
+  <h3 id="juperos-equipment">Equipment</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="32215",
+      folder="yuno",
+      name="Vesper Gear 01 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to have a clear mind.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>INT +2.</li>
+        <li>When equipped with Vesper Core 01 and the total refinement is 15 or above, SP Recovery Rate +15%, Variable Cast Time -10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32216",
+      folder="yuno",
+      name="Vesper Gear 02 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be stronger.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>STR +2.</li>
+        <li>When equipped with Vesper Core 02 and the total refinement is 15 or above, HP Recovery Rate +30%, ATK +20.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32217",
+      folder="yuno",
+      name="Vesper Gear 03 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more agile.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>AGI +2.</li>
+        <li>When equipped with Vesper Core 03 and the total refinement is 15 or above, FLEE +20, ASPD +5%, healing received +5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32218",
+      folder="yuno",
+      name="Vesper Gear 04 [1]",
+      category="Accessory (Left)",
+      craftedFrom="Dimik",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more dexterous and more accurate.</li>
+        <li>It feels like this could fit into the grooves of another part.</li>
+        <li>[Can be refined]</li>
+        <li>DEX +1, LUK +1.</li>
+        <li>When equipped with Vesper Core 04 and the total refinement is 15 or above, HIT +10, CRIT +3, Critical Damage +7%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32211",
+      folder="yuno",
+      name="Vesper Core 01 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to have a clear mind.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, INT +2, MaxSP +3%, MATK +5.</li>
+        <li>If +7 or higher, SP Recovery Rate +5%, MATK +3.</li>
+        <li>If +9 or higher, Heal +5%, +5% additional SP Recovery Rate and MATK +5.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32212",
+      folder="yuno",
+      name="Vesper Core 02 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be stronger.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, STR +2, ATK +5.</li>
+        <li>If +7 or higher, HP Recovery Rate +5%, ATK +3.</li>
+        <li>If +9 or higher, +10% additional HP Recovery Rate and ATK +5.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32213",
+      folder="yuno",
+      name="Vesper Core 03 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more agile.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, AGI +2, FLEE +5.</li>
+        <li>If +7 or higher, healing received +2%, an additional FLEE +5.</li>
+        <li>If +9 or higher, an additional healing received +3% and FLEE +7.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32214",
+      folder="yuno",
+      name="Vesper Core 04 [1]",
+      category="Accessory (Right)",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="30",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>An object which seems to be part of Vesper.</li>
+        <li>Possesses a mysterious power that enables its owner to be more dexterous and more accurate.</li>
+        <li>[Can be refined]</li>
+        <li>MDEF +3, DEX +2, HIT +5.</li>
+        <li>If +7 or higher, an additional HIT +3.</li>
+        <li>If +9 or higher, an additional HIT +5.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19392",
+      folder="yuno",
+      name="Memory of Lovers",
+      category="Middle Headgear",
+      craftedFrom="Vesper's Memory Exchange (yuno_in04 180, 111)",
+      canWear="All",
+      requiredLevel="75",
+      weight="10",
+      def="25"
+    %}
+      <ul class="border-t p-2">
+        <li>A component left by a robotic doll which mourned the death of its owner.</li>
+        <li>It's filled with their memories of love.</li>
+        <li>MaxHP +300, MaxSP +30, MDEF +7.</li>
+        <li>Reduces damage taken from Fire enemies by 5%.</li>
+        <li>When equipped with Vesper Core 01, Heal +10%, MATK +20.</li>
+        <li>When equipped with Vesper Core 02, ATK +20.</li>
+        <li>When equipped with Vesper Core 03, ASPD +1.</li>
+        <li>When equipped with Vesper Core 04, HIT +15.</li>
+        <li><em>Can be exchanged for a costume Memory of Lovers with Gelstar.</em></li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h3>Items</h3>
+
+  <div class="flex flex-wrap justify-between">
+    <div class="border-2 rounded-md text-sm mb-4 ca-w-49">
+      <div class="border-b rounded-t-md p-2 bg-blue-100">
+        <a href="https://divine-pride.net/database/item/25718" target="_blank" rel="noopener noreferrer">
+          <img class="inline-block mr-2" src="/images/equip/yuno/25718.png" alt="Vesper's Memory" />
+          Vesper's Memory</a>
+      </div>
+      <div class="border-t p-2">
+        <span class="font-bold">Obtained From:</span> Not Sure Yet
+      </div>
+      <ul class="border-t p-2">
+        <li>A chip that contains some of Vesper's memories.</li>
+      </ul>
+      <ul class="border-t p-2">
+        <li><strong>Weight:</strong> 10</li>
+        <li>All moveable</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="craftable-equipment">Craftable Equipment</h2>
+
+  <p>With the Yuno update, the following craftable headgear was added. To see more information about each headgear, including NPC location, ingredients needed, and an item description, <a href="/updates/craftable-equipment/">head to the Craftable Equipment page</a>.</p>
+
+  <ul class="list-disc pl-8">
+    <li>Ayam [1]</li>
+    <li>Bride's Corolla</li>
+    <li>Spore Hat</li>
+    <li>Red Ribbon</li>
+    <li>Wonder Nutshell</li>
+    <li>Parcel Hat</li>
+    <li>Grief for Greed</li>
+    <li>Opera Phantom Mask</li>
+    <li>Blush</li>
+    <li>Magistrate Hat [1]</li>
+  </ul>
+
+  <h2 id="droppable-equipment">Droppable Equipment</h2>
+
+  <p>New equipment drops were also added to monsters that already existed in Yuno in previous iterations of RO. This section describes these pieces of equipment. <strong>Since they are new equipment, they will have Fever Field random options.</strong></p>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="28756",
+      folder="yuno",
+      name="Ninja's Excalibur [1]",
+      category="Dagger",
+      droppedBy="Venatu 1",
+      canWear="Ninja",
+      requiredLevel="60",
+      level="3",
+      weight="70",
+      atk="70"
+    %}
+      <ul class="border-t p-2">
+        <li>A godly dagger for magic-wielding Ninjas.</li>
+        <li>An immense amount of energy lives within this dagger.</li>
+        <li>MATK +110.</li>
+        <li>Increases damage of [Exploding Dragon], [Snow Flake Drift], [Frost Wind] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Exploding Dragon], [Snow Flake Drift], [Frost Wind] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Exploding Dragon], [Snow Flake Drift], [Frost Wind] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="13344",
+      folder="yuno",
+      name="Huuma Ebony [1]",
+      category="Huuma Shuriken",
+      droppedBy="Venatu 2",
+      canWear="Ninja",
+      requiredLevel="60",
+      level="3",
+      weight="100",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A jet-black Huuma Shuriken.</li>
+        <li>It is made of very light material, so it is easy to throw.</li>
+        <li>Indestructible.</li>
+        <li>Increases damage of [Throw Huuma Shuriken] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Throw Huuma Shuriken] by an additional 10%.</li>
+        <li>If +9 or higher, decreases skill cooldown of [Throw Huuma Shuriken] by 1 second.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="18181",
+      folder="yuno",
+      name="Hellfire Bow [1]",
+      category="Bow",
+      droppedBy="Gig",
+      canWear="Archer, Rogue",
+      requiredLevel="60",
+      level="3",
+      weight="70",
+      atk="115"
+    %}
+      <ul class="border-t p-2">
+        <li>A bow crafted from hellfire.</li>
+        <li>ATK +3%</li>
+        <li>If +7 or higher, increases bow damage by 15%.</li>
+        <li>If +9 or higher, increases damage of [Double Strafe] by 15%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28952",
+      folder="yuno",
+      name="Alloy Shield [1]",
+      category="Shield",
+      droppedBy="Archdam",
+      canWear="All",
+      requiredLevel="60",
+      weight="80",
+      def="75"
+    %}
+      <ul class="border-t p-2">
+        <li>A shield that is alloyed with special metals.</li>
+        <li>It is light but sturdy, which makes it suitable for anyone.</li>
+        <li>Reduces physical/magical damage taken from Medium enemies by 5%.</li>
+        <li>If +7 or higher, ASPD +5%.</li>
+        <li>If +9 or higher, reduces physical/magical damage taken from Medium enemies by an additional 2%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="16090",
+      folder="yuno",
+      name="Meteor Hammer [1]",
+      category="Mace",
+      droppedBy="Dimik 1",
+      canWear="Acolyte",
+      requiredLevel="60",
+      level="3",
+      weight="120",
+      atk="150"
+    %}
+      <ul class="border-t p-2">
+        <li>A hammer made entirely out of metal.</li>
+        <li>Looking closely, it doesn't look like a metal from this world.</li>
+        <li>Indestructible.</li>
+        <li>Increases damage of [Investigate] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Investigate] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Investigate] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19398",
+      folder="yuno",
+      name="Falcon Feather",
+      category="Lower Headgear",
+      droppedBy="Grand Peco",
+      canWear="Hunter",
+      requiredLevel="80",
+      weight="10",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>A bird's tail feather.</li>
+        <li>It is said that it can help tame a falcon.</li>
+        <li>AGI +1, LUK +1.</li>
+        <li>Increases damage of [Blitz Beat] by 5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32220",
+      folder="yuno",
+      name="Falcon Claw",
+      category="Accessory (Right)",
+      droppedBy="Harpy",
+      canWear="Hunter",
+      requiredLevel="80",
+      weight="10",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>A sharp claw accessory that increases the falcon's efficiency.</li>
+        <li>AGI +1, LUK +1.</li>
+        <li>Increases damage of [Blitz Beat] by 5%.</li>
+        <li>When equipped with Falcon Feather, increases [Blitz Beat] damage by an additional 10%, and adds a high chance to autocast [Blitz Beat] when doing ranged physical attacks (according to the learned level of the skill and will not activate if it's not learned).</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32020",
+      folder="yuno",
+      name="Piercing Spear [1]",
+      category="1Handed Spear",
+      droppedBy="Apocalypse",
+      canWear="Swordsman",
+      requiredLevel="60",
+      level="3",
+      weight="120",
+      atk="135"
+    %}
+      <ul class="border-t p-2">
+        <li>A one-handed spear that is great for stabbing your opponents.</li>
+        <li>ASPD +10%.</li>
+        <li>If +7 or higher, increases damage of [Pierce] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Pierce] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="16091",
+      folder="yuno",
+      name="Hellfire Mace [1]",
+      category="Mace",
+      droppedBy="Grizzly",
+      canWear="Novice, Swordsman, Merchant, Acolyte",
+      requiredLevel="60",
+      level="3",
+      weight="110",
+      atk="135"
+    %}
+      <ul class="border-t p-2">
+        <li>A mace that was smelted at extremely high temperatures.</li>
+        <li>It is said to be very durable.</li>
+        <li>Indestructible.</li>
+        <li>Increases damage of [Bash] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Bash] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Bash] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26153",
+      folder="yuno",
+      name="Holyfire Staff [1]",
+      category="1Handed Staff",
+      droppedBy="Earth Deleter",
+      canWear="Acolyte",
+      requiredLevel="60",
+      level="3",
+      weight="80",
+      atk="60"
+    %}
+      <ul class="border-t p-2">
+        <li>A staff burning with divine fire.</li>
+        <li>It is said to be able to punish the wicked with its divine light.</li>
+        <li>MATK +150, Indestructible.</li>
+        <li>Increases damage of [Magnus Exorcismus] by 10%.</li>
+        <li>If +7 or higher, increases damage of [Magnus Exorcismus] by an additional 5%.</li>
+        <li>If +9 or higher, increases damage of [Magnus Exorcismus] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19399",
+      folder="yuno",
+      name="Grand Peco Headband [1]",
+      category="Upper Headgear",
+      droppedBy="Grand Peco",
+      canWear="All",
+      requiredLevel="60",
+      weight="80",
+      def="15"
+    %}
+      <ul class="border-t p-2">
+        <li>A gorgeous headdress made with the feathers of Grand Peco Peco.</li>
+        <li>Increases magical damage against human and animal monsters by 7%.</li>
+        <li>If +7 or higher, increases Fire magical damage by 3%.</li>
+        <li>If +9 or higher, increases Fire magical damage by an additional 5%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19400",
+      folder="yuno",
+      name="Sleeper Hat [1]",
+      category="Upper Headgear",
+      droppedBy="Sleeper",
+      canWear="All",
+      requiredLevel="60",
+      weight="100",
+      def="20"
+    %}
+      <ul class="border-t p-2">
+        <li>A hat that mimics the Sleeper from Yuno.</li>
+        <li>Increases physical damage against Formless and Demon monsters by 7%.</li>
+        <li>If +7 or higher, ATK +15.</li>
+        <li>If +9 or higher, ATK +20.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="1863",
+      folder="yuno",
+      name="Nippy Claw [1]",
+      category="Fist",
+      droppedBy="Dimik 2",
+      canWear="Monk, Priest",
+      requiredLevel="60",
+      level="3",
+      weight="100",
+      atk="110"
+    %}
+      <ul class="border-t p-2">
+        <li>A fist capable of very fast attacks.</li>
+        <li>It is made out of an unknown metal and seems to be quite sharp.</li>
+        <li>ASPD +5%.</li>
+        <li>If +7 or higher, increases damage of [Chain Combo] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Combo Finish] by 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28757",
+      folder="yuno",
+      name="Blazing Dagger [1]",
+      category="Dagger",
+      droppedBy="Blazzer",
+      canWear="Thief, Rogue",
+      requiredLevel="60",
+      level="3",
+      weight="90",
+      atk="115"
+    %}
+      <ul class="border-t p-2">
+        <li>A dagger smelted in hot lava flames.</li>
+        <li>HIT +5.</li>
+        <li>If +7 or higher, increases damage of [Raid] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Back Stab] by 10%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26022",
+      folder="yuno",
+      name="Burning Nightmare [1]",
+      category="2Handed Spear",
+      droppedBy="Nightmare Terror",
+      canWear="Swordsman",
+      requiredLevel="60",
+      level="3",
+      weight="185",
+      atk="170"
+    %}
+      <ul class="border-t p-2">
+        <li>A two-handed spear burning with the nightmare flame.</li>
+        <li>It's better to swing than stab with it.</li>
+        <li>ATK +3%.</li>
+        <li>If +7 or higher, increases damage of [Brandish Spear] by 10%.</li>
+        <li>If +9 or higher, increases damage of [Brandish Spear] by an additional 10%.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2 id="doomed-swords">Doomed Swords</h2>
+
+  <p>With Yuno it became possible to craft the three Doomed Swords: Executioner, Mysteltainn, and Grimtooth via a quest. This section describes the three swords.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="28758",
+      folder="yuno",
+      name="Doomed Sword Grimtooth [2]",
+      category="Dagger",
+      craftedFrom="Doomed Swords Quest",
+      canWear="Swordsman, Archer, Thief, Mage, Merchant, Ninja, Soul Linker",
+      requiredLevel="60",
+      level="4",
+      weight="80",
+      atk="100"
+    %}
+      <ul class="border-t p-2">
+        <li>The longer you use this dagger made from a monster's tooth, the more violent you will become.</li>
+        <li>66 HP lost every 5 seconds that it is equipped. 666 HP lost when unequipped.</li>
+        <li>If +3 or higher, increases physical damage to all enemies by 10%.</li>
+        <li>If +6 or higher, increases physical damage to Medium-size monsters by 10%.</li>
+        <li>If +9 or higher, increases physical damage to Medium-size monsters by an additional 10% and has a low probability, on physical attack, to eliminate the weapon-size penalty for 5 seconds.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="21048",
+      folder="yuno",
+      name="Doomed Sword Executioner [2]",
+      category="2Hand Sword",
+      craftedFrom="Doomed Swords Quest",
+      canWear="Swordsman",
+      requiredLevel="60",
+      level="4",
+      weight="220",
+      atk="185"
+    %}
+      <ul class="border-t p-2">
+        <li>A terrifying two-handed sword that is said to have severed the heads off countless death row inmates, destroying their souls in the process as well.</li>
+        <li>66 HP lost every 5 seconds that it is equipped. 666 HP lost when unequipped.</li>
+        <li>Increases physical damage to Demi-Human monsters by 20%.</li>
+        <li>If +7 or higher, increases physical damage to Demi-Human monsters by an additional 10%.</li>
+        <li>If +9 or higher, has a low probability of ignoring 50% of a Demi-Human monster's DEF for 5 seconds.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="13494",
+      fullWidth="true",
+      folder="yuno",
+      name="Doomed Sword Mysteltainn [2]",
+      category="1Handed Sword",
+      craftedFrom="Doomed Swords Quest",
+      canWear="Swordsman, Merchant, Thief",
+      requiredLevel="60",
+      level="4",
+      weight="100",
+      atk="150"
+    %}
+      <ul class="border-t p-2">
+        <li>A young branch that stabbed the God of Light to death.</li>
+        <li>MATK +85, +50% increased [Soul Strike] damage.</li>
+        <li>Increases physical damage to Ghost-element monsters by 30%.</li>
+        <li>If +7 or higher, increases physical damage to Ghost monsters by an additional 20%.</li>
+        <li>If +9 or higher, has a high chance of casting [Soul Strike] Level 10 on close physical attack.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2 id="yuno-monsters">Yuno Monsters</h2>
+
+  <p>The Yuno monsters listed on the kRO Zero update page for Yuno contain the same stats as those found in general Renewal versions of the game. Below you'll find a list of these monsters, with links to their Divine-Pride pages. I have also included the Champion mobs in the list as well, though the DP pages won't list the optioned gear drops.</p>
+
+  <ul class="list-disc pl-8">
+    <li><a href="https://divine-pride.net/database/monster/1368/" target="_blank" rel="noopener noreferrer">Geographer (지오그래퍼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2824/" target="_blank" rel="noopener noreferrer">Swift Geographer</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2825/" target="_blank" rel="noopener noreferrer">Solid Geographer</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1372/" target="_blank" rel="noopener noreferrer">Goat (고우트)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2815/" target="_blank" rel="noopener noreferrer">Solid Goat</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2816/" target="_blank" rel="noopener noreferrer">Goat Ringleader</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1376/" target="_blank" rel="noopener noreferrer">Harpy (하피)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2806/" target="_blank" rel="noopener noreferrer">Harpy Ringleader</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2807/" target="_blank" rel="noopener noreferrer">Furious Harpy (분노의 하피)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1369/" target="_blank" rel="noopener noreferrer">Grand Peco (그랜드 페코)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2810/" target="_blank" rel="noopener noreferrer">Solid Grand Peco</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2811/" target="_blank" rel="noopener noreferrer">Grand Peco Ringleader</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1386/" target="_blank" rel="noopener noreferrer">Sleeper (슬리퍼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2655/" target="_blank" rel="noopener noreferrer">Elusive Sleeper</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2656/" target="_blank" rel="noopener noreferrer">Swift Sleeper</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1072/" target="_blank" rel="noopener noreferrer">Kaho (카호)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1383/" target="_blank" rel="noopener noreferrer">Explosion (익스플로젼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2837/" target="_blank" rel="noopener noreferrer">Furious Explosion (분노의 익스플로젼)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1366/" target="_blank" rel="noopener noreferrer">Lava Golem (라바 골렘)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1367/" target="_blank" rel="noopener noreferrer">Blazer (블레이저)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1381/" target="_blank" rel="noopener noreferrer">Grizzly (그리즐리)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1384/" target="_blank" rel="noopener noreferrer">Sky Deleter (공중 딜리터)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1385/" target="_blank" rel="noopener noreferrer">Ground Deleter (지상 딜리터)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1382/" target="_blank" rel="noopener noreferrer">Diabolic (디아볼릭)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1379/" target="_blank" rel="noopener noreferrer">Nightmare Terror (나이트메어 테러)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/2732/" target="_blank" rel="noopener noreferrer">Furious Nightmare Terror (분노의 나이트메어 테러)</a></li>
+    <li><a href="https://divine-pride.net/database/monster/1387/" target="_blank" rel="noopener noreferrer">Gig (기그)</a></li>
+  </ul>
+
+  <div id="kro-zero-changelogs" class="mb-6 text-sm">
+    <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">kRO Zero Changelogs</h2>
+    <p class="border-r border-l p-2 mb-0">The information for this piece of content changed over time on kRO Zero. When possible, this section links to the different versions of the original source article on the kRO Zero website.</p>
+    <ul class="border-r border-l border-b rounded-b-md pt-1 pb-3 pl-8 list-disc">
+      <li>2018-06-27 - Original</li>
+      <li>2018-07-03 - Updated</li>
+      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10014&seq=36&curpage=3">2020-06-22 - Updated</a> (Dimik 1, fixed incomplete DEF/MDEF value)</li>
+    </ul>
+  </div>
+
+  <h2>Related Pages</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="/news/205-2018-07-09-july-11-maint/">News #205 - 2018.07.02</a>
+    </li>
+    <li>
+      <a href="/news/204-2018-07-02-july-4-maint/">News #204 - 2018.07.02</a>
+    </li>
+    <li>
+      <a href="/news/200-2018-06-25-june-27-maint/">News #200 - 2018.06.25</a>
+    </li>
+    <li>
+      <a href="/dev-notes/40-2018-06-12-jun-dev-details-2/">Dev Note #40 - 2018.06.12</a>
+    </li>
+    <li>
+      <a href="/updates/craftable-equipment/">Craftable Equipment</a>
+    </li>
+  </ul>
+
+</article>
