@@ -121,7 +121,7 @@ function card (description, card) {
         ${card.prefix ? `<li><strong>Prefix/Suffix:</strong> ${card.prefix}</li>` : ``}
       </ul>
     ${description}
-    <span class="block mt-2 text-xs">
+    <span class="block mt-2 px-2 pb-2 text-xs">
       <i><a class="font-normal" href="#${card.name}">Link here</a></i>
     </span>
   </div>
