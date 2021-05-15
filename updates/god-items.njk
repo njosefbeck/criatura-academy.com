@@ -1,0 +1,302 @@
+---
+layout: /layouts/base.njk
+title: God Items & Quests
+description: Read about the implementation of the God Items & their quests on korean Ragnarok Online Zero. Discover the updates made to this area of Ragnarok Online.
+tags: update
+image: '/images/meta/criatura-academy-meta-god-items.png'
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">God Items & Quests (신급 아이템 및 퀘스트)</h1>
+
+  <p>God Items are strong pieces of equipment that require great time, coordination, and energy to create. Ragnarok Zero updated the God Items themselves, changing their effects somewhat from their Renewal-counterparts. Otherwise the quests and materials to make the God Items have largely remained the same. Read on to learn more!</p>
+
+  <h2 id="making-god-items">Making God Items</h2>
+
+  <p>If you are a Guild Master and have all the ingredients for a God Item, you can bring them to the Grunburti (그룬부르티) NPC in the guild dungeons to make it for you.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/grunburti.png" alt="Grunburti NPC screenshot" />
+    <figcaption>
+      (Grunburti NPC)
+    </figcaption>
+  </figure>
+
+  <p>You can only make a God Item once all the quests for that God Item have been completed.</p>
+
+  <h2 id="the-items">The Items</h2>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="22205",
+      folder="god-items",
+      name="Sleipnir (슬레이프니르)",
+      category="Shoes",
+      canWear="All Jobs",
+      requiredLevel="94",
+      weight="350",
+      def="40"
+    %}
+      <ul class="border-t p-2">
+        <li>Named after Odin's trusty steed, these shoes also mimic Sleipnir's powers.</li>
+        <li>MaxHP +20%, MaxSP +20%, SP Recovery Rate +100%, MDEF +10</li>
+        <li>Increases damage done to enemies of all elements by 1% for every 10 base levels.</li>
+        <li>For every 15 base DEX, -10% fixed cast (up to -80% fixed cast reduction).</li>
+        <li>Increased movement speed.</li>
+        <li>This item cannot be refined.</li>
+        <li>Indestructible.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32223",
+      folder="god-items",
+      name="Brisingamen (브리싱가멘)",
+      category="Accessory (Left)",
+      canWear="All Jobs",
+      requiredLevel="94",
+      weight="150",
+      def="7"
+    %}
+      <ul class="border-t p-2">
+        <li>An imitation of the necklace worn by the beautiful goddess Freyja.</li>
+        <li>STR, AGI, DEX, and VIT +3. LUK, INT, and MDEF +5.</li>
+        <li>For every 20 STR, ATK +3.</li>
+        <li>For every 20 AGI, FLEE +3, +2% ASPD.</li>
+        <li>For every 20 VIT, MaxHP +2%, DEF +5.</li>
+        <li>For every 20 INT, MATK +3, +30% [Heal] amount.</li>
+        <li>For every 20 DEX, HIT +3, -3% Variable Casting.</li>
+        <li>For every 20 LUK, CRIT +2, +3% Critical damage.</li>
+        <li>This item cannot be refined.</li>
+        <li>Indestructible.</li>
+        <li class="font-bold text-purple-600">* Added on 2018.09.17.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="490000",
+      folder="god-items",
+      name="Megingjard (메긴기오르드)",
+      category="Accessory (Right)",
+      canWear="All Jobs",
+      requiredLevel="94",
+      weight="800",
+      def="2"
+    %}
+      <ul class="border-t p-2">
+        <li>A reproduction of the girdle of might that Thor wore to enhance his prodigious strength.</li>
+        <li>STR +40, MDEF +7.</li>
+        <li>For every 5 base levels, +1 additional STR. <span class="text-red-500">(Original korean is vague (착용자의 BaseLV에 따라 STR 추가 증가.), so using effect for non-Zero version.)</span></li>
+        <li>If base STR is 120 or higher, +10% physical damage to Boss monsters.</li>
+        <li>This item cannot be refined.</li>
+        <li>Indestructible.</li>
+        <li class="font-bold text-purple-600">* Added on 2019.02.18 along with the Payon siege map.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32409",
+      folder="god-items",
+      name="Mjolnir (묘르닐)",
+      category="Mace",
+      canWear="Swordsman, Merchant, and Acolyte Jobs",
+      requiredLevel="94",
+      level="4",
+      weight="600",
+      atk="350"
+    %}
+      <ul class="border-t p-2">
+        <li>A facsimile of the mighty hammer wielded by Thor, god of thunder.</li>
+        <li>DEX +20, STR +20.</li>
+        <li>HIT +100.</li>
+        <li>Adds a 10% chance of casting level 10 [Thunder Storm] on the target when performing a physical attack.</li>
+        <li>Adds a 5% chance of activating splash damage for 10 seconds when performing a close physical attack.</li>
+        <li>ASPD +10%. <span class="text-red-500">(Original korean is vague (무한 공격속도 가속화), so using effect for non-Zero version.)</span></li>
+        <li>This item cannot be refined.</li>
+        <li>Indestructible.</li>
+        <li class="font-bold text-purple-600">* Added on 2018.07.22 along with the Aldebaran siege map.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h2 id="quest-information">Quest Information</h2>
+
+  <p>The God Item quests themselves don't seem to have changed much from their Renewal versions. <a href="https://irowiki.org/wiki/God_Items_Quest" target="_blank" rel="noopener nofollower">See the iRO Wiki page for specific information about the different Seal quests.</a></p>
+
+  <ol class="pl-8 list-decimal">
+    <li>A God Item Quest can be repeated.</li>
+    <li>A God Item Quests are conducted in four stages, and the next God Item Quest will be opened when 100 people complete the previous one.</li>
+    <li>Up to 200 people can complete each God Item Quest. Once 200 people have completed the quest, it will be closed.</li>
+    <li>God Item creation will be opened when 200 God Item Quests from each stage (1 - 4) are completed. At this itime, a Guild Master with all the ingredients can visit Grunburti to make the God Item.</li>
+  </ol>
+
+  <h3 id="sleipnir-quest">1st God Item Quest (Seal #1) - Sleipnir</h3>
+
+  <p>Noi (iRO: Noyee), a Yuno resident, cares about a certain lab that apparently helps with amazing research.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/yuno-noyee.png" alt="Noi NPC screenshot" />
+    <figcaption>
+      (Noi NPC)
+    </figcaption>
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Yuno Resident Noi (유노주민 노이) (yuno 164, 200)</li>
+    <li><b>Reward:</b> A random armor from Cukure & EXP</b> 
+  </ul>
+
+  <h3 id="sleipnir-quest">2nd God Item Quest (Seal #2) - Megingjard</h3>
+
+  <p class="font-bold text-purple-600">*Added on 2019-02-18 when the Payon WoE map was also added.</p>
+
+  <p>Royal Crusader Rebarev Doug (레베이레브 독) is looking for news of the former members of his unit. Let's find the whereabouts of the former troops at his request.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/yuno-rebarev-doug.png" alt="Rebarev Doug NPC screenshot" />
+    <figcaption>
+      (Rebarev Doug NPC)
+    </figcaption>
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> 100 players clear the Sleipnir Quest</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Rebarev Doug (레베이레브 독) (prt_cas 178, 243)</li>
+    <li><b>Reward:</b> Old Blue Box (OBB) & EXP</b> 
+  </ul>
+
+  <h3 id="sleipnir-quest">3rd God Item Quest (Seal #3) - Brisingamen</h3>
+
+  <p class="font-bold text-purple-600">*Added on 2018-09-17.</p>
+
+  <p>Nelliorde, a bard at the southern gate of Prontera, has some interesting information. Let's get a letter of recommendation from him and help Enrico of the Yuno Monster Society.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/bard-nelliorde.png" alt="Bard Nelliorde NPC screenshot" />
+    <figcaption>
+      (Bard Nelliorde NPC)
+    </figcaption>
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> 100 players clear the Megingjard Quest</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Bard Nelliorde (음유시인 넬류어드) (prt_fild08 175, 373)</li>
+    <li><b>Reward:</b> A random card from Enrico & EXP</b> 
+  </ul>
+
+  <h3 id="sleipnir-quest">4th God Item Quest (Seal #4) - Mjolnir</h3>
+
+  <p class="font-bold text-purple-600">*Added on 2019-07-22 when the Aldebaran WoE map was also added.</p>
+
+  <p>Tiafli had a mysterious dream last night. Based on what Tiafli has told us, let's visit the blacksmith dwarves in the Mjolnir mountains to find out more.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/tiafli.png" alt="Tiafli NPC screenshot" />
+    <figcaption>
+      (Tiafli NPC)
+    </figcaption>
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> 100 players clear the Brisingamen Quest</li>
+    <li><b>Level Requirement:</b> Base level 70 or higher</li>
+    <li><b>Start Location:</b> Tiafli (티알피) (prontera 124, 297)</li>
+    <li><b>Reward:</b> A random level 3 or level 4 weapon from Tiafli's family treasure & EXP</b> 
+  </ul>
+
+  <h2>WoE Treasure Chest Items Updated</h2>
+
+  <p class="font-bold text-purple-600">*During the 2019.12.11 maintenance, the number of castles per realm was reduced from 5 to 3. The realms that were closed are marked in each section below. There was very little mention of how the God Item materials in those closed realms were distributed amongst the other realms still open in that region.</p>
+
+  <h3>Prontera - Valkyrie Realm</h3>
+
+  <p>The items needed to craft <b>Sleipnir</b> can be found in the WoE Treasure Chests from the castles in Prontera's Valkyrie Realm.</p>
+
+  <ul class="list-disc pl-8">
+    <li><b>Kriemhild (Valkyrie 1):</b> {% item id="7076", name="Wheel of the Unknown (미지의 톱니바퀴)", imageFolder="items" %}</li>
+    <li><b>Swanhild (Valkyrie 2):</b> {% item id="7083", name="Spirit of Fish (물고기의 영혼)", imageFolder="items" %}</li>
+    <li><b>Fadhgrindh (Valkyrie 3)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7079", name="Feather of Angel Wing (물천사의 날개깃털)", imageFolder="items" %}</li>
+    <li><b>Skoegul (Valkyrie 4):</b> {% item id="7086", name="Emblem of the Sun God (태양신의 상징)", imageFolder="items" %}</li>
+    <li><b>Gondul (Valkyrie 5)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7087", name="Breath of Spirit (영혼의 숨소리)", imageFolder="items" %}</li>
+  </ul>
+
+  <h3>Geffen - Britoniah Realm</h3>
+
+  <p class="font-bold text-purple-600">*Added on 2018-09-17.</p>
+
+  <p>The items needed to craft <b>Brisingamen</b> can be found in the WoE Treasure Chests from the castles in Geffen's Britoniah Realm.</p>
+
+  <ul class="list-disc pl-8">
+    <li><b>Repherion (Britoniah 1):</b> {% item id="7077", name="Silver Ornament (은장식)", imageFolder="items" %}</li>
+    <li><b>Eeyorbriggar (Britoniah 2):</b> {% item id="7088", name="Snow Crystal (눈의 결정)", imageFolder="items" %}</li>
+    <li><b>Yesnelph (Britoniah 3)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7090", name="Ripple (조용한 물결)", imageFolder="items" %}</li>
+    <li><b>Bergel (Britoniah 4):</b> {% item id="7073", name="Freya's Jewel (프레이야의 보석)", imageFolder="items" %}</li>
+    <li><b>Mersetzdeitz (Britoniah 5)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7092", name="Drifting Air (흐르는 공기)", imageFolder="items" %}</li>
+  </ul>
+
+  <h3>Payon - Balder (Greenwood Lake) Realm</h3>
+
+  <p class="font-bold text-purple-600">*Added on 2019-02-18 when the Payon WoE map was also added.</p>
+
+  <p>The items needed to craft <b>Megingjard</b> can be found in the WoE Treasure Chests from the castles in Payon's Balder (Greenwood Lake) Realm.</p>
+
+  <ul class="list-disc pl-8">
+    <li><b>Bright Arbor (Balder 1):</b> {% item id="7080", name="Cat Tread (고양이의 발소리)", imageFolder="items" %}</li>
+    <li><b>Sacred Palace (Balder 2)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7084", name="Sputum of Bird (새의 침)", imageFolder="items" %}</li>
+    <li><b>Holy Shadow (Balder 3):</b> {% item id="7085", name="Sinew of Bear (곰의 힘줄)", imageFolder="items" %}</li>
+    <li><b>Scarlet Palace (Balder 4):</b> {% item id="7082", name="Root of Stone (돌의 뿌리)", imageFolder="items" %}</li>
+    <li><b>Bamboo Grove Hill (Balder 5)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7081", name="Woman's Moustache (여인의 수염)", imageFolder="items" %}</li>
+  </ul>
+
+  <h3>Aldebaran - Luina Realm</h3>
+
+  <p class="font-bold text-purple-600">*Added on 2019-07-22 when the Aldebaran WoE map was also added.</p>
+
+  <p>The items needed to craft <b>Mjolnir</b> can be found in the WoE Treasure Chests from the castles in Aldebaran's Luina Realm.</p>
+
+  <ul class="list-disc pl-8">
+    <li><b>Neuschwanstein (Luina 1):</b> {% item id="7091", name="Billow (몰아치는 파도)", imageFolder="items" %}</li>
+    <li><b>Hohenschwangau (Luina 2)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7074", name="Thor's Gauntlets (토르의 쇠장갑)", imageFolder="items" %}</li>
+    <li><b>Nuernberg (Luina 3):</b> {% item id="7075", name="Iron Maiden (아이언 메이든)", imageFolder="items" %}</li>
+    <li><b>Wuerzburg (Luina 4)<sup class="font-bold text-purple-600">*Closed on 2019.12.11</sup>:</b> {% item id="7078", name="Wrath of Valkyrie (발키리의 분노)", imageFolder="items" %}</li>
+    <li><b>Rothenburg (Luina 5):</b> {% item id="7089", name="Omen of Tempest (폭풍우의 징조)", imageFolder="items" %}</li>
+  </ul>
+
+  <div id="kro-zero-changelogs" class="mb-6 text-sm">
+    <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">Ragnarok Zero Changelogs</h2>
+    <p class="border-r border-l p-2 mb-0">The information for this piece of content changed over time on Ragnarok Zero. When possible, this section links to the different versions of the original source article on the Ragnarok Zero website.</p>
+    <ul class="border-r border-l border-b rounded-b-md pt-1 pb-3 pl-8 list-disc">
+      <li>2018-08-07 - Original</li>
+      <li>2018-09-17 - Updated</li>
+      <li>2019-02-18 - Updated</li>
+      <li>2019-07-22 - Updated</li>
+      <li><a href="https://roz.gnjoy.com/news/update/View.asp?BBSMode=10015&seq=43&curpage=3">2019-07-24</a></li>
+    </ul>
+  </div>
+
+  <h2>Related Pages</h2>
+
+  <ul class="list-disc pl-8">
+    <li>
+      <a href="https://roz.gnjoy.com/news/notice/View.asp?BBSMode=10001&seq=448&curpage=1" target="_blank" rel="noopener nofollower">News #?? - 2019.12.09 [kRO Page!]</a>
+    </li>
+    <li>
+      <a href="https://roz.gnjoy.com/news/notice/View.asp?BBSMode=10001&seq=380&curpage=1" target="_blank" rel="noopener nofollower">News #?? - 2019.07.22 [kRO Page!]</a>
+    </li>
+    <li>
+      <a href="https://roz.gnjoy.com/news/notice/View.asp?BBSMode=10001&seq=321&curpage=1" target="_blank" rel="noopener nofollower">News #?? - 2019.02.18 [kRO Page!]</a>
+    </li>
+    <li>
+      <a href="https://roz.gnjoy.com/news/notice/View.asp?BBSMode=10001&seq=261&curpage=1" target="_blank" rel="noopener nofollower">News #?? - 2018.09.17 [kRO Page!]</a>
+    </li>
+    <li>
+      <a href="/news/223-2018-08-20-aug-22-maint/">News #223 - 2018.08.20</a>
+    </li>
+    <li>
+      <a href="/news/223-2018-08-20-aug-22-maint/">News #215 - 2018.08.06</a>
+    </li>
+  </ul>
+
+</article>
