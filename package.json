@@ -5,20 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve --formats=njk,gif,bmp,png,jpg,jpeg,xml,webmanifest,ico,svg & postcss css/index.css --o _tmp/index.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy --formats=njk,gif,bmp,png,jpg,jpeg,xml,webmanifest,ico,svg & ELEVENTY_PRODUCTION=true postcss css/index.css --o _site/css/index.css"
+    "build": "NODE_ENV=production ELEVENTY_PRODUCTION=true npx @11ty/eleventy --formats=njk,gif,bmp,png,jpg,jpeg,xml,webmanifest,ico,svg & NODE_ENV=production ELEVENTY_PRODUCTION=true postcss css/index.css --o _site/css/index.css && uglifyjs _site/js/lang-toggle.js -c -o _site/js/lang-toggle.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "autoprefixer": "^9.8.6",
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.5",
     "html-minifier": "^4.0.0",
-    "postcss-clean": "^1.1.0",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^2.0.4"
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2",
+    "uglify-js": "^3.13.8"
   }
 }

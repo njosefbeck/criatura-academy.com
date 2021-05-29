@@ -1,5 +1,12 @@
-const htmlmin = require("html-minifier");
-const { monsterCard, equipCard, item, card, craftableEquipCard, enchantCard } = require("./shortcodes");
+const htmlmin = require('html-minifier');
+const {
+  monsterCard,
+  equipCard,
+  item,
+  card,
+  craftableEquipCard,
+  enchantCard
+} = require("./shortcodes");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -8,9 +15,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./_tmp/index.css": "./css/index.css" });
   eleventyConfig.addPassthroughCopy({ "./js/lang-toggle.js": "./js/lang-toggle.js" });
 
-  eleventyConfig.addShortcode("version", function () {
-    return String(Date.now());
-  });
+  eleventyConfig.addShortcode("version", () => String(Date.now()));
 
   eleventyConfig.addNunjucksShortcode("monsterCard", monsterCard)
   eleventyConfig.addPairedNunjucksShortcode("equipCard", equipCard)
@@ -19,16 +24,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode("item", item)
   eleventyConfig.addPairedNunjucksShortcode("card", card)
 
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (
-      process.env.ELEVENTY_PRODUCTION &&
-      outputPath &&
-      outputPath.endsWith(".html")
-    ) {
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if( outputPath && outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true,
+        collapseWhitespace: true
       });
       return minified;
     }
