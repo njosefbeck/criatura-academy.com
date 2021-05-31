@@ -17,17 +17,22 @@ image: '/images/meta/criatura-academy-meta-malangdo.png'
   <ul class="list-disc pl-8 mb-6">
     <li><a href="#origin-story">Origin Story</a></li>
     <li><a href="#malangdo-quests">Malangdo Quests</a></li>
+    <li><a href="#malangdo-dungeon">Malangdo Dungeon</a></li>
+    <li><a href="#malangdo-equipment">New Equipment</a></li>
+    <li><a href="#upgrade-cat-hand-gloves">How To Upgrade Cat Paw Gloves</a></li>
+    <li><a href="#ocean-cat-box">Ocean Cat's Box</a></li>
+    <li><a href="#warehouse-keeper-npc">Warehouse Keeper NPC</a></li>
   </ul>
 
   <h2 id="origin-story">Origin Story</h2>
 
-  <p>A group of cats known as "The Cat Hand Group" left their homeland and crossed the sea hoping to make a lot of money. Unfortunately they encountered an unexpected storm on the 26th day of sailing. In the storm, the ship's rudder was damaged. As they were waiting for the ocean to calm, a large wave came and with a tremendous roar they collided with an unknown reef.</p>
+  <p>A group of cats known as "The Cat Paw Group" left their homeland and crossed the sea hoping to make a lot of money. Unfortunately they encountered an unexpected storm on the 26th day of sailing. In the storm, the ship's rudder was damaged. As they were waiting for the ocean to calm, a large wave came and with a tremendous roar they collided with an unknown reef.</p>
 
-  <p>When the cats of the Cat Hand Group, who became unconscious during the collision, opened their eyes, the water was calm and the sun was shining leisurely on the sea. They found themselves on a remote island. In the middle of the island, they found their main ship, Nabeeho. Thankfully no cats were injured or missing, but all their other boats were shipwrecked and most of their goods were swept away with the waves. The cats, stranded on this remote island, settled down there to start a strong life. They named their new home "Malangdo".</p>
+  <p>When the cats of the Cat Paw Group, who became unconscious during the collision, opened their eyes, the water was calm and the sun was shining leisurely on the sea. They found themselves on a remote island. In the middle of the island, they found their main ship, Nabeeho. Thankfully no cats were injured or missing, but all their other boats were shipwrecked and most of their goods were swept away with the waves. The cats, stranded on this remote island, settled down there to start a strong life. They named their new home "Malangdo".</p>
 
   <h2 id="malangdo-quests">Malangdo Quests</h2>
 
-  <p>All quests are available at base level 60.</p>
+  <p>All quests are available at base level 60. These quests, among other things, will give you {% item id="23525", name="Sea God Crystal", imageFolder="items" %}, which can be used to obtain various food buff items as well as for upgrading the Cat Paw Glove.</p>
 
   <h3 id="tomas-predicament-quest" class="underline">Tomas's Predicament (토마스씨의 고충)</h3>
 
@@ -40,7 +45,7 @@ image: '/images/meta/criatura-academy-meta-malangdo.png'
     <li><b>Start Location:</b> Tomas (mal_in02 22, 62)</li>
   </ul>
 
-  <p>You can hear the story of how The Cat Hand Group came to settle on Malangdo, as well as the various stories that took place after they settled. <a href="https://wiki.playragnarokzero.com/wiki/Malangdo_Island" target="_blank" rel="noopener noreferrer">Click here for the quest walkthrough (Steps #1-6).</a></p>
+  <p>You can hear the story of how The Cat Paw Group came to settle on Malangdo, as well as the various stories that took place after they settled. <a href="https://wiki.playragnarokzero.com/wiki/Malangdo_Island" target="_blank" rel="noopener noreferrer">Click here for the quest walkthrough (Steps #1-6).</a></p>
 
   <h3 id="help-the-hairballs-quest" class="underline">Help The Hairballs (털뭉치파 돕기)</h3>
 
@@ -210,6 +215,568 @@ image: '/images/meta/criatura-academy-meta-malangdo.png'
   </ul>
 
   <p>Our role in the Cat Gamers doesn't simply end as a trainee. Let's help them train more! <a href="https://wiki.playragnarokzero.com/wiki/Cat_Gamer_Support" target="_blank" rel="noopener noreferrer">Click here for the quest walkthrough.</a></p>
+
+  <h2 id="malangdo-dungeon">Malangdo Dungeon</h2>
+
+  <p>In Zero, the Malangdo Dungeon has two levels instead of just one. The Deep Sea monster variants listed below are found on the second level. The MVP and Little Octopus are found on the second level and Wild Rider is found on both levels. There is no level requirement nor entrance quest to enter the dungeon.</p>
+
+  <h3 id="malangdo-monsters">Monsters</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="siorava.png",
+      name="Siorava (시오라바)",
+      level="68",
+      hp="5751",
+      class="Normal",
+      family="Formless",
+      property="Water LV1",
+      size="Small",
+      expJexp="1150/1035"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="red-eruma.png",
+      name="Red Eruma (빨간 에루마)",
+      level="73",
+      hp="7632",
+      class="Normal",
+      family="Fish",
+      property="Water LV2",
+      size="Medium",
+      expJexp="1272/1145"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="siorava.png",
+      name="Deep Sea Siorava (심해의 시오라바)",
+      level="108",
+      hp="33106",
+      class="Normal",
+      family="Formless",
+      property="Water LV1",
+      size="Small",
+      expJexp="3010/2709"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="red-eruma.png",
+      name="Deep Sea Red Eruma (심해의 빨간 에루마)",
+      level="109",
+      hp="32940",
+      class="Normal",
+      family="Fish",
+      property="Water LV2",
+      size="Medium",
+      expJexp="2995/2695"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="giant-octopus.png",
+      name="Giant Octopus (대왕 문어)",
+      level="117",
+      hp="4556238",
+      class="Boss",
+      family="Fish",
+      property="Water LV2",
+      size="Large",
+      expJexp="414203/372783"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="little-octopus.png",
+      name="Little Octopus (작은 문어)",
+      level="115",
+      hp="56641",
+      class="Normal",
+      family="Fish",
+      property="Water LV2",
+      size="Small",
+      expJexp="5051/4546"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="wild-rider.png",
+      name="Wild Rider (와일드 라이더)",
+      level="120",
+      hp="129240",
+      class="Mini Boss (중보스)",
+      family="Fish",
+      property="Water LV2",
+      size="Medium",
+      expJexp="11749/10574"
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="octopus-leg.png",
+      name="Octopus Leg (Boss Slave) (문어 다리 (보스 슬레이브))",
+      level="111",
+      hp="55559",
+      class="Normal",
+      family="Fish",
+      property="Water LV2",
+      size="Small",
+      expJexp="0/0"
+    %}
+  </div>
+
+  <h2 id="malangdo-equipment">New Equipment</h2>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="28559",
+      folder="malangdo",
+      name="Left Cat Paw Glove [1]",
+      category="Accessory (Left)",
+      craftedFrom="Cat Paw Glove Upgrade (malangdo 146, 139)",
+      canWear="All",
+      requiredLevel="1",
+      weight="50",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>A memento from Malangdo that makes me feel happy.</li>
+        <li>[Can be refined]</li>
+        <li>VIT +1, AGI +1, DEX +1, LUK +1.</li>
+        <li>+5% item drop rate.</li>
+        <li>If +7, +2% additional item drop rate.</li>
+        <li>If +9, +3% additional item drop rate.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28558",
+      folder="malangdo",
+      name="Right Cat Paw Glove [1]",
+      category="Accessory (Right)",
+      craftedFrom="Cat Paw Glove Upgrade (malangdo 146, 139)",
+      canWear="All",
+      requiredLevel="1",
+      weight="50",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>A memento from Malangdo that makes me feel happy.</li>
+        <li>[Can be refined]</li>
+        <li>VIT +1, AGI +1, DEX +1, LUK +1.</li>
+        <li>When hunting monsters, +2% EXP.</li>
+        <li>If +7, +1% additional EXP when hunting monsters.</li>
+        <li>If +9, +2% additional EXP when hunting monsters.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32022",
+      folder="malangdo",
+      name="Freezing Trident [1]",
+      category="1Handed Spear",
+      droppedBy="Deep Sea Red Eruma",
+      canWear="Swordsman series",
+      requiredLevel="60",
+      level="3",
+      weight="100",
+      atk="130"
+    %}
+      <ul class="border-t p-2">
+        <li>A spear carved out of blue crystal. It has a cold disposition.</li>
+        <li>Is water element.</li>
+        <li>+10% physical damage to Fire-element enemies.</li>
+        <li>If +7, +5% additional damage to Fire-element enemies.</li>
+        <li>If +9, +15% Pierce damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="26157",
+      folder="malangdo",
+      name="Blue Crystal Rod [1]",
+      category="1Handed Staff",
+      droppedBy="Red Eruma",
+      canWear="Mage series",
+      requiredLevel="60",
+      level="3",
+      weight="80",
+      atk="60"
+    %}
+      <ul class="border-t p-2">
+        <li>A staff glowing with the blue light of the sea. It is said to exert great power on fire-elemental objects.</li>
+        <li>MATK +150, indestructible.</li>
+        <li>+10% magic damage to Fire-element enemies.</li>
+        <li>If +7, +5% additional magic damage to Fire-element enemies.</li>
+        <li>If +9, +10% Water-element magic damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28041",
+      folder="malangdo",
+      name="Sandy Lake [1]",
+      category="Katar",
+      droppedBy="Giant Octopus",
+      canWear="Assassin series",
+      requiredLevel="60",
+      level="3",
+      weight="90",
+      atk="155"
+    %}
+      <ul class="border-t p-2">
+        <li>A katar based on a rake used to dig sand.</li>
+        <li>+10% physical damage to Wind-element enemies.</li>
+        <li>If +7, +5% additional damage to Wind-element enemies.</li>
+        <li>If +9, +15% critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28760",
+      folder="malangdo",
+      name="Golden Pocket Knife [1]",
+      category="Dagger",
+      droppedBy="Siorava",
+      canWear="Thief, Ninja series",
+      requiredLevel="60",
+      level="3",
+      weight="70",
+      atk="150"
+    %}
+      <ul class="border-t p-2">
+        <li>A pocket knife with a small, sharp blade.</li>
+        <li>HIT +5.</li>
+        <li>If +7, +5% long-range physical damage.</li>
+        <li>If +9, +5% additional long-range physical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="1332",
+      folder="malangdo",
+      name="Octopus Axe [1]",
+      category="1Handed Axe",
+      droppedBy="Giant Octopus",
+      canWear="Swordsman, Merchant series",
+      requiredLevel="60",
+      level="3",
+      weight="150",
+      atk="170"
+    %}
+      <ul class="border-t p-2">
+        <li>An unusual axe designed in the shape of an octopus.</li>
+        <li>CRIT +5.</li>
+        <li>If +7, +5% ASPD.</li>
+        <li>If +9, +5% critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32224",
+      folder="malangdo",
+      name="Golden Fish Accessory",
+      category="Accessory (Right)",
+      droppedBy="Deep Sea Siorava",
+      canWear="Thief, Ninja series",
+      requiredLevel="80",
+      weight="10",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>An ornament in the shape of a golden fish. It lacks its own effect, but when combined with other equipment, additional effects are enabled.</li>
+        <li>The set effects are only activated when this accessory is worn on the right hand.</li>
+        <li>When equipped with Sandy Lake, CRIT +5.</li>
+        <li>If Sandy Lake is +10 or higher, ATK +20, +7% ASPD.</li>
+        <li>When equipped with Golden Pocket Knife, ATK +20.</li>
+        <li>If Golden Pocket Knife is +10 or higher, ATK +7%.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32225",
+      folder="malangdo",
+      name="Blue Fish Accessory",
+      category="Accessory (Right)",
+      droppedBy="Small Octopus",
+      canWear="Swordsman, Merchant series",
+      requiredLevel="80",
+      weight="10",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>An ornament in the shape of a blue fish. It lacks its own effect, but when combined with other equipment, additional effects are enabled.</li>
+        <li>The set effects are only activated when this accessory is worn on the right hand.</li>
+        <li>When equipped with Freezing Trident, ATK +20.</li>
+        <li>If Freezing Trident is +10 or higher, +10% damage to Large-size enemies.</li>
+        <li>When equipped with Octopus Axe, ASPD +1.</li>
+        <li>If Octopus Axe is +10 or higher, +10% critical damage.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="32226",
+      folder="malangdo",
+      name="Frozen Glove",
+      category="Accessory (Right)",
+      droppedBy="Small Octopus",
+      canWear="Mage series",
+      requiredLevel="80",
+      weight="10",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>A glove full of cold energy.</li>
+        <li>+5% Water-element magic damage.</li>
+        <li>When equipped with Mystic Frozen Charm, MATK +30, -5% Variable Cast Time (VCT).</li>
+        <li>When equipped with Blue Crystal Rod, MATK +30, +15% Water-element magic damage.</li>
+        <li>If Blue Crystal Rod is +10 or higher, -25% in Variable Cast Time (VCT).</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="19408",
+      folder="malangdo",
+      name="Mystic Frozen Charm",
+      category="Headgear (Lower)",
+      droppedBy="Wild Rider",
+      canWear="All",
+      requiredLevel="80",
+      weight="10",
+      def="0"
+    %}
+      <ul class="border-t p-2">
+        <li>A mouth-watering Mystic Frozen.</li>
+        <li>+2% magic damage to Fire-element enemies.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="28559",
+      folder="malangdo",
+      name="Cat Paw Glove [1]",
+      category="Accessory",
+      craftedFrom="Malangdo Buy Shop (malangdo 162, 146)",
+      canWear="All",
+      requiredLevel="1",
+      weight="10",
+      def="5"
+    %}
+      <ul class="border-t p-2">
+        <li>A memento from Malangdo that makes me feel happy.</li>
+        <li>VIT +1, AGI +1, DEX +1, LUK +1.</li>
+      </ul>
+    {% endequipCard %}
+    {% equipCard
+      id="490003",
+      folder="malangdo",
+      name="Wolf Armguard [1]",
+      category="Accessory",
+      droppedBy="Deep Sea Siorava",
+      canWear="Ninja series",
+      requiredLevel="100",
+      weight="20",
+      def="1"
+    %}
+      <ul class="border-t p-2">
+        <li>A wrist protector with a threatening wolf figure on it. When worn, you can feel the energy of wild instinct.</li>
+        <li>[Can be refined]</li>
+        <li>HIT +3, +3% ASPD.</li>
+        <li>If +9, +2 additional HIT, +2% additional ASPD.</li>
+        <li class="font-bold text-purple-600">* Added later, likely with the release of Kagerou & Oboro.</li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+  <h3 id="upgrade-cat-hand-gloves">How To Upgrade Cat Paw Gloves</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/malangdo_cat_hand_npc.png" alt="Cat Paw Upgrade NPC" />
+  </figure>
+
+  <p>Use {% item id="23525", name="200 Sea God Crystal", imageFolder="items" %} to upgrade a Cat Paw Glove. Sea God Crystal can be obtained as a daily quest reward.</p>
+
+  <h2 id="ocean-cat-box">Ocean Cat's Box</h2>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/malangdo_ocean_cat_box.png" alt="Ocean Cat Box NPC" />
+  </figure>
+
+  <p>Use {% item id="23525", name="10 Sea God Crystal", imageFolder="items" %} to see what you can get from the Ocean Cat's Box. This box is located at <strong>malangdo 170, 141</strong>.</p>
+
+  <h3>Possible Items</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23526",
+      name="Cutlassfish (갈치)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>Sea fish Cutlassfish. Shaped like a long knife. If you grill it and eat it, it feels like you can attack more sharply.</li>
+        <li>CRIT +5, +10% critical damage for 15 minutes.</li>
+        <li>Weight: 5</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23527",
+      name="Spearfish (청새치)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>A Spearfish from the ocean. It is seasonally mobile known for its sharp taste.</li>
+        <li>Ignore monster DEF and MDEF for 15 minutes.</li>
+        <li>Weight: 5</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23528",
+      name="Malang Snow Crab (말랑 대게)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>A crustacean that lives in the sand or mud of the deep sea. If you steam it, you'll fill up quickly.</li>
+        <li>DEF +100 for 15 minutes.</li>
+        <li>The effect does not overlap with items with the same effect.</li>
+        <li>Weight: 5</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23529",
+      name="Spotted Eel (얼룩무늬 장어)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>A spotted eel that appears on the coast of Malangdo. It has a tendency to put its body into a specific shape, so it's tied with a rope.</li>
+        <li>+15% ATK for 15 minutes.</li>
+        <li>Weight: 5</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23530",
+      name="Pompano (전갱이)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>A sea fish that can be cooked in many ways.</li>
+        <li>+30% Red & Orange Potion effectiveness for 15 minutes.</li>
+        <li>Weight: 5</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23531",
+      name="Bluefin Tuna (참다랑어)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>A high-end species of Mackerel that is used for cooking.</li>
+        <li>-10% Variable Cast Time (VCT) for 15 minutes.</li>
+        <li>Weight: 5</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="579",
+      name="Fresh Fish (맛좋은 물고기)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 15</li>
+        <li>A fresh fish that can be cooked a variety of ways.</li>
+        <li>Restores a small amount of HP.</li>
+        <li>Weight: 2</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23604",
+      name="Finest Course Meal (최고급 코스 요리)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 2</li>
+        <li>A top-of-the-line dish that contains all the foods known to be healthy.</li>
+        <li>All stats +10, ATK +30, MATK +30 for 30 minutes.</li>
+        <li>Weight: 1</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23607",
+      name="Unlimited Drink (언리미티드 드링크)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 2</li>
+        <li>A drink that activates energy in the body, making you feel like you have infinite energy.</li>
+        <li>MaxHP +5% and MaxSP +5% for 30 minutes.</li>
+        <li>+5% critical damage, long range physical attack, and all property magic attacks.</li>
+        <li>Uninterrupted casting.</li>
+        <li>Weight: 1</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23608",
+      name="Eir's Blessing (에이르의 축복)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 2</li>
+        <li>A potion containing the blessing of the god Eir, who handles herbs.</li>
+        <li>Increases performance of some recovery items and Heal by 20% for 30 minutes.</li>
+        <li>Weight: 1</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="12017",
+      name="Slow Potion (에이르의 축복)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Possible Number Obtained:</strong> 1 - 3</li>
+        <li>A potion which decreases the moving speed of a character for a set duration.</li>
+        <li>(Adds a 100% chance of inflicting Slow on the user when using this item for 5 seconds.)</li>
+        <li>Weight: 10</li>
+      </ul>
+    {% enditemCard %}
+  </div>
+
+  <h2 id="warehouse-keeper-npc">Warehouse Keeper NPC</h2>
+
+  <p>You can use the Cat Paw Warehouse service to purchase unlimited Cat Paw Tickets. This NPC can be found at <strong>malangdo 184, 139</strong>. These tickets give you access to an additional storage.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/dev-notes/malangdo_warehouse_keeper_npc.png" alt="Warehouse Keeper NPC" />
+  </figure>
+
+  <div class="flex flex-wrap justify-between">
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23933",
+      name="Infinite Cat Paw Ticket 7 Day Box (무한 고양이손 티켓 7일상자)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Cost:</strong> 6 Gel Star (젤스타)</li>
+        <li>A box containing 1 Infinite Cat Paw Ticket available for 7 days.</li>
+        <li>--</li>
+        <li>Rental Item</li>
+        <li>When used, the Cat Paw storage service can be accessed.</li>
+        <li>Weight: 1</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="ca-w-49",
+      id="23934",
+      name="Infinite Cat Paw Ticket 30 Day Box (무한 고양이손 티켓 30일상자)"
+    %}
+      <ul class="border-t p-2">
+        <li class="border-b mb-2 pb-2"><strong>Cost:</strong> 20 Gel Star (젤스타)</li>
+        <li>A box containing 1 Infinite Cat Paw Ticket available for 30 days.</li>
+        <li>--</li>
+        <li>Rental Item</li>
+        <li>When used, the Cat Paw storage service can be accessed.</li>
+        <li>Weight: 1</li>
+      </ul>
+    {% enditemCard %}
+    {% itemCard 
+      widthClass="w-full",
+      id="22998",
+      name="Infinite Cat Paw Ticket (무한 고양이손 티켓)"
+    %}
+      <ul class="border-t p-2">
+        <li>When used, the Cat Paw storage service can be accessed.</li>
+        <li>Weight: 0</li>
+      </ul>
+    {% enditemCard %}
+  </div>
 
   <div id="kro-zero-changelogs" class="mb-6 text-sm">
     <h2 class="bg-gradient py-1 px-2 mb-0 uppercase font-bold text-sm rounded-t-md">Ragnarok Zero Changelogs</h2>

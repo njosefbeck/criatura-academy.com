@@ -3,6 +3,7 @@ const {
   monsterCard,
   equipCard,
   item,
+  itemCard,
   card,
   craftableEquipCard,
   enchantCard
@@ -21,6 +22,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksShortcode("equipCard", equipCard)
   eleventyConfig.addPairedNunjucksShortcode("craftableEquipCard", craftableEquipCard)
   eleventyConfig.addPairedNunjucksShortcode("enchantCard", enchantCard)
+  eleventyConfig.addPairedNunjucksShortcode("itemCard", itemCard)
   eleventyConfig.addNunjucksShortcode("item", item)
   eleventyConfig.addPairedNunjucksShortcode("card", card)
 
