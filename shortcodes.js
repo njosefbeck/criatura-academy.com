@@ -37,7 +37,7 @@ function equipCard (description, equip) {
   const widthClass = equip.fullWidth ? 'w-full' : 'ca-w-49';
   return `
   <div class="border-2 rounded-md text-sm mb-4 ${widthClass}" id="${equip.name}">
-    <div class="border-b rounded-t-md p-2 bg-blue-100">
+    <div class="border-b rounded-t-sm p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${equip.id}" target="_blank" rel="noopener noreferrer">
         <img class="inline-block mr-2" src="/images/equip/${equip.folder}/${equip.id}.png" alt="${equip.name}" />
         ${equip.name}</a>
@@ -73,7 +73,7 @@ function craftableEquipCard (content, equip) {
   const widthClass = equip.fullWidth ? 'w-full' : 'ca-w-49';
   return `
   <div class="border-2 rounded-md text-sm mb-4 ${widthClass}" id="${equip.name}">
-    <div class="border-b rounded-t-md p-2 bg-blue-100">
+    <div class="border-b rounded-t-sm p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${equip.id}" target="_blank" rel="noopener noreferrer">
         <img class="inline-block mr-2" src="/images/equip/${equip.folder}/${equip.id}.png" alt="${equip.name}" />
         ${equip.name}</a>
@@ -94,7 +94,7 @@ function enchantCard (content, enchant) {
   const widthClass = enchant.fullWidth ? 'w-full' : 'ca-w-49';
   return `
   <div class="border-2 rounded-md text-sm mb-4 ${widthClass}" id="${enchant.name}">
-    <div class="border-b rounded-t-md p-2 bg-blue-100">
+    <div class="border-b rounded-t-sm p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${enchant.id}" target="_blank" rel="noopener noreferrer">
         <img class="inline-block mr-2" src="/images/enchants/${enchant.id}.png" alt="${enchant.name}" />
         ${enchant.name}</a>
@@ -112,7 +112,7 @@ function enchantCard (content, enchant) {
 function card (description, card) {
   return `
   <div class="border-2 rounded-md text-sm mb-4 ${card.widthClass}" id="${card.name}">
-    <div class="border-b rounded-t-md p-2 bg-blue-100">
+    <div class="border-b rounded-t-sm p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${card.id}" target="_blank" rel="noopener noreferrer">
         ${card.name}</a>
     </div>
@@ -141,8 +141,8 @@ function item (item) {
 
 function itemCard (content, item) {
   return `
-  <div class="border-2 rounded-md text-sm mb-4 ${item.widthClass}" id="${item.id}" >
-    <div class="border-b rounded-t-md p-2 bg-blue-100">
+  <div class="border-2 rounded-md text-sm mb-4 ${item.widthClass}" id="${item.id}">
+    <div class="border-b rounded-t-sm p-2 bg-blue-100">
       <a href="https://divine-pride.net/database/item/${item.id}" target="_blank" rel="noopener noreferrer">
         <img class="inline-block mr-2" src="/images/items/${item.id}.png" alt="${item.name}" />
         ${item.name}</a>
@@ -155,6 +155,19 @@ function itemCard (content, item) {
   `
 }
 
+// Tip Card
+
+function tipCard (content, tip) {
+  return `
+  <div class="border-2 rounded-md mb-4" id="${tip.id}">
+    <div class="border-b rounded-t-sm p-2 bg-blue-100">
+      <a href="#${tip.id}">${tip.title}</a>
+    </div>
+    ${content}
+  </div>
+  `;
+}
+
 module.exports = {
   monsterCard,
   equipCard,
@@ -162,5 +175,6 @@ module.exports = {
   enchantCard,
   item,
   itemCard,
-  card
+  card,
+  tipCard
 }

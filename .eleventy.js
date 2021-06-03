@@ -6,7 +6,8 @@ const {
   itemCard,
   card,
   craftableEquipCard,
-  enchantCard
+  enchantCard,
+  tipCard
 } = require("./shortcodes");
 
 module.exports = function (eleventyConfig) {
@@ -25,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedNunjucksShortcode("itemCard", itemCard)
   eleventyConfig.addNunjucksShortcode("item", item)
   eleventyConfig.addPairedNunjucksShortcode("card", card)
+  eleventyConfig.addPairedNunjucksShortcode("tipCard", tipCard)
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
