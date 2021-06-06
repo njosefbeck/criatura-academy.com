@@ -162,6 +162,7 @@ function tipCard (content, tip) {
   <div class="border-2 rounded-md mb-4" id="${tip.id}">
     <div class="border-b rounded-t-sm p-2 bg-blue-100">
       <a href="#${tip.id}">${tip.title}</a>
+      <span class="float-right">#${tip.id}</span>
     </div>
     ${content}
   </div>
