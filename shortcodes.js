@@ -32,7 +32,7 @@ function monsterCard (monster) {
 
 // Equipment card
 function equipCard (description, equip) {
-  const hasFoundInOrCraftedFrom = (equip.foundIn || equip.craftedFrom || equip.droppedBy);
+  const hasFoundInOrCraftedFrom = (equip.foundIn || equip.craftedFrom || equip.droppedBy || equip.acquiredFrom);
   const displayStats = hasFoundInOrCraftedFrom && equip.weight && (equip.def || equip.atk);
   const widthClass = equip.fullWidth ? 'w-full' : 'ca-w-49';
   return `
@@ -47,6 +47,7 @@ function equipCard (description, equip) {
       `
       <ul class="p-2">
         ${equip.foundIn ? `<li><strong>Found In:</strong> ${equip.foundIn}</li>` : ``}
+        ${equip.acquiredFrom ? `<li><strong>Acquired From:</strong> ${equip.acquiredFrom}</li>` : ``}
         ${equip.droppedBy ? `<li><strong>Dropped By:</strong> ${equip.droppedBy}</li>` : ``}
         ${equip.craftedFrom ? `<li><strong>Crafted From:</strong> ${equip.craftedFrom}</li>` : ``}
         ${equip.canWear ? `<li><strong>Can Wear:</strong> ${equip.canWear}</li>` : ``}
