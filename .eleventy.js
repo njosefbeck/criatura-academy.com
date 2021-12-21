@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./_tmp/index.css");
   eleventyConfig.addPassthroughCopy({ "./_tmp/index.css": "./css/index.css" });
   eleventyConfig.addPassthroughCopy({ "./js/lang-toggle.js": "./js/lang-toggle.js" });
+  eleventyConfig.addPassthroughCopy({ "./tipbox-ko.html": "./tipbox/ko/index.html" });
 
   eleventyConfig.addShortcode("version", () => String(Date.now()));
 
