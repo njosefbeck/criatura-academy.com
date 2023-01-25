@@ -1,0 +1,1441 @@
+---
+layout: /layouts/base.njk
+title: Lighthalzen
+description: Read about the implementation of Lighthalzen on korean Ragnarok Online Zero. Discover the updates made to this classic regional area of Ragnarok Online.
+tags: update
+image: '/images/meta/criatura-academy-meta-lighthalzen.png'
+---
+
+<article>
+
+  <h1 class="text-2xl mb-2">Lighthalzen</h1>
+
+  <p>INTRO HERE</p>
+
+  <h2>Table Of Contents</h2>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><a href="#how-to-get-to-lighthalzen">How To Get To Lighthalzen</a></li>
+    <li><a href="#upgrading-transcendent-conqueror-equipment">Upgrading Transcendent Conqueror's Equipment</a></li>
+    <li><a href="#lighthalzen-quests">Lighthalzen Quests</a></li>
+    <li><a href="#lighthalzen-fields">Lighthalzen Fields</a></li>
+    <li><a href="#lighthalzen-dungeon">Lighthalzen Dungeon</a></li>
+  </ul>
+
+  <h2 id="how-to-get-to-lighthalzen">How To Get To LightHalzen</h2>
+
+  <!-- IMAGE HERE -->
+
+  <p>The Schwartzvald Republic cities use airships as their main means of transportation. You can use the domestic airship from Yuno, Hugel and Einbroch airports to get to Lighthalzen.</p>
+
+  <p>It is also possible to get to Lighthalzen over land, as the city lies to the west of Einbroch. This is not recommended though because there are many rough canyons and broken bridges along the way!</p>
+
+  <h2 id="upgrading-transcendent-conqueror-equipment">Upgrading Transcendent Conqueror's Equipment</h2>
+
+  <p>Lighthalzen's Equipment Enhancer NPC (장비 강화사) allows you to upgrade Memorial Dungeon Conquerer Equipment to Transcendent versions. Designer Sally (디자이너 샐리) enchants the upgraded gear.</p>
+
+  <!-- IMAGE HERE -->
+
+  <p>The Equipment Enhancer NPC can be found at lighthalzen 184, 122. Designer Sally is at lighthalzen 187, 124.</p>
+
+  <h3>Transcendent Conqueror's Equipment</h3>
+
+  <p>To craft the transcendent version of a piece of conqueror's equipment, you'll need the conquerer piece, some amount of {% item id="6471", name="Death's Chill", imageFolder="items" %}, some amount of {% item id="25832", name="Purple Magic Crystal", imageFolder="items" %}, and some amount of Jello Stone. See below for the exact requirements.</p>
+
+  <p>The newly crafted equipment <a href="/memorial-dungeons/equipment/#conquering">has the same stats and bonuses as the original conqueror version</a> (one exception being the level requirement, which is base level 60 to wear the upgraded version), but upgrading to the transcendent version allows you to get the transcendent class enchant on the armor.</p>
+
+  <ul class="text-sm flex flex-wrap justify-between">
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="32256", name="Conqueror Transcendent Magic Ring [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="28548", name="1 Conqueror Magic Ring [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="10 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="32254", name="Conqueror Transcendent Ring [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="28546", name="1 Conqueror Ring [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="10 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="32255", name="Conqueror Transcendent Necklace [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="28549", name="1 Conqueror Necklace [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="10 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="32257", name="Conqueror Transcendent Glove [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="28547", name="1 Conqueror Glove [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="10 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="15413", name="Conqueror Transcendent Robe [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="15229", name="1 Conqueror Robe [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="50 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="3 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25471", name="6 Breeze Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="15414", name="Conqueror Transcendent Garment [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="15230", name="1 Conqueror Garment [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="50 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="3 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25471", name="3 Breeze Jello Stone", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="3 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="15415", name="Conqueror Transcendent Chain Mail [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="15227", name="1 Conqueror Chain Mail [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="50 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="3 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25470", name="6 Red Lotus Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="15416", name="Conqueror Transcendent Cloth [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="15228", name="1 Conqueror Cloth [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="50 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="3 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25470", name="3 Red Lotus Jello Stone", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25473", name="3 Chaotic Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="20958", name="Conqueror Transcendent Manteau [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="20874", name="1 Conqueror Manteau [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25473", name="6 Chaotic Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="22217", name="Conqueror Transcendent Boots [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="22158", name="1 Conqueror Boots [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25473", name="6 Chaotic Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="22218", name="Conqueror Transcendent Greaves [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="22157", name="1 Conqueror Greaves [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25470", name="6 Red Lotus Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="22219", name="Conqueror Transcendent Magic Shoes [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="22160", name="1 Conqueror Magic Shoes [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="6 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="20959", name="Conqueror Transcendent Cape [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="20877", name="1 Conqueror Cape [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="6 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="22220", name="Conqueror Transcendent Shoes [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="22159", name="1 Conqueror Shoes [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25471", name="6 Breeze Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="20960", name="Conqueror Transcendent Muffler [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="20876", name="1 Conqueror Muffler [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25471", name="3 Breeze Jello Stone", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25474", name="3 Holy Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+    <li class="border rounded-md mb-4 ca-w-49">
+      <div class="mb-2 p-2 border-b bg-purple-100">
+        {% item id="20961", name="Conqueror Transcendent Manteau [1]", imageFolder="equip/conquering" %}
+      </div>
+      <ul>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="20874", name="1 Conqueror Manteau [1]", imageFolder="equip/conquering" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25832", name="20 Purple Magic Crystal", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="6471", name="1 Death's Chill", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25470", name="3 Red Lotus Jello Stone", imageFolder="items" %}
+        </li>
+        <li class="pb-2 pl-2 pr-2">
+          {% item id="25473", name="3 Chaotic Jello Stone", imageFolder="items" %}
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+
+  <h3>Transcendent Conqueror's Equipment Enchants</h3>
+
+  <p>As before, the Transcendent Conquerer armor piece is enchantable. [Designer Sally] handles the enchantment. It's possible to enchant the item with two "general" enchants (stats-based enchants) and 1 job-based enchant.The general enchants occupy sockets 3 & 4 on the item while the job-based enchant occupies socket 2.</p>
+
+  <p>To apply the "general" enchant, you need {% item id="25827", name="20 Research Records", imageFolder="items" %}, {% item id="25828", name="5 High-Quality Prisoner's Bracelet", imageFolder="items" %} and 50,000 zeny.</p>
+
+  <p>To apply the job-based enchant, there must already be a "general" enchant applied to the item. Additionally, {% item id="25828", name="10 High-Quality Prisoner's Bracelet", imageFolder="items" %}, {% item id="6469", name="1 Will of Warrior", imageFolder="items" %}, and 50,000 zeny.</p>
+
+  <p>The NPC has a preview option that you can use by paying {% item id="25399", name="2 Gel Star", imageFolder="items" %}. This will allow you to see the type of enchants that you'll get (AGI, INT, HP, etc) but not the level of the enchant (+1, +2, etc). (It's unclear if this works for both job-based and general enchants.)</p>
+
+  <p>As before, it's possible to reset your enchants. This reset can fail, which can cause your equipment to be destroyed in the process. See below for the success rate based on what you pay.</p>
+
+  <ul class="list-disc">
+    <li><b>100,000 Zeny</b>: 70% success rate, equipment destroyed on failure.</li>
+    <li><b>{% item id="6470", name="5 Blood Thirst", imageFolder="items" %}</b>: 70% success rate, equipment not destroyed on failure.</li>
+    <li><b>{% item id="25399", name="1 Gel Star", imageFolder="items" %}</b>: 100% success rate, no failure.</li>
+  </ul>
+
+  <h4>General Enchants</h4>
+
+  <p>The general enchant pool is the same as they were <a href="/memorial-dungeons/equipment-enchanting/">for the Conqueror armor</a> (search for "Enchant List (Expedition, Dispatching, Conquering)" to find on that page). As before, if the equipment is +9, there's a higher chance of getting a better enchant.</p>
+
+  <h4>Job-based Enchants</h4>
+
+  <p>Unlike before, it doesn't seem that the piece of equipment needs to be +9 to get the job-based enchant.</p>
+
+  <div class="flex flex-wrap justify-between">
+    {% enchantCard
+      id="29622",
+      name="Lord Knight Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Cavalry Mastery], CRI +3.</li>
+        <li>Increases [Bowling Bash] damage by 20%.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+        <li>For every level of [Aura Blade], +1% critical damage.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29623",
+      name="Lord Knight Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Cavalry Mastery], CRIT +5.</li>
+        <li>Increases [Bowling Bash] damage by 20%.</li>
+        <li>When using [Two-Hand Quicken], +7% critical damage for 60 seconds.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+        <li>For every level of [Aura Blade], +3% critical damage.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29624",
+      name="Paladin Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Faith], ATK +3.</li>
+        <li>Increases [Holy Cross] damage by 15%.</li>
+        <li>For every +2 armor refine, MaxHP +100.</li>
+        <li>Increases [Shield Chain] damage by 15%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29625",
+      name="Paladin Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Faith], ATK +5.</li>
+        <li>Increases [Holy Cross] damage by 15%.</li>
+        <li>When using [Auto Guard], DEF +80 for 60 seconds.</li>
+        <li>For every +2 armor refine, MaxHP +100.</li>
+        <li>Increases [Shield Chain] damage by 30%.</li>
+        <li>When using [Sacrifice], MaxHP +1500, DEF +80 for 30 seconds.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29626",
+      name="High Wizard Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>Increase [Storm Gust], [Lord of Vermilion] and [Meteor Storm] damage by 20%.</li>
+        <li>For every +1 armor refine, MATK +1%.</li>
+        <li>Increase [Napalm Vulcan] damage by 20%.</li>
+        <li>Variable casting reduced by 2x per level of [Mystical Amplification].</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29627",
+      name="High Wizard Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>Increase [Storm Gust], [Lord of Vermilion] and [Meteor Storm] damage by 20%.</li>
+        <li>For every +1 armor refine, MATK +1%.</li>
+        <li>Increase [Napalm Vulcan] damage by 20%.</li>
+        <li>Variable casting reduced by 3x per level of [Mystical Amplification].</li>
+        <li>When using [Mystical Amplification], MATK +15% & FLEE +30 for 30 seconds.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29628",
+      name="Professor Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every 1 level in [Advanced Book], MATK +3.</li>
+        <li>Increases [Fire Bolt], [Cold Bolt], and [Lightning Bolt] damage by 20%.</li>
+        <li>For every +2 armor refine, MATK +2.</li>
+        <li>Decrease [Soul Exhale] fixed cast by 20%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29629",
+      name="Professor Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every 1 level in [Advanced Book], MATK +5.</li>
+        <li>Increases [Fire Bolt], [Cold Bolt], and [Lightning Bolt] damage by 20%.</li>
+        <li>For every +2 armor refine, MATK +2.</li>
+        <li>Decrease [Soul Exhale] fixed cast by 50%.</li>
+        <li>When using [Double Casting], [Fire, Cold, and Lightning Bolt] damage increased by 30% for 30 seconds.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29630",
+      name="Whitesmith Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>When using [Shattering Strike]<sup>(Melt Down)</sup>, CRIT +10 for 30 seconds.</li>
+        <li>For every level of [Maximize Power], CRIT +3.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+        <li>Increases [High Speed Cart Ram]<sup>(Cart Termination)</sup> damage by 15%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29631",
+      name="Whitesmith Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>When using [Shattering Strike]<sup>(Melt Down)</sup>, CRIT +15 and ignore 30% of enemy's DEF for 30 seconds.</li>
+        <li>For every level of [Maximize Power], CRIT +5.</li>
+        <li>For every level of [Weaponry Research], +1% critical damage.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+        <li>Increases [High Speed Cart Ram]<sup>(Cart Termination)</sup> damage by 20%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29632",
+      name="Creator Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Potion Research], ATK +3.</li>
+        <li>ASPD +10%.</li>
+        <li>For every +2 armor refine, CRIT +5.</li>
+        <li>For every level of [Full Chemical Protection], ATK +1%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29633",
+      name="Creator Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Potion Research], ATK +5.</li>
+        <li>ASPD +10%.</li>
+        <li>For every +2 armor refine, CRIT +5.</li>
+        <li>For every level of [Full Chemical Protection], ATK +1%.</li>
+        <li>Increases [Acid Demonstration] damage by 20%.</li>
+        <li>When using [Potion Pitcher], LUK +7, DEX +7, INT +7, and adds a chance to drop Glistening Coat and Plant Bottle when killing monsters for 60 seconds.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29634",
+      name="High Priest Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Magnificat], -3% variable cast time.</li>
+        <li>Increases [Heal] amount by 10%.</li>
+        <li>Increases [Magnus Exorsismus] damage by 20%.</li>
+        <li>For every level of [Meditatio], increases SP recovery by 3x.</li>
+        <li>For every +3 armor refine, +10% [Magnus Exorsismus] damage.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29635",
+      name="High Priest Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Magnificat], -5% variable cast time.</li>
+        <li>Increases [Heal] amount by 15%.</li>
+        <li>Increases [Magnus Exorsismus] damage by 20%.</li>
+        <li>For every level of [Meditatio], increases SP recovery by 5x.</li>
+        <li>For every +3 armor refine, +15% [Magnus Exorsismus] damage.</li>
+        <li>When using [Assumptio], MATK +15% and MaxSP +10% for 60 seconds.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29636",
+      name="Champion Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Demon Bane], ATK +3.</li>
+        <li>Increases [Chain Combo] damage by 20%.</li>
+        <li>For every +2 armor refine, +5% [Combo Finish] damage.</li>
+        <li>Increases [Glacier Fist]<sup>Tiger Knuckle Fist</sup> and [Chain Crush Combo] damage by 15%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29637",
+      name="Champion Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Demon Bane], ATK +5.</li>
+        <li>Increases [Chain Combo] damage by 20%.</li>
+        <li>When [Explosion Spirits] is used, for 60 seconds [Call Spirits] is activated with a high probability during normal melee physical attacks.</li>
+        <li>For every +2 armor refine, +5% [Combo Finish] damage.</li>
+        <li>Increases [Glacier Fist]<sup>Tiger Knuckle Fist</sup> and [Chain Crush Combo] damage by 30%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29638",
+      name="Sniper Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every 1 level in [Beast Bane], ATK x2.</li>
+        <li>Increases [Double Strafe] damage by 20%.</li>
+        <li>Increases [Blitz Beat] damage by 20%.</li>
+        <li>For every +2 armor refine, +3% bow damage.</li>
+        <li>Increases [Sharp Shooting] damage by 20%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29639",
+      name="Sniper Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every 1 level in [Beast Bane], ATK x3.</li>
+        <li>Increases [Double Strafe] damage by 30%.</li>
+        <li>Increases [Blitz Beat] damage by 30%.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+        <li>For every +2 armor refine, +3% bow damage.</li>
+        <li>Increases [Sharp Shooting] damage by 30%.</li>
+        <li>When using [True Sight]<sup>Falcon Eyes</sup>, increases bow damage by 20% for 30 seconds.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29640",
+      name="Clown & Gypsy Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every 1 level in [Dancing Lessons] or [Musical Lessons], ATK +3.</li>
+        <li>Increases [Throw Arrow] or [Musical Strike] damage by 20%.</li>
+        <li>For every +2 armor refine, +1% ranged weapon physical damage.</li>
+        <li>Increases [Arrow Vulcan] damage by 20%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29641",
+      name="Clown & Gypsy Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every 1 level in [Dancing Lessons] or [Musical Lessons], ATK +5.</li>
+        <li>Increases [Throw Arrow] or [Musical Strike] damage by 20%.</li>
+        <li>After using [Encore], increases [Throw Arrow] or [Musical Strike] damage by an additional 20% and -20% variable casting for 60 seconds.</li>
+        <li>For every +2 armor refine, +1% ranged weapon physical damage.</li>
+        <li>Increases [Arrow Vulcan] damage by 30%.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29642",
+      name="Assassin Cross Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Advanced Katar Research], CRIT +3.</li>
+        <li>Increases [Sonic Blow] damage by 20%.</li>
+        <li>Increases [Meteor Assault] damage by 20%.</li>
+        <li>For every +1 armor refine, +1% critical damage.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29643",
+      name="Assassin Cross Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Advanced Katar Research], CRIT +5.</li>
+        <li>Increases [Sonic Blow] damage by 20%.</li>
+        <li>Increases [Meteor Assault] damage by 40%.</li>
+        <li>When using [Enchant Deadly Poison], +7% ASPD and +15% critical damage for 60 seconds.</li>
+        <li>For every +1 armor refine, +1% critical damage.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29644",
+      name="Stalker Essence Lv1"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Plagiarism], ATK +3.</li>
+        <li>Increases [Raid] damage by 25%.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+        <li>For every 2 levels in [One-Hand Sword Mastery], HIT +2.</li>
+      </ul>
+    {% endenchantCard %}
+    {% enchantCard
+      id="29645",
+      name="Stalker Essence Lv2"
+    %}
+      <ul class="border-t p-2">
+        <li>For every level of [Plagiarism], ATK +5.</li>
+        <li>Increases [Raid] damage by 30%.</li>
+        <li>For every 2 levels in [One-Hand Sword Mastery], HIT +3.</li>
+        <li>When using [Counter Instinct]<sup>Reject Sword</sup>, [Backstab] and [Raid] damage increased by 30%, decreases SP consumption by 10% for 30 seconds.</li>
+        <li>For every +1 armor refine, +1% ASPD.</li>
+      </ul>
+    {% endenchantCard %}
+  </div>
+
+  <h2 id="lighthalzen-quests">Lighthalzen Quests</h2>
+
+  <p>Lighthalzen brings with it a fair amount of one-time and daily quests you can do. Some of these quests will be familiar to long-time players of RO, while others are new. Also some old quests have been reworked!</p>
+
+  <h3 id="small-personal-connections" class="underline">Small Personal Connections (사소한 인맥)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/small-personal-connections.jpeg" alt="Small Personal Connections Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Andrea (lhz_airport 138, 28)</li>
+  </ul>
+
+  <p>Andrea in the Lighthalzen Airport seems to want a famous adventurer like yourself to expose a hidden event.</p>
+
+  <h3 id="intrusion" class="underline">Intrusion (잠입)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/intrusion.jpeg" alt="Intrusion Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Completed the Small Personal Connections quest</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Fishburn (lighthalzen 341, 224)</li>
+  </ul>
+
+  <p>Andrea has a good friend who is a security guard. He is suspicious of the company he works for. Go to the Lighthalzen slums to hear his story.</p> 
+
+  <h3 id="company" class="underline">Company (기업)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/company.jpeg" alt="Company Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Intrusion quest completed and you're investigating biolabs with the prisoner's bracelet</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> None provided</li>
+  </ul>
+
+  <p>You experience sudden auditory hallucinations while investigating a closed biological laboratory. But it's hard to hear the voice properly. You need to find someone to help you.</p>
+
+  <h3 id="president" class="underline">President (대통령)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/president.jpeg" alt="President Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Completed the Cursed Legacy quest (an Einbech quest @ einbech 165, 105) and the Intrusion quest</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Galstein (lighthalzen 179, 170)</li>
+  </ul>
+
+  <p>Would you believe what someone is saying who introduces themselves as a key figure in the government? Why don't you listen to what the hell they're trying to say?</p>
+
+  <h3 id="mercenary-rebellion" class="underline">Mercenary Rebellion & Rekenber (용병반란 그리고 레켄베르)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/mercenary-rebellion.jpeg" alt="Mercenary Rebellion Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Completed the Company and President quests</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Heriko (lighthalzen 258, 98)</li>
+  </ul>
+
+  <p>Lighthalzen's Heriko is worried that his grandson, who traveled alone, has not returned. Let's look for the grandson in Hugel.</p>
+
+  <h3 id="biological-weapon-researcher" class="underline">Biological Weapon Researcher (무기-생체 연구자)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/biological-weapon-researcher.png" alt="Biological Weapon Researcher Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Businessman (einbroch 86, 193)</li>
+  </ul>
+
+  <p>An anxious businessman who is in a hurry to leave Einbroch suggests something to you...</p>
+
+  <h3 id="rekenber-brothers" class="underline">Rekenber Brothers (레켄베르의 형제들)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/rekenber-brothers.jpeg" alt="Rekenber Brothers Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Hurried Person (lighthalzen 141, 162)</li>
+  </ul>
+
+  <p>There aren't many opportunities to work and make money for Rekenber, a Lighthalzen-based corporation. The opportunity that many people want is waiting for you right now.</p>
+
+  <h3 id="nursing-ellen" class="underline">Nursing Ellen (엘런 간호하기)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/nursing-ellen.jpeg" alt="Nursing Ellen Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Postil Schoil (lighthalzen 117, 101)</li>
+  </ul>
+
+  <p>Postil came all the way to Lighthalzen to get medicine for his father. He left his father in Hugel. Let's go to Hugel to check on his father.</p>
+
+  <h3 id="friends" class="underline">Friends (친구)</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/friends.jpeg" alt="Friends Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Completed the Small Personal Connections quest</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Youth (lighthalzen 253, 205)</li>
+  </ul>
+
+  <p>This is a story about a delivery that you accidentally take on while trying to stop a dispute on the street between three friends.</p>
+
+  <h3 id="bridge-construction" class="underline">Bridge Construction Materials Delivery (다리 건설 자재 배달) - Daily Quest</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/bridge-construction-materials-delivery.png" alt="Bridge Construction Materials Delivery Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> President 8 (lhz_fild02 225, 239)</li>
+  </ul>
+
+  <p>In the northeast field of Lighthalzen, there is an ambitious cat, "President 8". This cat has a big dream of becoming rich by building a bridge to charge a toll to cross it. Will you help him?</p>
+
+  <h3 id="such-a-big-pool" class="underline">There's Such A Big Pool! (저렇게 큰 수영장이 있는데 왜!) - Daily Quest</h3>
+
+  <p>[NPC image below]</p>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Theodore (lighthalzen 200, 314)</li>
+  </ul>
+
+  <p>Theodore, who works in Lighthalzen, is troubled by Amy's complaint. Why is the swimming pool outside the city and why is it so dangerous there?</p>
+
+  <h3 id="slap-your-ankle" class="underline">Slap Your Ankle (발목을 찰싹 찰싹) - Daily Quest</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/slap-your-ankle.jpeg" alt="Slap Your Ankle Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Theodore (lighthalzen 200, 314)</li>
+  </ul>
+
+  <p>Theodore still listens to complaints from young children in the city even though it's not his job. Let's help him!</p>
+
+  <h3 id="name-of-the-valley-of-the-dead" class="underline">The Name Of The Valley Of The Dead (사신의 계곡이라는 이름) - Daily Quest</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/name-of-the-valley-of-the-dead.jpeg" alt="Name Of The Valley Of The Dead Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> None</li>
+    <li><b>Level Requirement:</b> Base Level 90+</li>
+    <li><b>Start Location:</b> Leno (lighthalzen 208, 314)</li>
+  </ul>
+
+  <p>Leno, a ghost-fearing Knight, is stuck in front of the outskirts of the city. Let's hear his story.</p>
+
+  <h3 id="biolabs-daily-1" class="underline">Biolabs 1 (생체연구소 일일퀘스트 1) - Daily Quest</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/biolabs-1.jpeg" alt="Biolabs 1 Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Must be able to enter biolabs</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Traces of making a fire (lighthalzen 328, 202)</li>
+    <li><b>Available Quests:</b> B1 & B3 mobs
+  </ul>
+
+  <p>You can receive a variety of daily biolab quests from this mysterious being hiding in the shadows.</p>
+
+  <h3 id="biolabs-daily-2" class="underline">Biolabs 2 (생체연구소 일일퀘스트 2) - Daily Quest</h3>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/biolabs-2.png" alt="Biolabs 2 Quest NPC" />
+  </figure>
+
+  <ul class="list-disc pl-8 mb-6">
+    <li><b>Prerequisites:</b> Must be able to enter biolabs</li>
+    <li><b>Level Requirement:</b> Base Level 100+</li>
+    <li><b>Start Location:</b> Tarem (lighthalzen 335, 219)</li>
+    <li><b>Available Quests:</b> Second Class Non-Trans Mobs
+  </ul>
+
+  <p>Research Tarem wants to study more about biolabs. You can receive a variety of daily biolabs quests from him.</p>
+
+  <h2 id="lighthalzen-fields">Lighthalzen Fields</h2>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/fields.png" alt="Lighthalzen Fields" />
+  </figure>
+
+  <h3 id="lighthalzen-field-monsters">Monsters</h3>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="metaling.gif",
+      name="Metaling (메탈링)",
+      level="92",
+      hp="12355",
+      defMdef="",
+      class="Normal",
+      family="Formless",
+      property="Neutral LV1",
+      size="Small",
+      expJexp="1100/990",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rafflesia.gif",
+      name="Rafflesia (라플레시아)",
+      level="114",
+      hp="57283",
+      defMdef="",
+      class="Normal",
+      family="Plant",
+      property="Earth LV1",
+      size="Small",
+      expJexp="3024/2721",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="stem-worm.gif",
+      name="Stem Worm (스템웜)",
+      level="116",
+      hp="57627",
+      defMdef="",
+      class="Normal",
+      family="Plant",
+      property="Wind LV1",
+      size="Medium",
+      expJexp="4802/4322",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="demon-pungus.gif",
+      name="Demon Pungus (데몬펑거스)",
+      level="97",
+      hp="13005",
+      defMdef="",
+      class="Normal",
+      family="Demon",
+      property="Poison LV3",
+      size="Small",
+      expJexp="1170/1053",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="breeze.gif",
+      name="Breeze (산들바람)",
+      level="103",
+      hp="31161",
+      defMdef="",
+      class="Normal",
+      family="Formless",
+      property="Wind LV3",
+      size="Medium",
+      expJexp="2833/2550",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+  </div>
+
+  <h2 id="lighthalzen-dungeon">Lighthalzen Dungeon</h2>
+
+  <h3 id="biolabs">Biolabs</h3>
+
+  <p>The 1st, 2nd, and 3rd basement floors of the Biological Experiment Research Institute (Biolabs) can be entered once the entrance quest is completed. You must also be base level 100. On the third floor, you can't use flywings.</p>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/biolabs-3-entrance.png" alt="Biolabs 3 Entrance NPC" />
+  </figure>
+
+  <h4>Map</h4>
+
+  <figure class="mb-4">
+    <img class="mt-6 mb-2" src="/images/quests/lighthalzen/biolabs-map.png" alt="Biolabs Map" />
+  </figure>
+
+  <h4>Monsters</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="egnigem_senia.gif",
+      name="Egnigem Cenia (이그니젬 세니아)",
+      level="117",
+      hp="120530",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Fire LV2",
+      size="Medium",
+      expJexp="15066/13560",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="kavach_icarus.gif",
+      name="Kavach Icarus (카바크 이카루스)",
+      level="116",
+      hp="117829",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Wind LV2",
+      size="Medium",
+      expJexp="14729/13256",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="armeyer_dinze.gif",
+      name="Armeyer Dinze (아르마이어 딘제)",
+      level="114",
+      hp="117371",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Earth LV3",
+      size="Medium",
+      expJexp="14671/13204",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="laurell_weinder.gif",
+      name="Laurell Weinder (라우렐 뷘더)",
+      level="119",
+      hp="121091",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Ghost LV2",
+      size="Medium",
+      expJexp="15136/13263",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="wickebine_tres.gif",
+      name="Wickebine Tres (휘케바인 트리스)",
+      level="114",
+      hp="116276",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Poison LV2",
+      size="Medium",
+      expJexp="14535/13081",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="errende_ebecee.gif",
+      name="Errende Ebecee (이렌드 에베시)",
+      level="113",
+      hp="116680",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Holy LV2",
+      size="Medium",
+      expJexp="14585/13127",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="rogue_wickebine.gif",
+      name="Rogue Wickebine (로그 휘케바인)",
+      level="126",
+      hp="165209",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Poison LV3",
+      size="Large",
+      expJexp="20651/18586",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="crusader_egnigem.gif",
+      name="Crusader Egnigem (크루세이더 이그니젬)",
+      level="125",
+      hp="165561",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Fire LV2",
+      size="Large",
+      expJexp="20695/18626",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="alchemist_armeyer.gif",
+      name="Alchemist Armeyer (알케미스트 아르마이어)",
+      level="122",
+      hp="161502",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Earth LV3",
+      size="Large",
+      expJexp="20188/18169",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="bard_kavach.gif",
+      name="Bard Kavach (바드 카바크)",
+      level="121",
+      hp="158060",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Wind LV2",
+      size="Large",
+      expJexp="19758/17782",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="dancer_josephina.gif",
+      name="Dancer Josephina (댄서 조세피나)",
+      level="121",
+      hp="158060",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Water LV2",
+      size="Large",
+      expJexp="19758/17782",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="sage_laurell.gif",
+      name="Sage Laurell (세이지 라우렐)",
+      level="127",
+      hp="166165",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Ghost LV2",
+      size="Large",
+      expJexp="20771/18694",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="monk_errende.gif",
+      name="Monk Errende (몽크 이랜드)",
+      level="124",
+      hp="164670",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Holy LV2",
+      size="Large",
+      expJexp="20584/18525",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="knight_seyren.gif",
+      name="Knight Seyren (나이트 세이렌)",
+      level="125",
+      hp="164073",
+      defMdef="",
+      class="Normal",
+      family="Demon",
+      property="Fire LV3",
+      size="Large",
+      expJexp="20509/18458",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="assassin_eremes.gif",
+      name="Assassin Eremes (어세신 에르메스)",
+      level="126",
+      hp="163269",
+      defMdef="",
+      class="Normal",
+      family="Demon",
+      property="Poison LV4",
+      size="Large",
+      expJexp="20409/18368",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="blacksmith_howard.gif",
+      name="Blacksmith Howard (블랙스미스 하워드)",
+      level="122",
+      hp="158256",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Water LV4",
+      size="Large",
+      expJexp="19782/17804",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="hunter_cecil.gif",
+      name="Hunter Cecil (헌터 셰실)",
+      level="128",
+      hp="166488",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Wind LV4",
+      size="Large",
+      expJexp="20811/18730",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="wizard_kathryne.gif",
+      name="Wizard Kathryne (위자드 카트린느)",
+      level="127",
+      hp="164209",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Ghost LV3",
+      size="Large",
+      expJexp="20526/18474",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="priest_margaretha.gif",
+      name="Priest Margaretha (프리스트 마가레타)",
+      level="124",
+      hp="161545",
+      defMdef="",
+      class="Normal",
+      family="Demihuman",
+      property="Holy LV3",
+      size="Large",
+      expJexp="20193/18174",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+    {% monsterCard 
+      widthClass="ca-w-49",
+      image="egnigem_cenia.gif",
+      name="Egnigem Cenia (프리스트 마가레타)",
+      level="141",
+      hp="5789534",
+      defMdef="",
+      class="MVP",
+      family="Demihuman",
+      property="Fire LV2",
+      size="Large",
+      expJexp="723692/651323",
+      str="",
+      dex="",
+      agi="",
+      vit="",
+      int="",
+      luk=""
+    %}
+  </div>
+
+  <h4>Items</h4>
+
+  <div class="flex flex-wrap justify-between">
+    {% equipCard
+      id="1284",
+      folder="lighthalzen",
+      name="Krishna [1]",
+      category="Weapon",
+      droppedBy="Eremes Guile, Assassin Eremes",
+      canWear="Assassin Cross",
+      requiredLevel="60",
+      level="4",
+      weight="120",
+      atk="165"
+    %}
+      <ul class="border-t p-2">
+        <li>A heavy katar decorated in black.</li>
+        <li>ATK +3 per 10 base STR. ATK +50 if base STR is 90 or higher.</li>
+        <li>If +7 or higher, +10% Sonic Blow damage.</li>
+        <li>If +9 or higher, +10% Sonic Blow damage and when using Deadly Poision, +10% damage to all enemies for 30 seconds.</li>
+        <li><i>Can add Einbroch Random Options to this item via the {% item id="9564", name="Hero's Modification Box (Physical)", imageFolder="items" %}.</i></li>
+      </ul>
+    {% endequipCard %}
+  </div>
+
+</article>
